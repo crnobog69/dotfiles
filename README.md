@@ -1,8 +1,8 @@
-#### README на српском 🇷🇸
+### README на српском 🇷🇸
 
 # 🏠 Dotfiles (GNU STOW)
 
-> [Read in English 🇬🇧](#readme-in-english)
+> [Read in English 🇬🇧](#readme-in-english-)
 
 > [!NOTE]
 > Само **kitty**, **zed**, **zsh**, **fastfetch** су за коришћење уз помоћ GNU STOW.
@@ -16,7 +16,7 @@
 Ручно:
 - 🖥️ [konsole](konsole/README.md) - водич
 - 🌐 [tabliss](tabliss/README.md) - водич
-- 💬 [vencord](vencord.README.md) - водич
+- 💬 [vencord](vencord/README.md) - водич
 - 🎵 [spicetify](spicetify/README.md) - водич
 
 ## 🛠️ Постављање
@@ -47,11 +47,11 @@ stow kitty zed zsh fastfetch
 
 ---
 
-#### README in English 🇬🇧
+### README in English 🇬🇧
 
 # 🏠 Dotfiles (GNU STOW)
 
-> [Читај на српском 🇷🇸](#readme-на-српском)
+> [Читај на српском 🇷🇸](#readme-на-српском-)
 
 > [!NOTE]
 > Only **kitty**, **zed**, **zsh**, **fastfetch** are to be used with GNU STOW.
@@ -65,7 +65,7 @@ Personal configuration files for:
 Manual setup:
 - 🖥️ [konsole](konsole/README.md) - guide
 - 🌐 [tabliss](tabliss/README.md) - guide
-- 💬 [vencord](vencord.README.md) - guide
+- 💬 [vencord](vencord/README.md) - guide
 - 🎵 [spicetify](spicetify/README.md) - guide
 
 ## 🛠️ Setup
