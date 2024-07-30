@@ -24,7 +24,7 @@
 
 3. Клонирање:
    ```
-   git clone https://github.com/корисничко-име/dotfiles.git ~/.dotfiles
+   git clone https://github.com/crnobog69/dotfiles.git
    ```
 
 4. Примена конфигурација:
