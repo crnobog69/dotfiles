@@ -1,6 +1,8 @@
+#### README на српском 🇷🇸
+
 # 🏠 Dotfiles (GNU STOW)
 
-[English - 🇬🇧](#-dotfiles-gnu-stow)
+> [Read in English 🇬🇧](#readme-in-english)
 
 > [!NOTE]
 > Само **kitty**, **zed**, **zsh**, **fastfetch** су за коришћење уз помоћ GNU STOW.
@@ -45,9 +47,11 @@ stow kitty zed zsh fastfetch
 
 ---
 
+#### README in English 🇬🇧
+
 # 🏠 Dotfiles (GNU STOW)
 
-[Српски - 🇷🇸](#-dotfiles-gnu-stow)
+> [Читај на српском 🇷🇸](#readme-на-српском)
 
 > [!NOTE]
 > Only **kitty**, **zed**, **zsh**, **fastfetch** are to be used with GNU STOW.
