@@ -10,10 +10,10 @@
 - 🖼️ fastfetch
 
 Ручно:
-- 🖥️ [konsole](konsole/README.md)
-- 🌐 [tabliss](tabliss/README.md)
-- 💬 [vencord](vencord.README.md)
-- 🎵 [spicetify](spicetify/README.md)
+- 🖥️ [konsole](konsole/README.md) - водич
+- 🌐 [tabliss](tabliss/README.md) - воидч
+- 💬 [vencord](vencord.README.md) - водич
+- 🎵 [spicetify](spicetify/README.md) - водич
 
 ## 🛠️ Постављање
 
