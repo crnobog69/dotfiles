@@ -14,7 +14,7 @@
 - 🖼️ fastfetch
 
 Ручно:
-- 🖥️ [konsole](konsole/README.md) <= водич
+- 🖥️ [konsole](konsole/README.md) <- водич
 - 🌐 [tabliss](tabliss/README.md) - водич
 - 💬 [vencord](vencord/README.md) - водич
 - 🎵 [spicetify](spicetify/README.md) - водич
