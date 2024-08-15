@@ -60,18 +60,18 @@ stow kitty zed zsh fastfetch
 > Only **kitty**, **zed**, **zsh**, **fastfetch** are to be used with GNU STOW.
 
 Personal configuration files for:
-- 😺 kitty
-- ⚡ zed
-- 🐚 zsh
-- 🖼️ fastfetch
+- 😺 | kitty
+- ⚡ | zed
+- 🐚 | zsh
+- 🖼️ |fastfetch
 
 Manual setup:
-- 🖥️ [konsole](konsole/README.md) <= guide
-- 🌐 [tabliss](tabliss/README.md) <= guide
-- 💬 [vencord](vencord/README.md) <= guide
-- 🎵 [spicetify](spicetify/README.md) <= guide
-- 🦁 [brave/chrome](brave/README.md) <= guide
-- 🦊 [firefox](firefox/README.md) <= guide
+- 🖥️ | [konsole](konsole/README.md) <= guide
+- 🌐 | [tabliss](tabliss/README.md) <= guide
+- 💬 | [vencord](vencord/README.md) <= guide
+- 🎵 | [spicetify](spicetify/README.md) <= guide
+- 🦁 | [brave/chrome](brave/README.md) <= guide
+- 🦊 | [firefox](firefox/README.md) <= guide
 
 ## 🛠️ Setup
 
