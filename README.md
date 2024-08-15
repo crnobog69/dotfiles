@@ -9,18 +9,18 @@
 > Само **kitty**, **zed**, **zsh**, **fastfetch** су за коришћење уз помоћ GNU STOW.
 
 Личне конфигурацијске датотеке за:
-- 😺 kitty
-- ⚡ zed
-- 🐚 zsh
-- 🖼️ fastfetch
+- 😺 | kitty
+- ⚡ | zed
+- 🐚 | zsh
+- 🖼️ | fastfetch
 
 Ручно:
-- 🖥️ [konsole](konsole/README.md) <= водич
-- 🌐 [tabliss](tabliss/README.md) <= водич
-- 💬 [vencord](vencord/README.md) <= водич
-- 🎵 [spicetify](spicetify/README.md) <= водич
-- 🦁 [brave/chrome](brave/README.md) <= водич
-- 🦊 [firefox](firefox/README.md) <= водич
+- 🖥️ | [konsole](konsole/README.md) <= водич
+- 🌐 | [tabliss](tabliss/README.md) <= водич
+- 💬 | [vencord](vencord/README.md) <= водич
+- 🎵 | [spicetify](spicetify/README.md) <= водич
+- 🦁 | [brave/chrome](brave/README.md) <= водич
+- 🦊 | [firefox](firefox/README.md) <= водич
 
 ## 🛠️ Постављање
 
