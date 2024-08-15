@@ -15,7 +15,7 @@
    *Овде можете наћи упутства за ручну инсталацију и прилагођавање.*
 
 2. **Chrome Web Store:**
-   [Rosé Pine тема](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
+   [Обична Rosé Pine тема](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
    
    *Једноставна инсталација кликом на дугме "Add to Chrome".*
 
@@ -53,7 +53,7 @@ If you want to customize the look of your Brave or Chrome browser, you can choos
    *Here you can find instructions for manual installation and customization.*
 
 2. **Chrome Web Store:**
-   [Rosé Pine Theme](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
+   [Classic Rosé Pine Theme](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
    
    *Simple installation by clicking the "Add to Chrome" button.*
 
