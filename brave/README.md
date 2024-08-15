@@ -2,7 +2,7 @@
 
 # Упутство за постављање тема у Brave/Chrome претраживачу
 
-Ако желите да прилагодите изглед вашег Brave или Chrome претраживача, можете изабрати једну од:
+Ако желите да прилагодите изглед вашег **Brave** или **Chrome** претраживача, можете изабрати једну од:
 
 ## 🌹 | Rosé Pine
 
@@ -40,7 +40,7 @@
 
 # Guide for Setting Up Themes in Brave/Chrome Browser
 
-If you want to customize the look of your Brave or Chrome browser, you can choose from popular themes|
+If you want to customize the look of your **Brave** or **Chrome** browser, you can choose from popular themes|
 
 ## 🌹 | Rosé Pine
 
