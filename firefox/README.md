@@ -8,7 +8,7 @@
 https://github.com/rose-pine/firefox
 ```
 
-или
+  или
 
 **😺 Catppuccin**
 ```
