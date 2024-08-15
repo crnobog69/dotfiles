@@ -1,4 +1,4 @@
-# 🎶 Spicetify Config - Comfy Theme Config
+# 🎵 Spicetify Config - Comfy Theme Config
 
 ### 🛠️ Како користити (Comfy тема)?
 
