@@ -2,9 +2,9 @@
 
 # Упутство за постављање тема у Brave/Chrome претраживачу
 
-Ако желите да прилагодите изглед вашег Brave или Chrome претраживача, можете изабрати једну од популарних тема. Ево како можете поставити две прелепе теме:
+Ако желите да прилагодите изглед вашег Brave или Chrome претраживача, можете изабрати једну од:
 
-## 🌹 Rosé Pine
+## 🌹 | Rosé Pine
 
 
 ### Опције инсталације:
@@ -19,7 +19,7 @@
    
    *Једноставна инсталација кликом на дугме "Add to Chrome".*
 
-## 😺 Catppuccin
+## 😺 | Catppuccin
 
 
 ### Опције инсталације:
@@ -40,9 +40,9 @@
 
 # Guide for Setting Up Themes in Brave/Chrome Browser
 
-If you want to customize the look of your Brave or Chrome browser, you can choose from popular themes. Here's how you can set up two beautiful themes:
+If you want to customize the look of your Brave or Chrome browser, you can choose from popular themes|
 
-## 🌹 Rosé Pine
+## 🌹 | Rosé Pine
 
 
 ### Installation Options:
@@ -57,7 +57,7 @@ If you want to customize the look of your Brave or Chrome browser, you can choos
    
    *Simple installation by clicking the "Add to Chrome" button.*
 
-## 😺 Catppuccin
+## 😺 | Catppuccin
 
 
 ### Installation Options:
