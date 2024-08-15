@@ -18,7 +18,7 @@ https://github.com/catppuccin/firefox
 
 ---
 
-###If you want to set up a theme for the Firefox browser, you can follow the instructions provided at one of the following links:
+### If you want to set up a theme for the Firefox browser, you can follow the instructions provided at one of the following links:
 
 **Rosé Pine**
 
