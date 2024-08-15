@@ -14,7 +14,7 @@ https://github.com/rose-pine/google-chrome
 https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej
 ```
 
-или
+**или**
 
 **😺 | Catppuccin**
 
@@ -44,7 +44,7 @@ https://github.com/rose-pine/google-chrome
 https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej
 ```
 
-or
+**or**
 
 **😺 | Catppuccin**
 
