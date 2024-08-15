@@ -7,7 +7,7 @@
 
 /
 
-📌 Ја тренутно користим [Text тему](https://github.com/spicetify/spicetify-themes/tree/master/text) са Catppuccin Mocha варијантом. (нема опциу за увоз/извоз config датотека)
+📌 Тренутно користим [Text тему](https://github.com/spicetify/spicetify-themes/tree/master/text) са Catppuccin Mocha варијантом. (нема опциу за увоз/извоз config датотека)
 
 ---
 
