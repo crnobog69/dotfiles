@@ -15,7 +15,7 @@
    *Овде можете наћи упутства за ручну инсталацију и прилагођавање.*
 
 2. **Chrome Web Store:**
-   [Обична Rosé Pine тема](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
+   [Обична Rosé Pine варијанта](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
    
    *Једноставна инсталација кликом на дугме "Add to Chrome".*
 
@@ -30,7 +30,7 @@
    *Садржи различите варијанте теме и упутства за инсталацију.*
 
 2. **Chrome Web Store (Catppuccin Mocha варијанта):**
-   [Catppuccin Mocha тема](https://chromewebstore.google.com/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
+   [Catppuccin Mocha variant](https://chromewebstore.google.com/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
    
    *Брза инсталација Mocha варијанте теме директно из Chrome Web Store-а.*
 
@@ -68,7 +68,7 @@ If you want to customize the look of your Brave or Chrome browser, you can choos
    *Contains various theme variants and installation instructions.*
 
 2. **Chrome Web Store (Catppuccin Mocha variant):**
-   [Catppuccin Mocha Theme](https://chromewebstore.google.com/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
+   [Catppuccin Mocha variant](https://chromewebstore.google.com/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
    
    *Quick installation of the Mocha variant directly from the Chrome Web Store.*
 
