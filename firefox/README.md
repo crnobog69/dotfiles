@@ -19,10 +19,12 @@ Rosé Pine је елегантна тема са нежним, пастелни�
 
 Catppuccin је шармантна тема инспирисана топлим бојама и мачкама.
 
-**GitHub репозиторијум:**
+`. **GitHub репозиторијум:**
 [https://github.com/catppuccin/firefox](https://github.com/catppuccin/firefox)
 
 *Садржи различите варијанте теме и детаљна упутства за инсталацију у Firefox-у.*
+
+2. **Firefox Color веза** (исто као из 1. корака) до Mocha Red обичне варијантe: [Firefox Color](https://color.firefox.com/?theme=XQAAAAJCBAAAAAAAAABBqYhm849SCicxcUcPX38oKRicm6da8pFtMcajvXaAE3RJ0F_F447xQs-L1kFlGgDKq4IIvWciiy4upusW7OvXIRinrLrwLvjXB37kvhN5ElayHo02fx3o8RrDShIhRpNiQMOdww5V2sCMLAfehhp9X6-0omTOJoxUMafR4835KzRtga3odeboL1_1B-QpbDvXNFc9eYq_VaFCSTmcaWjaap_g_3ohvnWmdBLPh-j4Od9aK_zPdPuzXPDUJe9AI4wshGDgTUn0lwQdlN2SiqoC5XzY0hMy2dL-8J2rsbHHPT5EdAI_t1nHMW0hAE3M3p5uqgjHckEd7PKDcCT4jXaWYJmf9H6WGdcvlkKbhUkB8pGHdpylU40Z3YrNIbuzYmTlElOy3-ysUR6Fvj8Pjjh6MruXklsjV9W4JQHsWu5q4j_cuFMuKM1mOjTiOBjVpu4JNcdSwX5b_5eknzHqkvELZQY5jTnNVHsadj8qS5v8UNc1GaKUxBhsUexnNmwEE6kutOngp9XfWIqL3RszZ89fd2YMT9xERpjWB37q3fxygag)
 
 Изаберите тему која вам се највише допада и уживајте у новом изгледу вашег Firefox претраживача!
 
