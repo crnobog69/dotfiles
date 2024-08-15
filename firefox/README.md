@@ -13,7 +13,7 @@ Rosé Pine је елегантна тема са нежним, пастелни�
 
 *Овде можете наћи упутства за инсталацију и прилагођавање теме за Firefox.*
 
-(2.) **Firefox Color веза** (исто као из 1. корака) до Rosé Pine обичне варијантe: [Firefox Color](https://color.firefox.com/?theme=XQAAAAKPAQAAAAAAAABBqYhm849SCia73laEGccwS-xMDPr3WmqH6mLhhyRv-nu52zZ2ZXxbsGmOEknLoZBVSFanWhsjezxhgdCrK27iduavSwvOOiigQih0UlOvLUeJzf6gowAriRj5ek5rgF5SiG4JPvtsgJ1eq9fw0_eEZstNqCi_ueDgCDy9hfOS3KrRkC6ae0NwhO_atJzPxh7wRFDoNx9VNnYtVQrfpx22kzrOtObs1tq6OGCzJIABASG1Mf0qXeW3fBan5GrGn2dnmoflD1b0AwCHpHP1vY-aNrVHjngbt1trpTwTJE5RtsxZdi0sCBW77jujsGxRsLb-9uYBr-TjDYT_9ZHGrQ)
+2. **Firefox Color веза** (исто као из 1. корака) до Rosé Pine обичне варијантe: [Firefox Color](https://color.firefox.com/?theme=XQAAAAKPAQAAAAAAAABBqYhm849SCia73laEGccwS-xMDPr3WmqH6mLhhyRv-nu52zZ2ZXxbsGmOEknLoZBVSFanWhsjezxhgdCrK27iduavSwvOOiigQih0UlOvLUeJzf6gowAriRj5ek5rgF5SiG4JPvtsgJ1eq9fw0_eEZstNqCi_ueDgCDy9hfOS3KrRkC6ae0NwhO_atJzPxh7wRFDoNx9VNnYtVQrfpx22kzrOtObs1tq6OGCzJIABASG1Mf0qXeW3fBan5GrGn2dnmoflD1b0AwCHpHP1vY-aNrVHjngbt1trpTwTJE5RtsxZdi0sCBW77jujsGxRsLb-9uYBr-TjDYT_9ZHGrQ)
 
 ## 😺 | Catppuccin
 
