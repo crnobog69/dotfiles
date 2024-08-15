@@ -19,6 +19,8 @@
 - 🌐 [tabliss](tabliss/README.md) <= водич
 - 💬 [vencord](vencord/README.md) <= водич
 - 🎵 [spicetify](spicetify/README.md) <= водич
+- 🦁 [brave/chrome](brave/README.md) <= водич
+- 🦊 [firefox](firefox/README.md) <= водич
 
 ## 🛠️ Постављање
 
@@ -68,6 +70,8 @@ Manual setup:
 - 🌐 [tabliss](tabliss/README.md) <= guide
 - 💬 [vencord](vencord/README.md) <= guide
 - 🎵 [spicetify](spicetify/README.md) <= guide
+- 🦁 [brave/chrome](brave/README.md) <= guide
+- 🦊 [firefox](firefox/README.md) <= guide
 
 ## 🛠️ Setup
 
