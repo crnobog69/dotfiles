@@ -20,6 +20,7 @@
 - 🎵 | [spicetify](spicetify/README.md) <= водич
 - 🦁 | [brave/chrome](brave/README.md) <= водич
 - 🦊 | [firefox](firefox/README.md) <= водич
+- 🧰 | assets - само слике и иконице
 
 ## 🛠️ Постављање
 
@@ -71,6 +72,7 @@ Manual setup:
 - 🎵 | [spicetify](spicetify/README.md) <= guide
 - 🦁 | [brave/chrome](brave/README.md) <= guide
 - 🦊 | [firefox](firefox/README.md) <= guide
+- 🧰 | assets - only images and icons
 
 ## 🛠️ Setup
 
