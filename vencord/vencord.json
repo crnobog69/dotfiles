@@ -316,7 +316,12 @@
                 "enabled": false
             },
             "OpenInApp": {
-                "enabled": false
+                "enabled": true,
+                "spotify": true,
+                "steam": true,
+                "epic": true,
+                "tidal": true,
+                "itunes": true
             },
             "OverrideForumDefaults": {
                 "enabled": false
@@ -516,9 +521,6 @@
             "VoiceMessages": {
                 "enabled": false
             },
-            "WatchTogetherAdblock": {
-                "enabled": false
-            },
             "WebKeybinds": {
                 "enabled": false
             },
@@ -548,6 +550,18 @@
             },
             "SupportHelper": {
                 "enabled": false
+            },
+            "YoutubeAdblock": {
+                "enabled": false
+            },
+            "ConsoleJanitor": {
+                "enabled": false
+            },
+            "MentionAvatars": {
+                "enabled": false
+            },
+            "ShowAllRoles": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -560,7 +574,7 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1719504385551
+            "settingsSyncVersion": 1723857326400
         }
     },
     "quickCss": ""
