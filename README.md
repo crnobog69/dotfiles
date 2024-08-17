@@ -8,7 +8,7 @@
 > Само **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** су за коришћење уз помоћ GNU STOW.
 
 Личне конфигурацијске датотеке за:
-- 😺 | kitty
+- 😺 | kitty (Mocha Green, Mocha Purple, Tokyo Night)
 - ⚡ | zed
 - 🐚 | zsh
 - 🖼️ | fastfetch
@@ -38,7 +38,7 @@
 3. Примена конфигурација:
    ```
    cd ~/.dotfiles
-   stow kitty zed zsh fastfetch alacritty
+   stow kitty-cat-green zed zsh fastfetch alacritty
    ```
 
 ## 🔄 Ажурирање
@@ -46,7 +46,7 @@
 ```
 cd ~/.dotfiles
 git pull
-stow kitty zed zsh fastfetch alacritty
+stow kitty-cat-green kitty-cat-purple kitty-tokyo-night zed zsh fastfetch alacritty
 ```
 
 ---
@@ -61,7 +61,7 @@ stow kitty zed zsh fastfetch alacritty
 > Only **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** are to be used with GNU STOW.
 
 Personal configuration files for:
-- 😺 | kitty
+- 😺 | kitty (Mocha Green, Mocha Purple, Tokyo Night)
 - ⚡ | zed
 - 🐚 | zsh
 - 🖼️ | fastfetch
@@ -91,7 +91,7 @@ Manual setup:
 3. Apply configurations:
    ```
    cd ~/.dotfiles
-   stow kitty zed zsh fastfetch alacritty
+   stow kitty-cat-green zed zsh fastfetch alacritty
    ```
 
 ## 🔄 Updating
@@ -99,5 +99,5 @@ Manual setup:
 ```
 cd ~/.dotfiles
 git pull
-stow kitty zed zsh fastfetch alacritty
+stow kitty-cat-green kitty-cat-purple kitty-tokyo-night zed zsh fastfetch alacritty
 ```
