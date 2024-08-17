@@ -5,13 +5,14 @@
 > [Read in English 🇬🇧](#readme-in-english-)
 
 > [!NOTE]
-> Само **kitty**, **zed**, **zsh**, **fastfetch** су за коришћење уз помоћ GNU STOW.
+> Само **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** су за коришћење уз помоћ GNU STOW.
 
 Личне конфигурацијске датотеке за:
 - 😺 | kitty
 - ⚡ | zed
 - 🐚 | zsh
 - 🖼️ | fastfetch
+- 🌴 |  alacritty
 
 Ручно:
 - 🖥️ | [konsole](konsole/README.md) <= водич
@@ -37,7 +38,7 @@
 3. Примена конфигурација:
    ```
    cd ~/.dotfiles
-   stow kitty zed zsh fastfetch
+   stow kitty zed zsh fastfetch alacritty
    ```
 
 ## 🔄 Ажурирање
@@ -45,7 +46,7 @@
 ```
 cd ~/.dotfiles
 git pull
-stow kitty zed zsh fastfetch
+stow kitty zed zsh fastfetch alacritty
 ```
 
 ---
@@ -57,13 +58,14 @@ stow kitty zed zsh fastfetch
 > [Читај на српском 🇷🇸](#readme-на-српском-)
 
 > [!NOTE]
-> Only **kitty**, **zed**, **zsh**, **fastfetch** are to be used with GNU STOW.
+> Only **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** are to be used with GNU STOW.
 
 Personal configuration files for:
 - 😺 | kitty
 - ⚡ | zed
 - 🐚 | zsh
-- 🖼️ |fastfetch
+- 🖼️ | fastfetch
+- 🌴 | alacritty
 
 Manual setup:
 - 🖥️ | [konsole](konsole/README.md) <= guide
@@ -89,7 +91,7 @@ Manual setup:
 3. Apply configurations:
    ```
    cd ~/.dotfiles
-   stow kitty zed zsh fastfetch
+   stow kitty zed zsh fastfetch alacritty
    ```
 
 ## 🔄 Updating
@@ -97,5 +99,5 @@ Manual setup:
 ```
 cd ~/.dotfiles
 git pull
-stow kitty zed zsh fastfetch
+stow kitty zed zsh fastfetch alacritty
 ```
