@@ -7,7 +7,7 @@
 ## 🌹 | Rosé Pine
 
 
-### Опције инсталације:
+### 📦 | Опције инсталације:
 
 1. **GitHub репозиторијум:**
    [https://github.com/rose-pine/google-chrome](https://github.com/rose-pine/google-chrome)
@@ -22,7 +22,7 @@
 ## 😺 | Catppuccin
 
 
-### Опције инсталације:
+### 📦 | Опције инсталације:
 
 1. **GitHub репозиторијум:**
    [https://github.com/catppuccin/chrome](https://github.com/catppuccin/chrome)
@@ -34,7 +34,7 @@
 
    *Брза инсталација Mocha варијанте теме директно из Chrome Web Store-а.*
 
-3. Ручно - Catppuccin Mocha Green
+3. **Ручно - Catppuccin Mocha Green**
 
 - Идите на chrome://extensions/ или brave://extensions/ (ако користите браве претраживач) у прегледачу.
 - Укључите Developer mode.
@@ -52,7 +52,7 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 ## 🌹 | Rosé Pine
 
 
-### Installation Options:
+### 📦 | Installation Options:
 
 1. **GitHub Repository:**
    [https://github.com/rose-pine/google-chrome](https://github.com/rose-pine/google-chrome)
@@ -67,7 +67,7 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 ## 😺 | Catppuccin
 
 
-### Installation Options:
+### 📦 | Installation Options:
 
 1. **GitHub Repository:**
    [https://github.com/catppuccin/chrome](https://github.com/catppuccin/chrome)
@@ -79,7 +79,7 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 
    *Quick installation of the Mocha variant directly from the Chrome Web Store.*
 
-3. Manual - Catppuccin Mocha Green
+3. **Manual - Catppuccin Mocha Green**
 
 - Go to chrome://extensions/ or brave://extensions/ (if you are using the Brave browser) in your browser.
 - Enable Developer mode.
