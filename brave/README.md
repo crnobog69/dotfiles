@@ -11,12 +11,12 @@
 
 1. **GitHub репозиторијум:**
    [https://github.com/rose-pine/google-chrome](https://github.com/rose-pine/google-chrome)
-   
+
    *Овде можете наћи упутства за ручну инсталацију и прилагођавање.*
 
 2. **Chrome Web Store:**
    [Обична Rosé Pine варијанта](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
-   
+
    *Једноставна инсталација кликом на дугме "Add to Chrome".*
 
 ## 😺 | Catppuccin
@@ -26,13 +26,20 @@
 
 1. **GitHub репозиторијум:**
    [https://github.com/catppuccin/chrome](https://github.com/catppuccin/chrome)
-   
+
    *Садржи различите варијанте теме и упутства за инсталацију.*
 
 2. **Chrome Web Store (Catppuccin Mocha варијанта):**
    [Catppuccin Mocha variant](https://chromewebstore.google.com/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
-   
+
    *Брза инсталација Mocha варијанте теме директно из Chrome Web Store-а.*
+
+3. Ручно - Catppuccin Mocha Green
+
+- Идите на chrome://extensions/ или brave://extensions/ (ако користите браве претраживач) у прегледачу.
+- Укључите Developer mode.
+- Кликните на Load unpacked и изаберите фасциклу `Green`.
+
 
 Изаберите тему која вам се највише допада и уживајте у новом изгледу вашег претраживача!
 
@@ -49,12 +56,12 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 
 1. **GitHub Repository:**
    [https://github.com/rose-pine/google-chrome](https://github.com/rose-pine/google-chrome)
-   
+
    *Here you can find instructions for manual installation and customization.*
 
 2. **Chrome Web Store:**
    [Classic Rosé Pine Theme](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
-   
+
    *Simple installation by clicking the "Add to Chrome" button.*
 
 ## 😺 | Catppuccin
@@ -64,12 +71,18 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 
 1. **GitHub Repository:**
    [https://github.com/catppuccin/chrome](https://github.com/catppuccin/chrome)
-   
+
    *Contains various theme variants and installation instructions.*
 
 2. **Chrome Web Store (Catppuccin Mocha variant):**
    [Catppuccin Mocha variant](https://chromewebstore.google.com/detail/catppuccin-chrome-theme-m/bkkmolkhemgaeaeggcmfbghljjjoofoh)
-   
+
    *Quick installation of the Mocha variant directly from the Chrome Web Store.*
+
+3. Manual - Catppuccin Mocha Green
+
+- Go to chrome://extensions/ or brave://extensions/ (if you are using the Brave browser) in your browser.
+- Enable Developer mode.
+- Click Load unpacked and select the folder `Green`.
 
 Choose the theme you like the most and enjoy the new look of your browser!
