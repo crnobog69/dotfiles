@@ -5,10 +5,15 @@
     // - "system": Use the theme that corresponds to the system's appearance
     // - "light": Use the theme indicated by the "light" field
     // - "dark": Use the theme indicated by the "dark" field
+    "language_models": {
+        "openai": {
+            "version": "1"
+        }
+    },
     "theme": {
         "mode": "system",
         "light": "One Light",
-        "dark": "Catppuccin Mocha (red)"
+        "dark": "Catppuccin Mocha (green)"
     },
     // The name of a base set of key bindings to use.
     // This setting can take four values, each named after another
@@ -372,7 +377,11 @@
     },
     "assistant": {
         // Version of this setting.
-        "version": "1",
+        "default_model": {
+            "provider": "openai",
+            "model": "gpt-4o"
+        },
+        "version": "2",
         // Whether the assistant is enabled.
         "enabled": true,
         // Whether to show the assistant panel button in the status bar.
@@ -382,19 +391,9 @@
         // Default width when the assistant is docked to the left or right.
         "default_width": 640,
         // Default height when the assistant is docked to the bottom.
-        "default_height": 320,
+        "default_height": 640.0,
         // AI provider.
-        "provider": {
-            "name": "openai",
-            // The default model to use when creating new contexts. This
-            // setting can take three values:
-            //
-            // 1. "gpt-3.5-turbo"
-            // 2. "gpt-4"
-            // 3. "gpt-4-turbo-preview"
-            // 4. "gpt-4o"
-            "default_model": "gpt-4o"
-        }
+        "provider": null
     },
     // Whether the screen sharing icon is shown in the os status bar.
     "show_call_status_icon": true,
