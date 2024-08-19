@@ -12,7 +12,7 @@
 - ⚡ | zed
 - 🐚 | zsh
 - 🖼️ | fastfetch
-- 🌴 |  alacritty
+- 🌴 | alacritty
 
 Ручно:
 - 🖥️ | [konsole](konsole/README.md) <= водич
@@ -21,6 +21,7 @@
 - 🎵 | [spicetify](spicetify/README.md) <= водич
 - 🦁 | [brave/chrome](brave/README.md) <= водич
 - 🦊 | [firefox](firefox/README.md) <= водич
+- ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= водич
 - 🧰 | assets - само слике и иконице
 
 ## 🛠️ Постављање
@@ -74,6 +75,7 @@ Manual setup:
 - 🎵 | [spicetify](spicetify/README.md) <= guide
 - 🦁 | [brave/chrome](brave/README.md) <= guide
 - 🦊 | [firefox](firefox/README.md) <= guide
+- ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= guide
 - 🧰 | assets - only images and icons
 
 ## 🛠️ Setup
