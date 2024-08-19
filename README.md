@@ -47,7 +47,7 @@
 ```
 cd ~/.dotfiles
 git pull
-stow kitty-cat-green kitty-cat-purple kitty-tokyo-night zed zsh fastfetch alacritty
+stow kitty-cat-green zed zsh fastfetch alacritty
 ```
 
 ---
@@ -101,5 +101,5 @@ Manual setup:
 ```
 cd ~/.dotfiles
 git pull
-stow kitty-cat-green kitty-cat-purple kitty-tokyo-night zed zsh fastfetch alacritty
+stow kitty-cat-green zed zsh fastfetch alacritty
 ```
