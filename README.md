@@ -22,10 +22,11 @@
 - 🌐 | [tabliss](tabliss/README.md) <= водич
 - 💬 | [vencord](vencord/README.md) <= водич
 - 🎵 | [spicetify](spicetify/README.md) <= водич
+- 🐇 | [mangadex](mangadex/README.md) <= водич
 - 🦊 | [firefox](firefox/README.md) <= водич
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [brave/chrome](brave/README.md) <= водич
-- 🗺️ | [brave/maps](https://github.com/crnobog69/cobaltium) <= водич (иско као [cobaltium](https://github.com/crnobog69/cobaltium))
+- 🗺️ | [brave/maps](brave-maps) <= водич (иско као [cobaltium](https://github.com/crnobog69/cobaltium))
 - 🧰 | assets - само слике и иконице
 
 ## 🛠️ Постављање
@@ -46,13 +47,29 @@
    stow kitty-cat-green zed zsh fastfetch alacritty
    ```
 
+   или (једно) 
+
+   ```
+   cd ~/.dofiles
+   stow zed
+   ```
+
 ## 🔄 Ажурирање
 
 ```
 cd ~/.dotfiles
 git pull
-stow kitty-cat-green zed zsh fastfetch alacritty
 ```
+
+## 🪐 Остало
+
+- [😺 | Catppuccin](https://github.com/catppuccin)
+- [🗼 | Tokyo Night](https://github.com/tokyo-night)
+- [🗺️ | Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
+- [🐇 | MangaDex](https://github.com/crnobog69/mangadex)
+- [🎵 | Spicetify](https://github.com/spicetify/cli)
+- [⚛️ | Cobaltium](https://github.com/crnobog69/cobaltium)
+- [🦊 | Crnobog - Творац/Ја](https://github.com/crnobog69)
 
 ---
 
@@ -80,6 +97,7 @@ Manual setup:
 - 🌐 | [tabliss](tabliss/README.md) <= guide
 - 💬 | [vencord](vencord/README.md) <= guide
 - 🎵 | [spicetify](spicetify/README.md) <= guide
+- 🐇 | [mangadex](mangadex/README.md) <= guide
 - 🦊 | [firefox](firefox/README.md) <= guide
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= guide
 - 🦁 | [brave/chrome](brave/README.md) <= guide
@@ -104,6 +122,13 @@ Manual setup:
    stow kitty-cat-green zed zsh fastfetch alacritty
    ```
 
+   or (one) 
+
+   ```
+   cd ~/.dofiles
+   stow zed
+   ```
+
 ## 🔄 Updating
 
 ```
@@ -111,3 +136,14 @@ cd ~/.dotfiles
 git pull
 stow kitty-cat-green zed zsh fastfetch alacritty
 ```
+
+## 🪐 Other
+
+- [😺 | Catppuccin](https://github.com/catppuccin)
+- [🗼 | Tokyo Night](https://github.com/tokyo-night)
+- [🗺️ | Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
+- [🐇 | MangaDex](https://github.com/crnobog69/mangadex)
+- [🎵 | Spicetify](https://github.com/spicetify/cli)
+- [⚛️ | Cobaltium](https://github.com/crnobog69/cobaltium)
+- [🦊 | Crnobog - Creator/Me](https://github.com/crnobog69)
+- [🦊 | Crnobog - Creator/Me](https://github.com/crnobog69)
