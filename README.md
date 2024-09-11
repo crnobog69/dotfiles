@@ -28,7 +28,7 @@
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [`brave`](brave/README.md) <= водич
 - 🗺️ | [`brave-maps`](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
-- ❄️ | [`assets`](assets/) - само слике и иконице
+- 🧰 | [`assets`](assets/) - само слике и иконице
 
 ## 🛠️ Постављање
 
@@ -104,7 +104,7 @@ Manual setup:
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= guide
 - 🦁 | [`brave`](brave/README.md) <= guide
 - 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [cobaltium](https://github.com/crnobog69/cobaltium))
-- ❄️ | [`assets`](assets/) - only images and icons
+- 🧰 | [`assets`](assets/) - only images and icons
 
 ## 🛠️ Setup
 
