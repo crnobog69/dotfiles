@@ -22,6 +22,8 @@ Userscripts for ani/manga and other 🖥️🔧
 
 ---
 
+<br>
+
 # Userscripts
 
 ### 📊 | [`Anilist`](https://anilist.co/):
