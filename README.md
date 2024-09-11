@@ -47,7 +47,7 @@
    stow kitty-cat-green zed zsh fastfetch alacritty
    ```
 
-   или (једно) 
+   или (једно)
 
    ```
    cd ~/.dofiles
@@ -122,7 +122,7 @@ Manual setup:
    stow kitty-cat-green zed zsh fastfetch alacritty
    ```
 
-   or (one) 
+   or (one)
 
    ```
    cd ~/.dofiles
@@ -145,5 +145,4 @@ stow kitty-cat-green zed zsh fastfetch alacritty
 - [🐇 | MangaDex](https://github.com/crnobog69/mangadex)
 - [🎵 | Spicetify](https://github.com/spicetify/cli)
 - [⚛️ | Cobaltium](https://github.com/crnobog69/cobaltium)
-- [🦊 | Crnobog - Creator/Me](https://github.com/crnobog69)
 - [🦊 | Crnobog - Creator/Me](https://github.com/crnobog69)
