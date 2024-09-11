@@ -1,10 +1,10 @@
 # 🐒 | Насилнимајмун
 
-<center>
+<br>
+
   [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
-</center>
 
-
+<br>
 
 Скрипте за аниме и манге 🖥️🔧
 
