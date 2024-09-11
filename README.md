@@ -8,7 +8,7 @@
 > Само **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** су за коришћење уз помоћ GNU STOW.
 
 > [!NOTE]
-> [brave-maps](brave-maps) - За сада само за `Chromium` претраживаче
+> [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
 Личне конфигурацијске датотеке за:
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
@@ -28,7 +28,7 @@
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [`brave`](brave/README.md) <= водич
 - 🗺️ | [`brave-maps`](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
-- 🧰 | [`assets`](assets/) - само слике и иконице
+- 🧰 | [`assets`](assets/) - слике и иконице и остало
 
 ## 🛠️ Постављање
 
@@ -84,7 +84,7 @@ git pull
 > Only **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** are to be used with GNU STOW.
 
 > [!NOTE]
-> [brave-maps](brave-maps) - For now only for `Chromium` browsers
+> [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
 Personal configuration files for:
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
