@@ -36,7 +36,7 @@
 
 3. **Ручно - Catppuccin Mocha Green**
 
-- Идите на chrome://extensions/ или brave://extensions/ (ако користите браве претраживач) у прегледачу.
+- Идите на chrome://extensions/ (ако користите Chrome претраживач) или brave://extensions/ (ако користите Brave претраживач) у прегледачу.
 - Укључите Developer mode.
 - Кликните на Load unpacked и изаберите фасциклу `Green`.
 
@@ -81,7 +81,7 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 
 3. **Manual - Catppuccin Mocha Green**
 
-- Go to chrome://extensions/ or brave://extensions/ (if you are using the Brave browser) in your browser.
+- Go to chrome://extensions/ (if you are using the Chrome browser) or brave://extensions/ (if you are using the Brave browser) in your browser.
 - Enable Developer mode.
 - Click Load unpacked and select the folder `Green`.
 
