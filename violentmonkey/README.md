@@ -35,19 +35,19 @@
 
 <br>
 
-### ⚙️ | Конфигурације
-
-<br>
-
-- 📧 | [Automail](automail/README.md)
-
-<br>
-
 ### 📂 | Остало:
 
 <br>
 
 - 📹 | [`VidLii video downloader`](https://greasyfork.org/en/scripts/487046-vidlii-video-downloader)
+
+<br>
+
+### ⚙️ | Конфигурације
+
+<br>
+
+- 📧 | [Automail](automail/README.md)
 
 <br>
 

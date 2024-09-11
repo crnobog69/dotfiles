@@ -37,19 +37,19 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
-### ⚙️ | Configurations
-
-<br>
-
-- 📧 | [Automail](automail/README.md)
-
-<br>
-
 ## 📂 | Other:
 
 <br>
 
 - 📹 | [`VidLii video downloader`](https://greasyfork.org/en/scripts/487046-vidlii-video-downloader)
+
+<br>
+
+### ⚙️ | Configurations
+
+<br>
+
+- 📧 | [Automail](automail/README.md)
 
 <br>
 
