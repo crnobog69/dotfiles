@@ -18,7 +18,7 @@
 - 🌴 | alacritty
 
 Ручно:
-- 🖥️ | [konsole](konsole/README.md) <= водич
+- 🖥️ | [`konsole`](konsole/README.md) <= водич
 - 🌐 | [tabliss](tabliss/README.md) <= водич
 - 💬 | [vencord](vencord/README.md) <= водич
 - 🎵 | [spicetify](spicetify/README.md) <= водич
@@ -28,7 +28,7 @@
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [brave/chrome](brave/README.md) <= водич
 - 🗺️ | [brave/maps](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
-- 🧰 | assets - само слике и иконице
+- 🧰 | [assets](assets/) - само слике и иконице
 
 ## 🛠️ Постављање
 
@@ -104,7 +104,7 @@ Manual setup:
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= guide
 - 🦁 | [brave/chrome](brave/README.md) <= guide
 - 🗺️ | [brave/maps](https://github.com/crnobog69/cobaltium) <= guide (same as [cobaltium](https://github.com/crnobog69/cobaltium))
-- 🧰 | assets - only images and icons
+- 🧰 | [assets](assets/) - only images and icons
 
 ## 🛠️ Setup
 
