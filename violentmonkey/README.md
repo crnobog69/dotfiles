@@ -15,7 +15,7 @@
 
 <br>
 
-## За 📊 | [`Anilist`](https://anilist.co/):
+## 📊 | [`Anilist`](https://anilist.co/):
 
 <br>
 

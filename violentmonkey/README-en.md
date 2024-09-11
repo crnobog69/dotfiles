@@ -15,7 +15,7 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
-## For 📊 | [`Anilist`](https://anilist.co/):
+## 📊 | [`Anilist`](https://anilist.co/):
 
 <br>
 
