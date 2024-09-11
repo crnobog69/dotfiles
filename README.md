@@ -11,24 +11,24 @@
 > [brave-maps](brave-maps) - За сада само за `Chromium` претраживаче
 
 Личне конфигурацијске датотеке за:
-- 😺 | kitty (Mocha Green, Mocha Purple, Tokyo Night)
-- ⚡ | zed
-- 🐚 | zsh
-- 🖼️ | fastfetch
-- 🌴 | alacritty
+- 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
+- ⚡ | `zed`
+- 🐚 | `zsh`
+- 🖼️ | `fastfetch`
+- 🌴 | `alacritty`
 
 Ручно:
 - 🖥️ | [`konsole`](konsole/README.md) <= водич
-- 🌐 | [tabliss](tabliss/README.md) <= водич
-- 💬 | [vencord](vencord/README.md) <= водич
-- 🎵 | [spicetify](spicetify/README.md) <= водич
-- 🐇 | [mangadex](mangadex/README.md) <= водич
-- ❄️ | [animanga](animanga/README.md) <= guide
-- 🦊 | [firefox](firefox/README.md) <= водич
-- ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= водич
-- 🦁 | [brave/chrome](brave/README.md) <= водич
-- 🗺️ | [brave/maps](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
-- 🧰 | [assets](assets/) - само слике и иконице
+- 🌐 | [`tabliss`](tabliss/README.md) <= водич
+- 💬 | [`vencord`](vencord/README.md) <= водич
+- 🎵 | [`spicetify`](spicetify/README.md) <= водич
+- 🐇 | [`mangadex`](mangadex/README.md) <= водич
+- ❄️ | [`animanga`](animanga/README.md) <= guide
+- 🦊 | [`firefox`](firefox/README.md) <= водич
+- ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= водич
+- 🦁 | [`brave`](brave/README.md) <= водич
+- 🗺️ | [`brave-maps`](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
+- 🧰 | [`assets`](assets/) - само слике и иконице
 
 ## 🛠️ Постављање
 
@@ -87,24 +87,24 @@ git pull
 > [brave-maps](brave-maps) - For now only for `Chromium` browsers
 
 Personal configuration files for:
-- 😺 | kitty (Mocha Green, Mocha Purple, Tokyo Night)
-- ⚡ | zed
-- 🐚 | zsh
-- 🖼️ | fastfetch
-- 🌴 | alacritty
+- 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
+- ⚡ | `zed`
+- 🐚 | `zsh`
+- 🖼️ | `fastfetch`
+- 🌴 | `alacritty`
 
 Manual setup:
-- 🖥️ | [konsole](konsole/README.md) <= guide
-- 🌐 | [tabliss](tabliss/README.md) <= guide
-- 💬 | [vencord](vencord/README.md) <= guide
-- 🎵 | [spicetify](spicetify/README.md) <= guide
-- 🐇 | [mangadex](mangadex/README.md) <= guide
-- ❄️ | [animanga](animanga/README.md) <= guide
-- 🦊 | [firefox](firefox/README.md) <= guide
-- ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= guide
-- 🦁 | [brave/chrome](brave/README.md) <= guide
-- 🗺️ | [brave/maps](https://github.com/crnobog69/cobaltium) <= guide (same as [cobaltium](https://github.com/crnobog69/cobaltium))
-- 🧰 | [assets](assets/) - only images and icons
+- 🖥️ | [`konsole`](konsole/README.md) <= guide
+- 🌐 | [`tabliss`](tabliss/README.md) <= guide
+- 💬 | [`vencord`](vencord/README.md) <= guide
+- 🎵 | [`spicetify`](spicetify/README.md) <= guide
+- 🐇 | [`mangadex`](mangadex/README.md) <= guide
+- ❄️ | [`animanga`](animanga/README.md) <= guide
+- 🦊 | [`firefox`](firefox/README.md) <= guide
+- ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= guide
+- 🦁 | [`brave`](brave/README.md) <= guide
+- 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [cobaltium](https://github.com/crnobog69/cobaltium))
+- 🧰 | [`assets`](assets/) - only images and icons
 
 ## 🛠️ Setup
 
