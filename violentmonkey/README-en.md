@@ -6,7 +6,7 @@
 
 <br>
 
-Scripts for anime and manga 🖥️🔧
+Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
