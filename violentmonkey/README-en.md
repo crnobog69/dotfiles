@@ -11,7 +11,7 @@ Userscripts for ani/manga and other 🖥️🔧
 <br>
 
 > [!IMPORTANT]
-> I am not affiliated with any of the scripts. Use them at your own risk.
+> I am not affiliated with any of the scripts and have no influence over their development. Use them at your own risk.
 
 <br>
 
