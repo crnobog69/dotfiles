@@ -9,8 +9,8 @@
 <br>
 
 - [`Automail`](https://greasyfork.org/en/scripts/370473-automail) 📧
-- [`anilist-nolife`](https://greasyfork.org/en/scripts/370473-automail) 🕰️
-- [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer) ➕
+- [`anilist-nolife`](https://greasyfork.org/en/scripts/468839-anilist-nolife) 🕰️
+- [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer) 🛟
 
 ---
 
@@ -25,5 +25,5 @@ For [`Anilist`](https://anilist.co/) 📊:
 <br>
 
 - [`Automail`](https://greasyfork.org/en/scripts/370473-automail) 📧
-- [`anilist-nolife`](https://greasyfork.org/en/scripts/370473-automail) 🕰️
-- [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer) ➕
+- [`anilist-nolife`](https://greasyfork.org/en/scripts/468839-anilist-nolife) 🕰️
+- [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer) 🛟
