@@ -22,7 +22,7 @@
 
 ## 🎨 Тема
 
-Pratite uputstvo na [Catppuccin](https://github.com/catppuccin/firefox)
+Пратите упутство на [Catppuccin](https://github.com/catppuccin/firefox)
 
 ## 📚 Ресурси
 
@@ -30,7 +30,7 @@ Pratite uputstvo na [Catppuccin](https://github.com/catppuccin/firefox)
 - [Tabliss GitHub](https://github.com/joelshepherd/tabliss)
 - [Catppuccin](https://github.com/catppuccin)
 
-Уживајте у новом изгледу вашег прегледача! 
+Уживајте у новом изгледу вашег прегледача!
 
 
 
@@ -68,4 +68,4 @@ Follow the guide on [Catppuccin](https://github.com/catppuccin/firefox)
 - [Tabliss GitHub](https://github.com/joelshepherd/tabliss)
 - [Catppuccin](https://github.com/catppuccin)
 
-Enjoy the new look of your browser! 
+Enjoy the new look of your browser!
