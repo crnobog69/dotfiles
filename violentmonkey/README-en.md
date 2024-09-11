@@ -10,12 +10,19 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
+> [!IMPORTANT]
+> I AM NOT AFFILIATED WITH ANY SCRIPT. USE AT YOU OWN RISK.
+
+<br>
+
 > [!NOTE]
 > I use Violentmonkey on Brave and Firefox Developer Edition browsers.
 
 <br>
 
-## 📊 | [`Anilist`](https://anilist.co/):
+# Userscripts
+
+### 📊 | [`Anilist`](https://anilist.co/):
 
 <br>
 
@@ -35,7 +42,7 @@ Userscripts for ani/manga and other 🖥️🔧
 
 ## 📥 | Instalation
 
-Sure! Here is the translation of the list into English:
+1. First, you need userscript manager:
 
 ### 🖥️/💻
 
@@ -60,5 +67,9 @@ Sure! Here is the translation of the list into English:
 
 - **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) or [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
 - **Gear**: ([no additional software required](https://gear4.app/))
+
+<br>
+
+2. Once you have chosen a userscript manager, click on the link to the userscript you want. [Go to Userscripts](#userscripts)
 
 <br>
