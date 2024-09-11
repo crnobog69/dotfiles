@@ -11,7 +11,7 @@ Userscripts for ani/manga and other 🖥️🔧
 <br>
 
 > [!IMPORTANT]
-> I AM NOT AFFILIATED WITH ANY SCRIPT. USE AT YOU OWN RISK.
+> I am not affiliated with any of the scripts. Use them at your own risk.
 
 <br>
 
@@ -19,6 +19,8 @@ Userscripts for ani/manga and other 🖥️🔧
 > I use Violentmonkey on Brave and Firefox Developer Edition browsers.
 
 <br>
+
+---
 
 # Userscripts
 
@@ -39,6 +41,8 @@ Userscripts for ani/manga and other 🖥️🔧
 - 📹 | [`VidLii video downloader`](https://greasyfork.org/en/scripts/487046-vidlii-video-downloader)
 
 <br>
+
+---
 
 ## 📥 | Instalation
 
