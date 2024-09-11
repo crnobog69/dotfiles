@@ -26,7 +26,7 @@
 
 ### 🖥️/💻
 
-- **Chrome**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) или [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
+- **Chrome|Brave**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) или [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
 - **Firefox**: [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/), [Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/), или [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
 - **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) или [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
 - **Microsoft Edge**: [Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) или [Violentmonkey](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao)
@@ -46,6 +46,9 @@
 
 - **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) или [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
 - **Gear**: ([не захтева додатни софтвер](https://gear4.app/))
+
+> [!NOTE]
+> Ја користим Violentmonkey на Brave и Firefox Developer Edition претраживачима.
 
 ---
 
@@ -79,7 +82,7 @@ Sure! Here is the translation of the list into English:
 
 ### 🖥️/💻
 
-- **Chrome**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
+- **Chrome|Brave**: [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) or [Violentmonkey](https://chrome.google.com/webstore/detail/violent-monkey/jinjaccalgkegednnccohejagnlnfdag)
 - **Firefox**: [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/), [Tampermonkey](https://addons.mozilla.org/firefox/addon/tampermonkey/), or [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
 - **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) or [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
 - **Microsoft Edge**: [Tampermonkey](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd) or [Violentmonkey](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao)
@@ -100,3 +103,6 @@ Sure! Here is the translation of the list into English:
 
 - **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) or [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
 - **Gear**: ([no additional software required](https://gear4.app/))
+
+> [!NOTE]
+> I use Violentmonkey on Brave and Firefox Developer Edition browsers.
