@@ -44,7 +44,9 @@ Userscripts for ani/manga and other 🖥️🔧
 
 ---
 
-## 📥 | Instalation
+<br>
+
+## 📥 | Installation
 
 1. First, you need userscript manager:
 
