@@ -26,7 +26,7 @@
 - 🦊 | [firefox](firefox/README.md) <= водич
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [brave/chrome](brave/README.md) <= водич
-- 🗺️ | [brave/maps](brave-maps) <= водич (иско као [cobaltium](https://github.com/crnobog69/cobaltium))
+- 🗺️ | [brave/maps](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
 - 🧰 | assets - само слике и иконице
 
 ## 🛠️ Постављање
