@@ -33,6 +33,9 @@
 - 🛟 | [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer)
 - 🙂 | [`Animoji`](https://greasyfork.org/en/scripts/444181-animoji)
 
+<br>
+
+[📧 | Automail конфигурација](automail/README.md)
 
 <br>
 
