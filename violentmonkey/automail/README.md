@@ -8,7 +8,7 @@
 
 1. 📥 | Инсталирајте Automail пратећи [упутство](../README.md).
 
-- Пратите ову > [везу](https://anilist.co/settings/apps) затим крените од броја `6.` или
+- Пратите ову > [везу](https://anilist.co/settings/apps), а затим крените од броја `6.` или
 
 2. 🌐 | Идите на [AniList](https://anilist.co/settings/apps)
 3. 🔧 | Кликните на иконицу профила и отворите [Settings](https://anilist.co/settings).
