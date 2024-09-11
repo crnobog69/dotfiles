@@ -2,7 +2,7 @@
 
 # Упутство за постављање тема у Brave/Chrome претраживачу
 
-Ако желите да прилагодите изглед вашег **Brave** или **Chrome** претраживача, можете изабрати једну од:
+Ако желите да прилагодите изглед вашег `*Brave*` или `*Chrome*` претраживача, можете изабрати једну од:
 
 ## 🌹 | Rosé Pine
 
@@ -17,7 +17,7 @@
 2. **Chrome Web Store:**
    [Обична Rosé Pine варијанта](https://chromewebstore.google.com/detail/ros%C3%A9-pine/noimedcjdohhokijigpfcbjcfcaaahej)
 
-   *Једноставна инсталација кликом на дугме "Add to Chrome".*
+   *Једноставна инсталација кликом на дугме `Add to Chrome`.*
 
 ## 😺 | Catppuccin
 
@@ -36,9 +36,9 @@
 
 3. **Ручно - Catppuccin Mocha Green**
 
-- Идите на chrome://extensions/ (ако користите Chrome претраживач) или brave://extensions/ (ако користите Brave претраживач) у прегледачу.
-- Укључите Developer mode.
-- Кликните на Load unpacked и изаберите фасциклу `Green`.
+- Идите на `chrome://extensions/` (ако користите `Chrome` претраживач) или brave://extensions/ (ако користите `Brave` претраживач) у прегледачу.
+- Укључите `Developer mode`.
+- Кликните на `Load unpacked` и изаберите фасциклу `Green`.
 
 
 Изаберите тему која вам се највише допада и уживајте у новом изгледу вашег претраживача!
@@ -81,8 +81,8 @@ If you want to customize the look of your **Brave** or **Chrome** browser, you c
 
 3. **Manual - Catppuccin Mocha Green**
 
-- Go to chrome://extensions/ (if you are using the Chrome browser) or brave://extensions/ (if you are using the Brave browser) in your browser.
-- Enable Developer mode.
-- Click Load unpacked and select the folder `Green`.
+- Go to `chrome://extensions` (if you are using the `Chrome` browser) or brave://extensions/ (if you are using the `Brave` browser) in your browser.
+- Enable `Developer mode`.
+- Click `Load unpacked` and select the folder `Green`.
 
 Choose the theme you like the most and enjoy the new look of your browser!
