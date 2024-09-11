@@ -11,7 +11,7 @@
 - Follow this > [link](https://anilist.co/settings/apps), then start from step `6.` or
 
 2. 🌐 | Go to [AniList](https://anilist.co/settings/apps).
-3. 🔧 | Click on the profile icon and open [Settings](https://anilist.co/settings).
+3. 🔧 | Hover over the profile icon and open [Settings](https://anilist.co/settings).
 4. 📱 | Find the section [Apps](https://anilist.co/settings/apps).
 5. 🔍 | In this section, locate **Apps and Automail**.
 6. 🔽 | Scroll down until you find the **Export settings** button.

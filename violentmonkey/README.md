@@ -35,7 +35,9 @@
 
 <br>
 
-[📧 | Automail конфигурација](automail/README.md)
+### ⚙️ | Конфигурације
+
+- 📧 | [Automail](automail/README.md)
 
 <br>
 

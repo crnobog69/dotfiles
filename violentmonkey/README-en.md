@@ -37,7 +37,9 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
-[📧 | Automail configuration](automail/README.md)
+### ⚙️ | Configurations
+
+- 📧 | [Automail](automail/README.md)
 
 <br>
 
