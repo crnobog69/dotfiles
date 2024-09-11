@@ -4,7 +4,7 @@
 
 ### Инсталација
 
-Преузмите "vencord", након тога уђите у Discord и под секциом "Vencord" идите у "Backup & Restore" и притисните "Import Settings" и изаберите "vencord-settings-backup-2024-06-28.json" затим затворите Discord и порените га опет.
+Преузмите "vencord.json", након тога уђите у Discord и под секциом "Vencord" идите у "Backup & Restore" и притисните "Import Settings" и изаберите "vencord.json" затим затворите Discord и порените га опет.
 
 - Catppuccin тема [овде](https://github.com/catppuccin/catppuccin).
 - Vencord [овде](https://github.com/Vendicated/Vencord).
@@ -15,7 +15,7 @@ Vencord Settings with Catppuccin Mocha theme and lowered notification sounds.
 
 ### Installation
 
-Download "vencord". Then, open Discord and go to the "Vencord" section. Navigate to "Backup & Restore" and click on "Import Settings". Select "vencord-settings-backup-2024-06-28.json", then close Discord and restart it.
+Download "vencord.json". Then, open Discord and go to the "Vencord" section. Navigate to "Backup & Restore" and click on "Import Settings". Select "vencord.json", then close Discord and restart it.
 
 - Catppuccin theme [here](https://github.com/catppuccin/catppuccin).
 - Vencord [here](https://github.com/Vendicated/Vencord).
