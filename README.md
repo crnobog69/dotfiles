@@ -23,6 +23,7 @@
 - 💬 | [vencord](vencord/README.md) <= водич
 - 🎵 | [spicetify](spicetify/README.md) <= водич
 - 🐇 | [mangadex](mangadex/README.md) <= водич
+- ❄️ | [animanga](animanga/README.md) <= guide
 - 🦊 | [firefox](firefox/README.md) <= водич
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [brave/chrome](brave/README.md) <= водич
@@ -98,6 +99,7 @@ Manual setup:
 - 💬 | [vencord](vencord/README.md) <= guide
 - 🎵 | [spicetify](spicetify/README.md) <= guide
 - 🐇 | [mangadex](mangadex/README.md) <= guide
+- ❄️ | [animanga](animanga/README.md) <= guide
 - 🦊 | [firefox](firefox/README.md) <= guide
 - ⚛️ | [cobaltium](https://github.com/crnobog69/cobaltium) <= guide
 - 🦁 | [brave/chrome](brave/README.md) <= guide
