@@ -31,6 +31,7 @@
 - 📧 | [`Automail`](https://greasyfork.org/en/scripts/370473-automail)
 - 🕰️ | [`anilist-nolife`](https://greasyfork.org/en/scripts/468839-anilist-nolife)
 - 🛟 | [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer)
+- 🙂 | [`Animoji`](https://greasyfork.org/en/scripts/444181-animoji)
 
 <br>
 
