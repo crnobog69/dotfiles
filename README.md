@@ -104,7 +104,7 @@ Manual setup:
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= guide
 - 🦁 | [`brave`](brave/README.md) <= guide
 - 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [cobaltium](https://github.com/crnobog69/cobaltium))
-- 🧰 | [`assets`](assets/) - only images and icons
+- 🧰 | [`assets`](assets/) - images, icons and other
 
 ## 🛠️ Setup
 
