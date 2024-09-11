@@ -1,3 +1,3 @@
 # Automail Settings
 
-Install Automail - follow [guide](./violanetmonkey/README.md) in violentmonkey/README.md
+Install Automail - follow [guide](../README.md) in violentmonkey/README.md
