@@ -560,7 +560,19 @@
             "MentionAvatars": {
                 "enabled": false
             },
-            "ShowAllRoles": {
+            "NoMaskedUrlPaste": {
+                "enabled": false
+            },
+            "AlwaysExpandRoles": {
+                "enabled": false
+            },
+            "CopyFileContents": {
+                "enabled": false
+            },
+            "StickerPaste": {
+                "enabled": false
+            },
+            "VolumeBooster": {
                 "enabled": false
             }
         },
@@ -571,10 +583,10 @@
             "logLimit": 50
         },
         "cloud": {
-            "authenticated": false,
+            "authenticated": true,
             "url": "https://api.vencord.dev/",
-            "settingsSync": false,
-            "settingsSyncVersion": 1723857326400
+            "settingsSync": true,
+            "settingsSyncVersion": 1726019198645
         }
     },
     "quickCss": ""
