@@ -64,13 +64,13 @@ git pull
 
 ## 🪐 Остало
 
-- [😺 | Catppuccin](https://github.com/catppuccin)
-- [🗼 | Tokyo Night](https://github.com/tokyo-night)
-- [🗺️ | Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
-- [🐇 | MangaDex](https://github.com/crnobog69/mangadex)
-- [🎵 | Spicetify](https://github.com/spicetify/cli)
-- [⚛️ | Cobaltium](https://github.com/crnobog69/cobaltium)
-- [🦊 | Crnobog - Творац/Ја](https://github.com/crnobog69)
+- 😺 | [Catppuccin](https://github.com/catppuccin)
+- 🗼 | [Tokyo Night](https://github.com/tokyo-night)
+- 🗺️ | [Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
+- 🐇 | [MangaDex](https://github.com/crnobog69/mangadex)
+- 🎵 | [Spicetify](https://github.com/spicetify/cli)
+- ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
+- 🦊 | [Crnobog - Творац/Ја](https://github.com/crnobog69)
 
 ---
 
@@ -141,10 +141,10 @@ stow kitty-cat-green zed zsh fastfetch alacritty
 
 ## 🪐 Other
 
-- [😺 | Catppuccin](https://github.com/catppuccin)
-- [🗼 | Tokyo Night](https://github.com/tokyo-night)
-- [🗺️ | Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
-- [🐇 | MangaDex](https://github.com/crnobog69/mangadex)
-- [🎵 | Spicetify](https://github.com/spicetify/cli)
-- [⚛️ | Cobaltium](https://github.com/crnobog69/cobaltium)
-- [🦊 | Crnobog - Creator/Me](https://github.com/crnobog69)
+- 😺 | [Catppuccin](https://github.com/catppuccin)
+- 🗼 | [Tokyo Night](https://github.com/tokyo-night)
+- 🗺️ | [Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
+- 🐇 | [MangaDex](https://github.com/crnobog69/mangadex)
+- 🎵 | [Spicetify](https://github.com/spicetify/cli)
+- ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
+- 🦊 | [Crnobog - Creator/Me](https://github.com/crnobog69)
