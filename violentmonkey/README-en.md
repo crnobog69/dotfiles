@@ -1,6 +1,10 @@
 # 🐒 | Violentmonkey
 
-[🇬🇧]
+<br>
+
+  [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
+
+<br>
 
 Scripts for anime and manga 🖥️🔧
 
