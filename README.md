@@ -23,7 +23,7 @@
 - 💬 | [`vencord`](vencord/README.md) <= водич
 - 🎵 | [`spicetify`](spicetify/README.md) <= водич
 - 🐇 | [`mangadex`](mangadex/README.md) <= водич
-- 🐒 | [`violentmonkey`](violentmonkey/README.md) <= guide
+- 🐒 | [`violentmonkey`](violentmonkey/README.md) <= водич
 - 🦊 | [`firefox`](firefox/README.md) <= водич
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= водич
 - 🦁 | [`brave`](brave/README.md) <= водич
