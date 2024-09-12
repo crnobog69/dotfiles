@@ -116,7 +116,7 @@
 ### 📱/🍎
 
 - **Safari**: [Tampermonkey](http://tampermonkey.net/?browser=safari) или [Userscripts](https://apps.apple.com/app/userscripts/id1463298887)
-- **Gear**: ([не захтева додатни софтвер](https://gear4.app/))\
+- **Gear**: ([не захтева додатни софтвер](https://gear4.app/))
 
 <br>
 
