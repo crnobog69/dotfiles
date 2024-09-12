@@ -10,10 +10,10 @@
 
 <br>
 
-# Tabel of content
+# 📖 | Tabel of content
 
-- [Theme](#theme)
-- [Userscripts](#userscripts)
+- 🎨 | [Theme](#theme)
+- ⛈️ | [Userscripts](#userscripts)
 
 <br>
 
@@ -23,7 +23,11 @@
 
 # Theme
 
-Catppuccin Mocha Green
+<br>
+
+`Catppuccin Mocha Green`
+
+<br>
 
 1. Open the **Violentmonkey** extension in your browser.
 
