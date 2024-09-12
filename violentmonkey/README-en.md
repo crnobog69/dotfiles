@@ -1,5 +1,7 @@
 # 🐒 | Violentmonkey
 
+---
+
 <br>
 
   [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
@@ -11,6 +13,8 @@
 <br>
 
 # 📖 | Tabel of content
+
+<br>
 
 - 🎨 | [Theme](#theme)
 - ⛈️ | [Userscripts](#userscripts)
