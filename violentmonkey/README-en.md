@@ -40,10 +40,6 @@ Sure, here is the translation:
 
 <br>
 
----
-
-<br>
-
 # ⛈️ | Userscripts
 
 Userscripts for ani/manga and other 🖥️🔧
