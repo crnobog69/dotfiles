@@ -70,6 +70,7 @@ git pull
 - 🐇 | [MangaDex](https://github.com/crnobog69/mangadex)
 - 🎵 | [Spicetify](https://github.com/spicetify/cli)
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
+- 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Творац/Ја](https://github.com/crnobog69)
 
 ---
@@ -147,4 +148,5 @@ stow kitty-cat-green zed zsh fastfetch alacritty
 - 🐇 | [MangaDex](https://github.com/crnobog69/mangadex)
 - 🎵 | [Spicetify](https://github.com/spicetify/cli)
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
+- 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Creator/Me](https://github.com/crnobog69)
