@@ -8,7 +8,7 @@
 
 # Tabel of content
 
-- [Theme](#catppuccin-mocha-green)
+- [Theme](#🎨-|-Theme---Catppuccin-Mocha-Green)
 - [Userscripts](#userscripts)
 
 <br>
