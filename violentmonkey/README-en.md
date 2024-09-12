@@ -6,7 +6,27 @@
 
 <br>
 
-Userscripts for ani/manga and other 🖥️🔧
+# 🎨 | Theme - Catppuccin Mocha Green
+
+Sure, here is the translation:
+
+1. Open the **Violentmonkey** extension in your browser.
+
+2. Go to **Settings**.
+
+3. Select **Advanced**.
+
+4. Search for **Custom Style**. (If you don't see the **Custom Style** option, scroll all the way down)
+
+5. Open the file [`mocha.css`](mocha.css) and copy all the code from it.
+
+6. Paste the copied code into the **Custom Style** field in Violentmonkey settings.
+
+7. Click **Save**.
+
+<br>
+
+---
 
 <br>
 
@@ -24,7 +44,9 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
-# Userscripts
+# ⛈️ | Userscripts
+
+Userscripts for ani/manga and other 🖥️🔧
 
 ### 📊 | [`Anilist`](https://anilist.co/):
 
