@@ -8,14 +8,14 @@
 
 # Tabel of content
 
-- [Theme](#🎨-|-Theme---Catppuccin-Mocha-Green)
+- [Theme](#theme)
 - [Userscripts](#userscripts)
 
 <br>
 
-# 🎨 | Theme - Catppuccin Mocha Green
+# Theme
 
-Sure, here is the translation:
+Catppuccin Mocha Green
 
 1. Open the **Violentmonkey** extension in your browser.
 
@@ -47,7 +47,7 @@ Sure, here is the translation:
 
 <br>
 
-# ⛈️ | Userscripts
+# Userscripts
 
 Userscripts for ani/manga and other 🖥️🔧
 
