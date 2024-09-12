@@ -18,7 +18,7 @@
 - 🌴 | `alacritty`
 
 Ручно:
-- 🖥️ | [`kde`](konsole/README.md) <= упутство
+- 🖥️ | [`kde`](kde/README.md) <= упутство
 - 🌐 | [`tabliss`](tabliss/README.md) <= упутство
 - 💬 | [`vencord`](vencord/README.md) <= упутство
 - 🎵 | [`spicetify`](spicetify/README.md) <= упутство
