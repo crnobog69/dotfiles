@@ -1,4 +1,4 @@
-# 🌙🌃 konsole-tokyo-night
+# 🗼 konsole-tokyo-night
 
 🇷🇸 Српски | Употреба 🛠️
 

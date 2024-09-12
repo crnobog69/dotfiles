@@ -18,16 +18,16 @@
 - 🌴 | `alacritty`
 
 Ручно:
-- 🖥️ | [`konsole`](konsole/README.md) <= водич
-- 🌐 | [`tabliss`](tabliss/README.md) <= водич
-- 💬 | [`vencord`](vencord/README.md) <= водич
-- 🎵 | [`spicetify`](spicetify/README.md) <= водич
-- 🐇 | [`mangadex`](mangadex/README.md) <= водич
-- 🐒 | [`violentmonkey`](violentmonkey/README.md) <= водич
-- 🦊 | [`firefox`](firefox/README.md) <= водич
-- ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= водич
-- 🦁 | [`brave`](brave/README.md) <= водич
-- 🗺️ | [`brave-maps`](brave-maps) <= водич (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
+- 🖥️ | [`kde`](konsole/README.md) <= упутство
+- 🌐 | [`tabliss`](tabliss/README.md) <= упутство
+- 💬 | [`vencord`](vencord/README.md) <= упутство
+- 🎵 | [`spicetify`](spicetify/README.md) <= упутство
+- 🐇 | [`mangadex`](mangadex/README.md) <= упутство
+- 🐒 | [`violentmonkey`](violentmonkey/README.md) <= упутство
+- 🦊 | [`firefox`](firefox/README.md) <= упутство
+- ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= упутство
+- 🦁 | [`brave`](brave/README.md) <= упутство
+- 🗺️ | [`brave-maps`](brave-maps) <= упутство (исто као [cobaltium](https://github.com/crnobog69/cobaltium))
 - 🧰 | [`assets`](assets/) - слике и иконице и остало
 
 ## 🛠️ Постављање
@@ -95,7 +95,7 @@ Personal configuration files for:
 - 🌴 | `alacritty`
 
 Manual setup:
-- 🖥️ | [`konsole`](konsole/README.md) <= guide
+- 🖥️ | [`kde`](kde/README.md) <= guide
 - 🌐 | [`tabliss`](tabliss/README.md) <= guide
 - 💬 | [`vencord`](vencord/README.md) <= guide
 - 🎵 | [`spicetify`](spicetify/README.md) <= guide

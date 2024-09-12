@@ -1,0 +1,22 @@
+[brave-browser.desktop][Global Shortcuts]
+_launch=Meta+B
+new-private-window=
+new-window=
+
+[kitty.desktop][Global Shortcuts]
+_launch=Meta+Return
+
+[org.kde.dolphin.desktop][Global Shortcuts]
+_launch=Meta+E
+
+[org.kde.konsole.desktop][Global Shortcuts]
+NewTab=
+NewWindow=
+_launch=Ctrl+Alt+T
+
+[org.kde.krunner.desktop][Global Shortcuts]
+RunClipboard=Alt+Shift+F2
+_launch=Alt+Space; Alt+F2; Search
+
+[org.kde.plasma-systemmonitor.desktop][Global Shortcuts]
+_launch=Ctrl+Shift+Esc; Meta+Esc
