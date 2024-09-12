@@ -44,7 +44,7 @@ Sure, here is the translation:
 
 Userscripts for ani/manga and other 🖥️🔧
 
-- ### 📊 | [`Anilist`](https://anilist.co/):
+### 📊 | [`Anilist`](https://anilist.co/):
 
 <br>
 
@@ -55,7 +55,7 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
-- ### 📂 | Other:
+### 📂 | Other:
 
 <br>
 
@@ -63,15 +63,11 @@ Userscripts for ani/manga and other 🖥️🔧
 
 <br>
 
-- ### ⚙️ | Configurations
+### ⚙️ | Configurations
 
 <br>
 
 - 📧 | [Automail](automail/README.md)
-
-<br>
-
----
 
 <br>
 
