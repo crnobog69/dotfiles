@@ -7,8 +7,9 @@
 ---
 
 # Table of Contents:
-- ## 🐧 | [My Computer](#🐧)
+
 - ## 📜 | [Scripts](#scripts)
+- ## 🗼 | [Personal configuration files | Gnu Stow](#-personal-configuration-files)
 - ## 🪐 | [Other](#other)
 
 ---
@@ -74,7 +75,7 @@ If you want to **add/remove** any **package/program**, just **open** the script 
 - `push.sh` - customized `push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
 
-# Personal configuration files for:
+# Personal configuration files:
 
 `GNU Stow`
 
@@ -84,7 +85,7 @@ If you want to **add/remove** any **package/program**, just **open** the script 
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
 
-# Manual setup:
+## Manual setup:
 - 🖥️ | [`kde`](kde/README.md) <= guide
 - 🌐 | [`tabliss`](tabliss/README.md) <= guide
 - 💬 | [`vencord`](vencord/README.md) <= guide
