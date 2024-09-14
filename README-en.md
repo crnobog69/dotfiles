@@ -6,6 +6,15 @@
 
 ---
 
+Evo превода:
+
+---
+
+# Table of Contents:
+- [My Computer 🐧](#🐧)
+- [Scripts](#scripts)
+- [Other](#other)
+
 # 🐧
 
 | Category            | Details                                    | Other                                  |
@@ -124,7 +133,7 @@ git pull
 stow kitty-cat-green zed zsh fastfetch alacritty
 ```
 
-## 🪐 Other
+# Other
 
 - 😺 | [Catppuccin](https://github.com/catppuccin)
 - 🗼 | [Tokyo Night](https://github.com/tokyo-night)
