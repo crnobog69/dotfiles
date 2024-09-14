@@ -8,17 +8,18 @@
 
 # 🐧
 
-| Категорија         | Детаљи                                   |
-|--------------------|------------------------------------------|
-| **ОС**             | Arch Linux (EndeavourOS)                 |
-| **РО**             | KDE Plasma 6.1                           |
-| **Иконице**        | Papirus-Dark (Catppuccin Folders)        |
-| **Композитор**     | Wayland                                  |
-| **Шкољка**         | zsh (oh-my-zsh, Powerlevel10k тема) / bash |
-| **Терминал**       | Kitty / Alacritty                        |
-| **ИРО**            | VS Code / Zed                            |
-| **Менаџер датотека** | Dolphin / Thunar                         |
-| **Прегледач**      | Brave / Firefox Developer Edition        |
+| Категорија         | Детаљи                                   | Друго                              |
+|--------------------|------------------------------------------|------------------------------------------|
+| **ОС**             | Arch Linux (EndeavourOS)                 | -                                        |
+| **РО**             | KDE Plasma 6.1                           | -                                        |
+| **Иконице**        | Papirus-Dark (Catppuccin Folders)        | -                                        |
+| **Композитор**     | Wayland                                  | -                                        |
+| **Шкољка**         | zsh (oh-my-zsh, Powerlevel10k тема)      | bash                                     |
+| **Терминал**       | Kitty / Alacritty                        | Alacritty , Konsole                      |
+| **ИРО**            | VS Code                                  | Zed                                      |
+| **Менаџер датотека** | Dolphin / Thunar                       | Thunar                                   |
+| **Прегледач**      | Brave                                    | Firefox Developer Edition                |
+
 
 
 ---
