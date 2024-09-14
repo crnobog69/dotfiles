@@ -6,6 +6,24 @@
 
 ---
 
+# 🐧
+
+| Category            | Details                                    | Other                                  |
+|---------------------|--------------------------------------------|----------------------------------------|
+| **OS**              | Arch Linux (EndeavourOS)                   | -                                      |
+| **DE**              | KDE Plasma 6.1                             | -                                      |
+| **Icons**           | Papirus-Dark (Catppuccin Folders)          | -                                      |
+| **Compositor**      | Wayland                                    | -                                      |
+| **Shell**           | zsh (oh-my-zsh, Powerlevel10k theme)       | bash                                    |
+| **Terminal**        | Kitty                                      | Alacritty, Konsole                      |
+| **IDE**             | VS Code                                    | Zed                                     |
+| **File Manager**    | Dolphin                                    | Thunar                                  |
+| **Browser**         | Brave                                      | Firefox Developer Edition              |
+
+---
+
+<br>
+
 > [!NOTE]
 > Only **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** are to be used with GNU STOW.
 
