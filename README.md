@@ -18,6 +18,8 @@
 - File manager - Dolphin / Thunar
 - Browser - Brave / Firefox Developer Edition
 
+---
+
 <br>
 
 > [!NOTE]
