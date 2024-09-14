@@ -156,6 +156,8 @@ git pull
 
 🏔️ | [`Codeberg | Репозиторијум`](https://codeberg.org/crnobog/dotfiles)
 
+🦊 | [GitLab Репозиторијум](https://gitlab.com/crnobog/dotfiles)
+
 <br>
 
 ---

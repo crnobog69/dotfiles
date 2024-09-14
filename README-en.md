@@ -148,9 +148,11 @@ git pull
 
 Repositories:
 
-🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/dotfiles)
+🐙 | [`Github | Repository`](https://github.com/crnobog69/dotfiles)
 
-🏔️ | [`Codeberg | Репозиторијум`](https://codeberg.org/crnobog/dotfiles)
+🏔️ | [`Codeberg | Repository`](https://codeberg.org/crnobog/dotfiles)
+
+🦊 | [`GitLab Repository`](https://gitlab.com/crnobog/dotfiles)
 
 <br>
 

@@ -4,3 +4,4 @@
 
 git pull origin main
 git pull codeberg main
+git pull gitlab main
