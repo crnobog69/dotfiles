@@ -9,7 +9,7 @@ MAGENTA='\033[0;35m'  # Љубичаста за pacman
 NC='\033[0m' # Без боје
 
 # Обавештење о дистрибуцији
-echo -e "${RED}Ова скрипта је намењена за Arch Linux и сличне системе.${NC}"
+echo -e "${RED}Ова скрипта је намењена за Arch Linux и деривативе (EndeavourOS, Manjaro, CachyOS, Artix Linux, RebornOS, Garuda Linux...).${NC}"
 
 # Функција за провера да ли је пакет инсталиран
 is_installed() {

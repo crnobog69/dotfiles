@@ -9,7 +9,7 @@ MAGENTA='\033[0;35m'  # Magenta for pacman
 NC='\033[0m' # No color
 
 # Distribution notice
-echo -e "${RED}This script is intended for Arch Linux and similar systems.${NC}"
+echo -e "${RED}This script is intended for Arch Linux and derivatives (EndeavourOS, Manjaro, CachyOS, Artix Linux, RebornOS, Garuda Linux...).${NC}"
 
 # Function to check if a package is installed
 is_installed() {
