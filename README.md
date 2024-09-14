@@ -20,7 +20,7 @@
 |--------------------|------------------------------------------|------------------------------------------|
 | **ОС**             | Arch Linux (EndeavourOS)                 | -                                        |
 | **РО**             | KDE Plasma 6.1                           | -                                        |
-| **Иконице**        | Papirus-Dark (Catppuccin Folders)        | -                                        |
+| **Иконице**        | Прилагођене Papirus-Dark | [Catppuccin Folders](https://github.com/catppuccin/papirus-folders)        | -                                        |
 | **Композитор**     | Wayland                                  | -                                        |
 | **Шкољка**         | zsh (oh-my-zsh, Powerlevel10k тема)      | bash                                     |
 | **Терминал**       | Kitty                                    | Alacritty , Konsole                      |
