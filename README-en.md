@@ -1,4 +1,4 @@
-# 🏠 Dotfiles (GNU STOW)
+# 🪐 Dotfiles (GNU STOW)
 
 ---
 
