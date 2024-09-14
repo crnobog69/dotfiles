@@ -7,7 +7,7 @@
 ---
 
 # Table of Contents:
-- 🐧 | [My Computer 🐧](#🐧)
+- 🐧 | [My Computer](#🐧)
 - 📜 | [Scripts](#scripts)
 - 🪐 | [Other](#other)
 
