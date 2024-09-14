@@ -1,7 +1,8 @@
 # 🪐 Dotfiles (GNU STOW)
 
-[Github Repository](https://github.com/crnobog69/dotfiles)
-[Codeberg Repository](https://codeberg.org/crnobog/dotfiles)
+[`Github Repository`](https://github.com/crnobog69/dotfiles)
+<br>
+[`Codeberg Repository`](https://codeberg.org/crnobog/dotfiles)
 
 ---
 
