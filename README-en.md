@@ -15,6 +15,8 @@ Evo превода:
 - [Scripts](#scripts)
 - [Other](#other)
 
+---
+
 # 🐧
 
 | Category            | Details                                    | Other                                  |
