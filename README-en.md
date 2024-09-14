@@ -7,9 +7,9 @@
 ---
 
 # Table of Contents:
-- [My Computer 🐧](#🐧)
-- [Scripts](#scripts)
-- [Other](#other)
+- 🐧 | [My Computer 🐧](#🐧)
+- 📜 | [Scripts](#scripts)
+- 🪐 | [Other](#other)
 
 ---
 
