@@ -1,5 +1,8 @@
 # 🪐 Dotfiles (GNU STOW)
 
+[Github Repository](https://github.com/crnobog69/dotfiles)
+[Codeberg Repository](https://codeberg.org/crnobog/dotfiles)
+
 ---
 
   [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
