@@ -130,7 +130,6 @@ chmod +x pull.sh
 ```
 cd ~/.dotfiles
 git pull
-stow kitty-cat-green zed zsh fastfetch alacritty
 ```
 
 # Other
