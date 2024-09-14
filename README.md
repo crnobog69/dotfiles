@@ -6,6 +6,22 @@
 
 ---
 
+<br>
+
+# 🐧
+
+* OS - Arch Linux (EndeavourOS)
+* DE - KDE Plasma 6.1
+* Theme - Papirus-Dark (Catppuccin Folders)
+* Compositor - Wayland
+* Shell - zsh (oh-my-zsh, Powerlevel10k theme) / bash
+* Terminal - Kitty / Alacritty
+* IDE - VS Code / Zed
+* File manager - Dolphin / Thunar
+* Browser - Brave / Firefox Developer Edition
+
+<br>
+
 > [!NOTE]
 > Само **kitty**, **zed**, **zsh**, **fastfetch**, **alacritty** су за коришћење уз помоћ GNU STOW.
 
