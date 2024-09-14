@@ -6,10 +6,6 @@
 
 ---
 
-Evo превода:
-
----
-
 # Table of Contents:
 - [My Computer 🐧](#🐧)
 - [Scripts](#scripts)
