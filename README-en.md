@@ -35,10 +35,32 @@
 
 # Scripts:
 
+You need to give permission to script(s):
+
+```
+chmod +x pkg-rs.sh
+```
+
+```
+chmod +x pkg-en-sh
+```
+
+```
+chmod +x push.sh
+```
+
+```
+chmod +x pull.sh
+```
+
 ## 📦 | Packages
 
 - 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
+
+There is no difference between these **two scripts** except that one is in **Serbian** and the other is in **English**.
+
+If you want to **add/remove** any **package/program**, just **open** the script (the script in the **language** of your choice) with a **text editor** of your choice and **edit it**.
 
 ## 🔄 | Git
 
