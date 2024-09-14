@@ -77,4 +77,6 @@ stow kitty-cat-green zed zsh fastfetch alacritty
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Creator/Me](https://github.com/crnobog69)
 
+<br>
+
 ---
