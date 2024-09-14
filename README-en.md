@@ -33,14 +33,26 @@
 > [!NOTE]
 > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
-Personal configuration files for:
+# Scripts:
+
+## 📦 | Packages
+
+- 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
+- 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
+
+## 🔄 | Git
+
+- `push.sh` - customized `push` script for my `dotfiles`
+- `pull.sh` - customized `pull` script for my `dotfiles`
+
+# GNU Stow | Personal configuration files for:
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
 - ⚡ | `zed`
 - 🐚 | `zsh`
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
 
-Manual setup:
+# Manual setup:
 - 🖥️ | [`kde`](kde/README.md) <= guide
 - 🌐 | [`tabliss`](tabliss/README.md) <= guide
 - 💬 | [`vencord`](vencord/README.md) <= guide
