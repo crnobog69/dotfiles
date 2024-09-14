@@ -2,8 +2,6 @@
 
 🐙 | [`Github | Repository`](https://github.com/crnobog69/dotfiles)
 
-<br>
-
 🏔️ | [`Codeberg | Repository`](https://codeberg.org/crnobog/dotfiles)
 
 ---
