@@ -8,7 +8,7 @@
 
 # 🐧
 
-- **ОС** | Arch Linux (EndeavourOS)  
+- **ОС** **|** Arch Linux (EndeavourOS)  
 - **РО** | KDE Plasma 6.1  
 - **Иконице** | Papirus-Dark (Catppuccin Folders)  
 - **Композитор** | Wayland  
