@@ -8,15 +8,15 @@
 
 # 🐧
 
-- Оперативни систем - Arch Linux (EndeavourOS)  
-- Радно окружење - KDE Plasma 6.1  
-- Иконице - Papirus-Dark (Catppuccin Folders)  
-- Композитор - Wayland  
-- Шкољка - zsh (oh-my-zsh, Powerlevel10k тема) / bash  
-- Терминал - Kitty / Alacritty  
-- ИДЕ - VS Code / Zed  
-- Менаџер датотека - Dolphin / Thunar  
-- Прегледач - Brave / Firefox Developer Edition
+- **ОС** - Arch Linux (EndeavourOS)  
+- **РО** - KDE Plasma 6.1  
+- **Иконице** - Papirus-Dark (Catppuccin Folders)  
+- **Композитор** - Wayland  
+- **Шкољка** - zsh (oh-my-zsh, Powerlevel10k тема) / bash  
+- **Терминал** - Kitty / Alacritty  
+- **ИРО** - VS Code / Zed  
+- **МД** - Dolphin / Thunar  
+- **Прегледач** - Brave / Firefox Developer Edition
 
 ---
 
