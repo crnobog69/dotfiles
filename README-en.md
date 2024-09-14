@@ -1,9 +1,5 @@
 # 🪐 Dotfiles (GNU STOW)
 
-🐙 | [`Github | Repository`](https://github.com/crnobog69/dotfiles)
-
-🏔️ | [`Codeberg | Repository`](https://codeberg.org/crnobog/dotfiles)
-
 ---
 
   [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
@@ -147,6 +143,14 @@ git pull
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Creator/Me](https://github.com/crnobog69)
+
+<br>
+
+Repositories:
+
+🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/dotfiles)
+
+🏔️ | [`Codeberg | Репозиторијум`](https://codeberg.org/crnobog/dotfiles)
 
 <br>
 
