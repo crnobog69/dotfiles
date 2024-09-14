@@ -67,7 +67,10 @@ If you want to **add/remove** any **package/program**, just **open** the script 
 - `push.sh` - customized `push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
 
-# GNU Stow | Personal configuration files for:
+# Personal configuration files for:
+
+`GNU Stow`
+
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
 - ⚡ | `zed`
 - 🐚 | `zsh`
