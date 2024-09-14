@@ -2,4 +2,5 @@
 
 # Скрипта која аутоматизује git push
 
-git pull
+git pull origin main
+git pull codeberg main
