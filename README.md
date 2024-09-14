@@ -35,14 +35,26 @@
 > [!NOTE]
 > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
-Личне конфигурацијске датотеке за:
+# Скрипте:
+
+## 📦 | Пакети
+
+- 🇷🇸 | `pkg-rs.sh` - листа пакета које користим
+- 🇬🇧 | `pkg-en-sh` - list of programs which I use
+
+## 🔄 | Git
+
+- `push.sh` - прилагођена `push` скрипта за моје `dotfiles`
+- `pull.sh` - прилагођена `pull` скрипта за моје `dotfiles`
+
+#Личне конфигурацијске датотеке за:
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
 - ⚡ | `zed`
 - 🐚 | `zsh`
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
 
-Ручно:
+# Ручно:
 - 🖥️ | [`kde`](kde/README.md) <= упутство
 - 🌐 | [`tabliss`](tabliss/README.md) <= упутство
 - 💬 | [`vencord`](vencord/README.md) <= упутство
