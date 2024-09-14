@@ -17,7 +17,7 @@
 | **Шкољка**         | zsh (oh-my-zsh, Powerlevel10k тема)      | bash                                     |
 | **Терминал**       | Kitty / Alacritty                        | Alacritty , Konsole                      |
 | **ИРО**            | VS Code                                  | Zed                                      |
-| **Менаџер датотека** | Dolphin / Thunar                       | Thunar                                   |
+| **Менаџер датотека** | Dolphin                                | Thunar                                   |
 | **Прегледач**      | Brave                                    | Firefox Developer Edition                |
 
 
