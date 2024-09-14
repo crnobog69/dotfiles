@@ -71,6 +71,7 @@ git pull
 - 🗼 | [Tokyo Night](https://github.com/tokyo-night)
 - 🗺️ | [Brave Maps](https://github.com/stignarnia/add-maps-links-brave-search)
 - 🐇 | [MangaDex](https://github.com/crnobog69/mangadex)
+- 🐈 | [Miruro](https://github.com/crnobog69/miruro-catppuccin)
 - 🎵 | [Spicetify](https://github.com/spicetify/cli)
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
