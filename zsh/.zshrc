@@ -120,3 +120,5 @@ export TERM="xterm-256color"
 
 # Created by `pipx` on 2024-07-21 22:29:50
 export PATH="$PATH:/home/krematorijum/.local/bin"
+
+alias linutil="curl -fsSL https://christitus.com/linux | sh"
