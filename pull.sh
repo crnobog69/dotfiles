@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Скрипта која аутоматизује git push
+# Скрипта која аутоматизује `git pull`
 
 git pull origin main
 git pull codeberg main
