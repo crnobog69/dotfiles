@@ -23,7 +23,7 @@
 | **Иконице**        | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders)        | -                                        |
 | **Композитор**     | Wayland                                  | -                                        |
 | **Шкољка**         | zsh (oh-my-zsh, Powerlevel10k тема)      | bash                                     |
-| **Терминал**       | Kitty                                    | Alacritty , Konsole                      |
+| **Терминал**       | Kitty                                    | Alacritty, Konsole                      |
 | **ИРО**            | VS Code                                  | Zed                                      |
 | **Менаџер датотека** | Dolphin                                | Thunar                                   |
 | **Прегледач**      | Brave                                    | Firefox Developer Edition                |
