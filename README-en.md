@@ -83,7 +83,7 @@ chmod +x ftn.sh
 ## 🐧 | Other
 
 > [!NOTE]
-> `F.T.N.` stand for ***Faculty of Technical Sciences***
+> `ftn.` stand for ***Faculty of Technical Sciences***
 
 - `ftn.sh` - a custom script that shows whether the week is even or odd.
 
