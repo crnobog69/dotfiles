@@ -122,3 +122,4 @@ export TERM="xterm-256color"
 export PATH="$PATH:/home/krematorijum/.local/bin"
 
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
+alias ftn="/home/krematorijum/dotfiles/ftn.sh"
