@@ -32,13 +32,13 @@ reset='\033[0m'        # Ресетовање боје
 
 # Провера да ли је разлика у недељама парна или непарна и додавање боје
 if (( razlika_nedelja % 2 == 0 )); then
-    nedelja_tip="${plava}Непарна недеља${reset}"
+    nedelja_tip="${plava}❄️ Непарна недеља${reset}"
 else
-    nedelja_tip="${crvena}Парна недеља${reset}"
+    nedelja_tip="${crvena}🗼 Парна недеља${reset}"
 fi
 
 # Испис периода тренутне недеље
-echo -e "Тренутна недеља траје од ${zelena}$dan_pocetak, $pocetak_tekuca_nedelja${reset} до ${zelena}$dan_kraj, $kraj_tekuca_nedelja.${reset}"
+echo -e "Тренутна недеља траје од ${zelena}☀️ $dan_pocetak, $pocetak_tekuca_nedelja${reset} до ${zelena}🌙 $dan_kraj, $kraj_tekuca_nedelja.${reset}"
 
 # Испис датума
-echo -e "Датум ${zuta}$dan_danas, $(date "+%d. %B %Y.") ${reset}је $nedelja_tip."
+echo -e "Датум ${zuta}🗓️ $dan_danas, $(date "+%d. %B %Y.") ${reset}је $nedelja_tip."
