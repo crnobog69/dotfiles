@@ -61,6 +61,10 @@ chmod +x push.sh
 chmod +x pull.sh
 ```
 
+```
+chmod +x ftn.sh
+```
+
 ## 📦 | Packages
 
 - 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
@@ -75,6 +79,13 @@ chmod +x pull.sh
 
 - `push.sh` - customized `push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
+
+## 🐧 | Other
+
+> [!NOTE]
+> `F.T.N.` stand for ***Faculty of Technical Sciences***
+
+- `ftn.sh` - a custom script that shows whether the week is even or odd.
 
 # Personal configuration files:
 
