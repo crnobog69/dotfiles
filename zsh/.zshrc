@@ -123,6 +123,7 @@ export PATH="$PATH:/home/krematorijum/.local/bin"
 
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/ftn.sh"
+alias azu='eos-update --aur'
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
