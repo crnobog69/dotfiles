@@ -48,7 +48,7 @@ install_pacman() {
 # Функција за инсталацију пакета са yay
 install_yay() {
     local packages=(
-        brave-bin coolercontrol element-desktop visual-studio-code-bin ani-cli
+        brave-bin coolercontrol element-desktop vscodium-bin ani-cli
         syncthingtray vesktop-bin portmaster-stub-bin spotify spicetify-cli cava
     )
 
