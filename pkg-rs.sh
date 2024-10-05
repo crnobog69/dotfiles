@@ -21,7 +21,7 @@ install_pacman() {
     local packages=(
         audacious bitwarden bleachbit fastfetch firefox-developer-edition
         haruna kitty obsidian openrgb signal-desktop steam stow
-        telegram-desktop zed zsh fzf
+        telegram-desktop zed zsh fzf spotify-launcher
     )
     
     local to_install=()
@@ -49,7 +49,7 @@ install_pacman() {
 install_yay() {
     local packages=(
         brave-bin coolercontrol element-desktop vscodium-bin ani-cli
-        syncthingtray vesktop-bin portmaster-stub-bin spotify spicetify-cli cava
+        syncthingtray vesktop-bin portmaster-stub-bin spicetify-cli cava
     )
 
     local to_install=()
