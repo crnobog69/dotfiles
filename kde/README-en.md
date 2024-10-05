@@ -8,5 +8,6 @@
 
 - 🗼 | [`konsole`](konsole/README.md) <= guide | **Tokyo Night** theme
 - ⌨️ | [`shortcut-scheme`](shortcut-scheme/README.md) <= guide | my keyboard shortcut configuration
+- 🐈 | [`catppuccin/kde`](https://github.com/catppuccin/kde) <= theme for KDE Plasma
 
 <br>

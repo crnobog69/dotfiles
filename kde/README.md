@@ -8,5 +8,6 @@
 
 - 🗼 | [`konsole`](konsole/README.md) <= упутство | **Tokyo Night** тема
 - ⌨️ | [`shortcut-scheme`](shortcut-scheme/README.md) <= упутство | моја конфигурација пречица за тастатуру
+- 🐈 | [`catppuccin/kde`](https://github.com/catppuccin/kde) <= тема за KDE Plasma
 
 <br>
