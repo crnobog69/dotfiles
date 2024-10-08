@@ -24,8 +24,13 @@
 ## System Updating
 - **`sudo pacman -Syu`** - Update the system.
 - **`sudo pacman -S package_name`** - Install a package.
-- **`sudo pacman -R package_name`** - Remove a package.
+- **`sudo pacman -Rns package_name`** - Remove a package.
 - **`pacman -Ss package_name`** - Search for a package.
+- **`yay -Syu`** / **`yay`** - Update the system with `yay`.
+- **`yay -S package_name`** - Install a package with `yay`.
+- **`yay -Rns package_name`** - Remove a package with `yay`.
+- **`yay -Ss package_name`** - Search for a packagewith `yay` .
+
 
 ## Service Management
 - **`sudo systemctl start service_name`** - Start a service.

@@ -24,8 +24,12 @@
 ## Ажурирање система
 - **`sudo pacman -Syu`** - Ажурирање система.
 - **`sudo pacman -S ime_paketa`** - Инсталирање пакета.
-- **`sudo pacman -R ime_paketa`** - Уклањање пакета.
+- **`sudo pacman -Rns ime_paketa`** - Уклањање пакета.
 - **`pacman -Ss ime_paketa`** - Претрага пакета.
+- **`yay -Syu`**/**`yay`** - Ажурирање система са `yay`.
+- **`yay -S ime_paketa`** - Инсталирање пакета са `yay`.
+- **`yay -Rns ime_paketa`** - Уклањање пакета са `yay`.
+- **`yay -Ss ime_paketa`** - Претрага пакета са `yay`.
 
 ## Управљање услугама
 - **`sudo systemctl start ime_usluge`** - Покретање услуге.
