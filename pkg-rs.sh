@@ -21,7 +21,7 @@ install_pacman() {
     local packages=(
         audacious bitwarden bleachbit fastfetch firefox-developer-edition
         haruna kitty obsidian openrgb signal-desktop steam stow
-        telegram-desktop zed zsh fzf spotify-launcher micro
+        telegram-desktop zed zsh fzf spotify-launcher micro git
     )
     
     local to_install=()
