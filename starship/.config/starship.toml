@@ -1,0 +1,81 @@
+[line_break]
+disabled = true
+
+[username]
+style_user = "#a6da95 bold"
+style_root = "#a6da95 bold"
+format = "{🔻} / [$user]($style) | [$hostname]($style)"
+disabled = false
+show_always = true
+
+[package]
+disabled = true
+symbol = "| 📦 "
+
+[hostname]
+ssh_only = false
+format =  "[$hostname](bold red) "
+trim_at = ".fritz.box"
+disabled = false
+
+[character]
+success_symbol = "[➜](bold green) "
+error_symbol = "[✗](bold red) "
+
+[cmd_duration]
+min_time = 60_000
+format = "took [$duration](bold yellow) "
+
+[directory]
+truncation_length = 5
+truncate_to_repo = true
+style = "#c6a0f6"
+format = "| 📂 [$path](#c6a0f6) "
+
+[git_branch]
+symbol = "| 🌱 "  # Симбол | у стандардној боји
+truncation_length = 4
+truncation_symbol = ""
+style = "bold #f5a97f"
+
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = '[++\($count\)](green)'
+renamed = "💭"
+deleted = "🗑"
+
+[docker_context]
+format = "| [🐋 $context](blue bold) "
+
+[nodejs]
+disabled = true
+format = "| [🤖 $version](bold green) "
+
+[python]
+format = "| [🐍 ($version)](bold green) "
+
+[ruby]
+format = "| [💎 $version](bold red) "
+
+[php]
+format = "| [🐘 $version](bold blue) "
+
+[java]
+format = "| [☕ $version](bold orange) "
+
+[elixir]
+format = "| [🌟 $version](bold purple) "
+
+[rust]
+format = "| [🦀 $version](bold red) "
+
+[c]
+format = "| [🛠️ $version](bold blue) "
+

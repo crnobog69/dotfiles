@@ -17,7 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -121,11 +121,25 @@ export TERM="xterm-256color"
 # Created by `pipx` on 2024-07-21 22:29:50
 export PATH="$PATH:/home/krematorijum/.local/bin"
 
+# ALIAS -----------------------------------------------------
+
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/ftn.sh"
 alias azu='eos-update --aur'
+
+# ALIAS -----------------------------------------------------
 
 # To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
 [[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
 
 export "MICRO_TRUECOLOR=1"
+
+export EDITOR="micro"
+
+
+
+
+
+
+
+eval "$(starship init zsh)"
