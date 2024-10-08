@@ -131,7 +131,7 @@ export PATH="$PATH:/home/krematorijum/.local/bin"
 # ALIAS -----------------------------------------------------
 
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
-alias ftn="~/dotfiles/ftn.sh"
+alias ftn="~/dotfiles/scripts/ftn.sh"
 alias azu='eos-update --aur'
 
 # ALIAS -----------------------------------------------------

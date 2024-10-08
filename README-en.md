@@ -24,7 +24,7 @@
 | **Compositor**      | Wayland                                    | -                                      |
 | **Shell**           | zsh (oh-my-zsh, Powerlevel10k theme)       | bash                                    |
 | **Terminal**        | Kitty                                      | Alacritty, Konsole                      |
-| **IDE**             | VS Code                                    | Zed                                     |
+| **IDE**             | VS Codium, VS Code, micro                  | Zed                                     |
 | **File Manager**    | Dolphin                                    | Thunar                                  |
 | **Browser**         | Brave                                      | Firefox Developer Edition              |
 
@@ -46,11 +46,16 @@
 You need to give permission to script(s):
 
 ```
-chmod +x pkg-rs.sh
+chmod +x scripts/pkg-rs.sh
 ```
 
 ```
-chmod +x pkg-en-sh
+chmod +x scripts/pkg-en.sh
+```
+
+
+```
+chmod +x scripts/ftn.sh
 ```
 
 ```
@@ -61,11 +66,9 @@ chmod +x push.sh
 chmod +x pull.sh
 ```
 
-```
-chmod +x ftn.sh
-```
-
 ## 📦 | Packages
+
+In [`scripts`](scripts).
 
 - 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
@@ -112,6 +115,9 @@ chmod +x ftn.sh
 - 🦁 | [`brave`](brave/README.md) <= guide
 - 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [`cobaltium`](https://github.com/crnobog69/cobaltium))
 - 🧰 | [`assets`](assets/) - images, icons and other
+
+## Other
+- 📰 | [`cmd`](cmd/cmd-en.md) - Basic Commands for Arch Linux
 
 ## 🛠️ Setup
 

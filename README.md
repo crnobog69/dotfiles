@@ -24,7 +24,7 @@
 | **Композитор**     | Wayland                                  | -                                        |
 | **Шкољка**         | zsh (oh-my-zsh, Powerlevel10k тема)      | bash                                     |
 | **Терминал**       | Kitty                                    | Alacritty, Konsole                      |
-| **ИРО**            | VS Code                                  | Zed                                      |
+| **ИРО**            | VS Codium, VS Code, micro                | Zed                                      |
 | **Менаџер датотека** | Dolphin                                | Thunar                                   |
 | **Прегледач**      | Brave                                    | Firefox Developer Edition                |
 
@@ -48,11 +48,15 @@
 Прво морате да дате дозволу скрипти/ама:
 
 ```
-chmod +x pkg-rs.sh
+chmod +x scripts/pkg-rs.sh
 ```
 
 ```
-chmod +x pkg-en-sh
+chmod +x scripts/pkg-en.sh
+```
+
+```
+chmod +x scripts/ftn.sh
 ```
 
 ```
@@ -64,6 +68,8 @@ chmod +x pull.sh
 ```
 
 ## 📦 | Пакети
+
+У [`scripts`](scripts).
 
 - 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
@@ -112,6 +118,9 @@ chmod +x pull.sh
 - 🦁 | [`brave`](brave/README.md) <= упутство
 - 🗺️ | [`brave-maps`](brave-maps) <= упутство (исто као [`cobaltium`](https://github.com/crnobog69/cobaltium))
 - 🧰 | [`assets`](assets/) - слике и иконице и остало
+
+## Остало
+- 📰 | [`cmd`](cmd/cmd.md) - Основне команде за Arch Linux
 
 ## 🛠️ Постављање
 
