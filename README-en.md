@@ -77,7 +77,7 @@ chmod +x ftn.sh
 
 ## 🔄 | Git
 
-- `push.sh` - customized `push` script for my `dotfiles`
+- `push.sh` - customized `pull`/`push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
 
 ## 🐧 | Other
