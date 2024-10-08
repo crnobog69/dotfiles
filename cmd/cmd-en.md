@@ -22,10 +22,16 @@
 - **`mv source_file destination`** - Move or rename a file.
 
 ## System Updating
+
+### pacman
+
 - **`sudo pacman -Syu`** - Update the system.
 - **`sudo pacman -S package_name`** - Install a package.
 - **`sudo pacman -Rns package_name`** - Remove a package.
 - **`pacman -Ss package_name`** - Search for a package.
+
+### yay
+
 - **`yay -Syu`** / **`yay`** - Update the system with `yay`.
 - **`yay -S package_name`** - Install a package with `yay`.
 - **`yay -Rns package_name`** - Remove a package with `yay`.

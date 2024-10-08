@@ -22,10 +22,15 @@
 - **`mv izvor-datoteka odredište`** - Премешта или преименује датотеку.
 
 ## Ажурирање система
+
+### pacman
+
 - **`sudo pacman -Syu`** - Ажурирање система.
 - **`sudo pacman -S ime_paketa`** - Инсталирање пакета.
 - **`sudo pacman -Rns ime_paketa`** - Уклањање пакета.
 - **`pacman -Ss ime_paketa`** - Претрага пакета.
+### yay
+
 - **`yay -Syu`**/**`yay`** - Ажурирање система са `yay`.
 - **`yay -S ime_paketa`** - Инсталирање пакета са `yay`.
 - **`yay -Rns ime_paketa`** - Уклањање пакета са `yay`.
