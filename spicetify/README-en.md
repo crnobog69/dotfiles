@@ -1,7 +1,3 @@
-Sure! Here’s the translation to English:
-
----
-
 # 🎵 Spicetify Config
 
 ---
