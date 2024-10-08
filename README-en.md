@@ -36,7 +36,7 @@
 > For `zsh` first follow this [**tutorial**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty** are to be used with GNU STOW.
+> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty** and **starship** are to be used with GNU STOW.
 
 > [!NOTE]
 > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
@@ -97,6 +97,7 @@ chmod +x ftn.sh
 - 🐚 | `zsh`
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
+- 🚀 | `starship`
 
 ## Manual setup:
 - 🖥️ | [`kde`](kde/README.md) <= guide
@@ -127,7 +128,7 @@ chmod +x ftn.sh
 3. Apply configurations:
    ```
    cd ~/.dotfiles
-   stow kitty-cat-green zed zsh fastfetch micro
+   stow kitty-cat-green zed zsh fastfetch micro starship
    ```
 
    or (one)

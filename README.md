@@ -38,7 +38,7 @@
 > За `zsh` прво пратите овај [**туторијал**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty** су за коришћење уз помоћ GNU STOW.
+> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty** и **starship** су за коришћење уз помоћ GNU STOW.
 
 > [!NOTE]
 > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
@@ -96,6 +96,7 @@ chmod +x pull.sh
 - 🐚 | `zsh`
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
+- 🚀 | `starship`
 
 
 ## Ручно:
@@ -127,7 +128,7 @@ chmod +x pull.sh
 3. Примена конфигурација:
    ```
    cd ~/.dotfiles
-   stow kitty-cat-green zed zsh fastfetch micro
+   stow kitty-cat-green zed zsh fastfetch micro starship
    ```
 
    или (једно)
