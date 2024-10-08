@@ -1,4 +1,35 @@
-# 🎵 Spicetify Config - Comfy Theme Config
+# 🎵 Spicetify Config
+
+---
+
+  [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
+
+---
+
+# Табела садржаја:
+
+- ## 🗼 | [Text](#text)
+- ## 📜 | [Comfy тема](#comfy)
+
+---
+
+# Text
+
+Ово садржи целу моју конфигурацију за **Spicetify**
+
+### 🛠️ Како користити?
+ 
+1. Отићи у `Marketplace`
+2. Кликнути на иконицу чупчаника
+3. Спустити се до дна
+4. На **Back up/Restore** секцији кликнути **Open**
+5. Кликнути **Import file** и изабрати датотеку или залепити садржај датотеке `spicetify-config.txt` у **Copy/paste your settings here** и кликнути **Import**
+
+🔗 Spicetify [овде](https://github.com/spicetify).
+
+---
+
+# Comfy
 
 ### 🛠️ Како користити (Comfy тема)?
 
@@ -11,15 +42,3 @@
 
 🪐 Можете користити [*моју скрипту*](https://github.com/crnobog69/spicetify-bat-installer-autoupdater) за инсталирање `Spicetify` за `Windows`.
 
----
-
-### 🛠️ How to use (Comfy Theme)?
-
-🔸 Copy the content of the "spicetify-comfy-tema-konfig.txt" file and in Comfy Theme settings click the "Import" button.
-🔗 Spicetify [here](https://github.com/spicetify).
-
-/
-
-📌 I currently use [Text theme](https://github.com/spicetify/spicetify-themes/tree/master/text) with Catppuccin Mocha Variant. (doesn't have option to import/export config files)
-
-🪐 You can use [*my script*](https://github.com/crnobog69/spicetify-bat-installer-autoupdater) for installing `Spicetify` for `Windows`
