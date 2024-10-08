@@ -38,7 +38,7 @@
 > За `zsh` прво пратите овај [**туторијал**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty** и **starship** су за коришћење уз помоћ GNU STOW.
+> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier** и **starship** су за коришћење уз помоћ GNU STOW.
 
 > [!NOTE]
 > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
@@ -103,6 +103,7 @@ chmod +x pull.sh
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
 - 🚀 | `starship`
+-` transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 
 ## Ручно:

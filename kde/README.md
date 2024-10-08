@@ -10,4 +10,6 @@
 - ⌨️ | [`shortcut-scheme`](shortcut-scheme/README.md) <= упутство | моја конфигурација пречица за тастатуру
 - 🐈 | [`catppuccin/kde`](https://github.com/catppuccin/kde) <= тема за KDE Plasma
 
+`colors` датотека је за `AppleDark-All` тему - `/home/krematorijum/.local/share/plasma/desktoptheme/AppleDark-ALL/`
+
 <br>
