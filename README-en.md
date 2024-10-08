@@ -22,7 +22,7 @@
 | **DE**              | KDE Plasma 6.1                             | -                                      |
 | **Icons**           | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders)          | -                                      |
 | **Compositor**      | Wayland                                    | -                                      |
-| **Shell**           | zsh (oh-my-zsh, Powerlevel10k theme)       | bash                                    |
+| **Shell**           | zsh (oh-my-zsh, starship, Powerlevel10k theme*)       | bash                                    |
 | **Terminal**        | Kitty                                      | Alacritty, Konsole                      |
 | **IDE**             | VS Codium, VS Code, micro                  | Zed                                     |
 | **File Manager**    | Dolphin                                    | Thunar                                  |
