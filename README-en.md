@@ -101,7 +101,7 @@ In [`scripts`](scripts).
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
 - 🚀 | `starship`
-- `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
+- 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ## Manual setup:
 - 🖥️ | [`kde`](kde/README.md) <= guide
