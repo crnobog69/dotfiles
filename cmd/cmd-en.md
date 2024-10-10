@@ -61,6 +61,7 @@
 - **`top`** - View active processes.
 - **`htop`** - Advanced view of active processes (install it with `sudo pacman -S htop`).
 - **`ip a`** - Displays information about network interfaces.
+- **`btm`** - Cross-platform graphical process/system monitor. (install it with `sudo pacman -S bottom`)
 
 ## Custom Commands
 - **`ftn`** - Custom script that shows whether the week is even or odd.
