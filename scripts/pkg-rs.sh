@@ -49,7 +49,7 @@ install_pacman() {
 install_yay() {
     local packages=(
         brave-bin coolercontrol element-desktop vscodium-bin ani-cli
-        syncthingtray vesktop-bin portmaster-stub-bin spicetify-cli cava
+        syncthingtray vesktop-bin portmaster-stub-bin spicetify-cli cava catppuccin-cursors-mocha
     )
 
     local to_install=()

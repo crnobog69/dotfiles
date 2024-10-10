@@ -37,7 +37,7 @@
 > For `zsh` first follow this [**tutorial**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish** and **starship** are to be used with GNU STOW.
+> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava** and **starship** are to be used with GNU STOW.
 
 > [!NOTE]
 > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
@@ -104,6 +104,7 @@ In [`scripts`](scripts).
 - 🚀 | `starship`
 - 🐟 | `fish`
 - 🥺 | `bottom`
+- 📢 | `cava`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ## Manual setup:
@@ -138,7 +139,7 @@ In [`scripts`](scripts).
 3. Apply configurations:
    ```
    cd ~/.dotfiles
-   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom
+   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom cava
    ```
 
    or (one)

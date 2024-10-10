@@ -39,7 +39,7 @@
 > За `zsh` прво пратите овај [**туторијал**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**,**bottom**, **fish** и **starship** су за коришћење уз помоћ GNU STOW.
+> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**,**bottom**, **fish**, **cava** и **starship** су за коришћење уз помоћ GNU STOW.
 
 > [!NOTE]
 > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
@@ -106,6 +106,7 @@ chmod +x pull.sh
 - 🚀 | `starship`
 - 🐟 | `fish`
 - 🥺 | `bottom`
+- 📢 | `cava`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 
@@ -141,7 +142,7 @@ chmod +x pull.sh
 3. Примена конфигурација:
    ```
    cd ~/.dotfiles
-   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom
+   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom cava
    ```
 
    или (једно)
