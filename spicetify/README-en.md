@@ -33,7 +33,7 @@ This contains my entire configuration for **Spicetify**
 
 ### 🛠️ How to Use (Comfy Theme)?
 
-🔸 Copy the contents of the "spicetify-comfy-theme-config.txt" file and in the Comfy Theme settings, click the "Import" button.
+🔸 Copy the contents of the [`comfy-config.txt`](comfy-config.txt) file and in the Comfy Theme settings, click the "Import" button.
 🔗 Spicetify [here](https://github.com/spicetify).
 
 /
