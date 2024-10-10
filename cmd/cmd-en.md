@@ -66,7 +66,8 @@
   - **`CTRL + T`** - Activates `fzf` for any commands
   /
   - **`any_command ** + TAB`** - Write `**` (two asterisk) and press `TAB` and it will activate `fzf`
-
+  - **`CTRL + R`** - `fzf` history
+  
 ## Custom Commands
 - **`ftn`** - Custom script that shows whether the week is even or odd.
 - **`azu`** - Shortcut for `eos-update --aur`.
