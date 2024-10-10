@@ -147,4 +147,8 @@ export EDITOR="micro"
 
 eval "$(fzf --zsh)"
 
+eval $(thefuck --alias)
+
+eval $(thefuck --alias fk)
+
 eval "$(starship init zsh)"
