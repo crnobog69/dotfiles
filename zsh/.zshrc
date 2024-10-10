@@ -145,4 +145,6 @@ export "MICRO_TRUECOLOR=1"
 
 export EDITOR="micro"
 
+eval "$(fzf --zsh)"
+
 eval "$(starship init zsh)"

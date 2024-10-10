@@ -90,6 +90,7 @@ In [`scripts`](scripts).
 > `ftn.` - stand for ***Faculty of Technical Sciences***.
 
 - `ftn.sh` - a custom script that shows whether the week is even or odd.
+- [`vhs-en.sh`](scripts/vhs/README-en.md) - Video Processing Script (in `scripts/vhs`)
 
 # Personal configuration files:
 

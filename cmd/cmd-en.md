@@ -62,6 +62,10 @@
 - **`htop`** - Advanced view of active processes (install it with `sudo pacman -S htop`).
 - **`ip a`** - Displays information about network interfaces.
 - **`btm`** - Cross-platform graphical process/system monitor. (install it with `sudo pacman -S bottom`)
+- **`fzf`** A command-line fuzzy finder
+  - **`CTRL + T`** - Activates `fzf` for any commands
+  /
+  - **`any_command ** + TAB`** - Write `**` (two asterisk) and press `TAB` and it will activate `fzf`
 
 ## Custom Commands
 - **`ftn`** - Custom script that shows whether the week is even or odd.
