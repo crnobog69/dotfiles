@@ -1,3 +1,5 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
 [line_break]
 disabled = false
 
@@ -78,4 +80,3 @@ format = "| [🦀 $version](bold red) "
 
 [c]
 format = "| [🛠️ $version](bold blue) "
-
