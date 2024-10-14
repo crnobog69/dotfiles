@@ -84,7 +84,7 @@ In [`scripts`](scripts).
 - `push.sh` - customized `pull`/`push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
 - `push.ps1` - customized `pull`/`push` script (Windows)
-- `pull.sh` - customized `pull` script (Windows)
+- `pull.ps1` - customized `pull` script (Windows)
 
 ## 🐧 | Other
 
