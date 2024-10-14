@@ -99,3 +99,4 @@ style = "Regular"
 [window]
 dimensions.columns = 133
 dimensions.lines = 33
+opacity = 0.8
