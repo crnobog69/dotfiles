@@ -83,6 +83,7 @@ In [`scripts`](scripts).
 
 - `push.sh` - customized `pull`/`push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
+- `push.ps1` - customized `pull`/`push` script (Windows)
 
 ## 🐧 | Other
 
