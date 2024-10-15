@@ -12,16 +12,40 @@
 
 <br>
 
+There are two ways to apply the configuration:
+- All at once - [Config File](#config-file)
+- Individually - [Theme](#theme), [User Scripts](#userscripts)
+
+<br>
+
 # 📖 | Tabel of content
 
 <br>
 
+- 📁 | [Config file](#config-file)
 - 🎨 | [Theme](#theme)
 - ⛈️ | [Userscripts](#userscripts)
 
 <br>
 
 ---
+
+<br>
+
+# Config File
+
+> [!NOTE]
+> [Automail](automail/README.md) configuration must be imported separately.
+
+1. Open the **Violentmonkey** extension in your browser.
+
+2. Go to **Settings**.
+
+3. Under the **Backup and maintenance** section, check the options for `Import script data` and `Import settings`.
+
+4. Then, click on **Import from ZIP…**
+
+5. Select **`violentmonkey-config.zip`**
 
 <br>
 

@@ -17,4 +17,4 @@
 6. 🔽 | Scroll down until you find the **Export settings** button.
 7. 👇 | Just below that, you'll see **Import settings:**.
 8. 🖱️ | Click on **Browse...**.
-9. 📂 | Select the `automail-settings.json` file.
+9. 📂 | Select the **`automail-settings.json`** file.
