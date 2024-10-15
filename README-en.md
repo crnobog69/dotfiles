@@ -44,6 +44,8 @@
 
 # Scripts:
 
+## Linux
+
 You need to give permission to script(s):
 
 ```
@@ -53,7 +55,6 @@ chmod +x scripts/pkg-rs.sh
 ```
 chmod +x scripts/pkg-en.sh
 ```
-
 
 ```
 chmod +x scripts/ftn.sh
@@ -65,6 +66,20 @@ chmod +x push.sh
 
 ```
 chmod +x pull.sh
+```
+
+## Windows
+
+### Power Shell
+
+```
+Set-ExecutionPolicy RemoteSigned
+```
+
+### CMD (Admininstrator)
+
+```
+powershell -Command "Set-ExecutionPolicy RemoteSigned"
 ```
 
 ## 📦 | Packages
@@ -92,6 +107,7 @@ In [`scripts`](scripts).
 > `ftn.` - stand for ***Faculty of Technical Sciences***.
 
 - `ftn.sh` - a custom script that shows whether the week is even or odd.
+- `ftn.ps1` - a custom script that shows whether the week is even or odd. (Widnows)
 - [`vhs-en.sh`](scripts/vhs/README-en.md) - Video Processing Script (in `scripts/vhs`)
 
 # Personal configuration files:
