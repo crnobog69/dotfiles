@@ -44,6 +44,8 @@
 > [!NOTE]
 > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
+---
+
 # Скрипте:
 
 ## Linux
@@ -113,6 +115,8 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `ftn.ps1` - прилагођена скрипта која приказује да ли је недеља парна или непарна (Windows)
 - [`vhs.sh`](scripts/vhs/README.md) - Скрипта за обраду видеа (у `scripts/vhs`)
 
+---
+
 # Личне конфигурацијске датотеке:
 
 `GNU Stow`
@@ -179,6 +183,8 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 cd ~/.dotfiles
 git pull
 ```
+
+---
 
 # Остало
 

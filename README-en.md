@@ -42,6 +42,8 @@
 > [!NOTE]
 > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
+---
+
 # Scripts:
 
 ## Linux
@@ -110,6 +112,8 @@ In [`scripts`](scripts).
 - `ftn.ps1` - a custom script that shows whether the week is even or odd. (Widnows)
 - [`vhs-en.sh`](scripts/vhs/README-en.md) - Video Processing Script (in `scripts/vhs`)
 
+---
+
 # Personal configuration files:
 
 `GNU Stow`
@@ -175,6 +179,8 @@ In [`scripts`](scripts).
 cd ~/.dotfiles
 git pull
 ```
+
+---
 
 # Other
 
