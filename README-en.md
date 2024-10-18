@@ -18,8 +18,8 @@
 
 | Category            | Details                                    | Other                                  |
 |---------------------|--------------------------------------------|----------------------------------------|
-| **OS**              | Arch Linux (EndeavourOS)                   | -                                      |
-| **DE**              | KDE Plasma 6.1                             | -                                      |
+| **OS**              | Arch Linux (EndeavourOS)                   | Windows 11                             |
+| **DE**              | KDE Plasma 6.2                             | -                                      |
 | **Icons**           | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders)          | -                                      |
 | **Compositor**      | Wayland                                    | -                                      |
 | **Shell**           | zsh (oh-my-zsh, starship, Powerlevel10k theme*)       | fish, bash                                    |
