@@ -1,0 +1,3 @@
+Visual Studio Code Arch Linux Official
+----------------------------------------
+https://archlinux.org/packages/?name=code
