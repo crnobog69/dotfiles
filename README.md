@@ -147,6 +147,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= упутство
 - 🦁 | [`brave`](brave/README.md) <= упутство
 - 🗺️ | [`brave-maps`](brave-maps) <= упутство (исто као [`cobaltium`](https://github.com/crnobog69/cobaltium))
+- 📝 | [`notesnook`](notesnook/README.md)
 - 🧰 | [`assets`](assets/) - слике и иконице и остало
 
 ## Остало

@@ -142,6 +142,7 @@ In [`scripts`](scripts).
 - 🦊 | [`firefox`](firefox/README.md) <= guide
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= guide
 - 🦁 | [`brave`](brave/README.md) <= guide
+- 📝 | [`notesnook`](notesnook/README-en.md)
 - 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [`cobaltium`](https://github.com/crnobog69/cobaltium))
 - 🧰 | [`assets`](assets/) - images, icons and other
 
