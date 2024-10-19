@@ -129,7 +129,7 @@ export PATH="$PATH:/home/krematorijum/.local/bin"
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/scripts/ftn.sh"
 alias azu='eos-update --aur'
-alias cmd='micro ~/dotfiles/cmd/cmd.md'
+alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
 
 # ALIAS -----------------------------------------------------
