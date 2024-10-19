@@ -196,6 +196,7 @@ git pull
 - 🐈 | [Miruro](https://github.com/crnobog69/miruro-catppuccin)
 - 🎵 | [Spicetify](https://github.com/spicetify/cli)
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
+- 📝 | [Notesnook](https://github.com/crnobog69/notesnook)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Творац/Ја](https://github.com/crnobog69)
 
