@@ -131,7 +131,7 @@ alias ftn="~/dotfiles/scripts/ftn.sh"
 alias azu='eos-update --aur'
 alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
-alias pasters="~/dotfiles/pasters/pasters.py"
+alias pasters="~/dotfiles/scripts/pasters/pasters.py"
 
 # ALIAS -----------------------------------------------------
 
