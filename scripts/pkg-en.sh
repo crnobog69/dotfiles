@@ -21,7 +21,7 @@ install_pacman() {
     local packages=(
         audacious bitwarden bleachbit fastfetch firefox-developer-edition
         haruna kitty obsidian openrgb signal-desktop steam stow
-        telegram-desktop zed zsh fzf spotify-launcher micro git starship fish bottom bat thefuck ttf-jetbrains-mono-nerd zoxide ffpeg
+        telegram-desktop zed zsh fzf spotify-launcher micro git starship fish bottom bat thefuck ttf-jetbrains-mono-nerd zoxide ffpeg code
     )
     
     local to_install=()
@@ -48,7 +48,7 @@ install_pacman() {
 # Function to install packages with yay
 install_yay() {
     local packages=(
-        brave-bin coolercontrol element-desktop vscodium-bin ani-cli
+        brave-bin coolercontrol element-desktop ani-cli
         syncthingtray vesktop-bin portmaster-stub-bin spicetify-cli cava catppuccin-cursors-mocha
     )
 

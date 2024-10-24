@@ -114,6 +114,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `ftn.sh` - прилагођена скрипта која приказује да ли је недеља парна или непарна
 - `ftn.ps1` - прилагођена скрипта која приказује да ли је недеља парна или непарна (Windows)
 - [`vhs.sh`](scripts/vhs/README.md) - Скрипта за обраду видеа (у `scripts/vhs`)
+- `pasters` - скрипта која користи API од [paste.rs](https://paste.rs/)
 
 ---
 
@@ -197,6 +198,7 @@ git pull
 - 🎵 | [Spicetify](https://github.com/spicetify/cli)
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
 - 📝 | [Notesnook](https://github.com/crnobog69/notesnook)
+- 🦀 | [pasters](https://github.com/crnobog69/pasters-terminal)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Творац/Ја](https://github.com/crnobog69)
 

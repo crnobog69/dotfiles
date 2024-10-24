@@ -111,6 +111,7 @@ In [`scripts`](scripts).
 - `ftn.sh` - a custom script that shows whether the week is even or odd.
 - `ftn.ps1` - a custom script that shows whether the week is even or odd. (Widnows)
 - [`vhs-en.sh`](scripts/vhs/README-en.md) - Video Processing Script (in `scripts/vhs`)
+- `pasters` - a script that uses the API of [paste.rs](https://paste.rs/)
 
 ---
 
@@ -193,6 +194,7 @@ git pull
 - 🎵 | [Spicetify](https://github.com/spicetify/cli)
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
 - 📝 | [Notesnook](https://github.com/crnobog69/notesnook)
+- 🦀 | [pasters](https://github.com/crnobog69/pasters-terminal)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Creator/Me](https://github.com/crnobog69)
 
