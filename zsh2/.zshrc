@@ -70,7 +70,8 @@ alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
 alias pasters="~/dotfiles/scripts/pasters/pasters.py"
 alias ls='ls --color'
-alias vim='nvim'
+alias neovim='nvim'
+alias vim='lvim'
 
 # ALIAS -----------------------------------------------------
 

@@ -159,6 +159,8 @@ alias tb 'nc termbin.com 9999'
 alias helpme 'echo "To print basic information about a command use tldr <command>"'
 alias pacdiff 'sudo -H DIFFPROG=meld pacdiff'
 
+alias neovim 'lvim'
+
 # Get the error messages from journalctl
 alias jctl 'journalctl -p 3 -xb'
 
