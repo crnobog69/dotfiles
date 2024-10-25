@@ -23,3 +23,5 @@ alias catgit='brave https://github.com/catppuccin'
 # ~/.bashrc
 
 eval "$(starship init bash)"
+
+eval "$(zoxide init bash)"

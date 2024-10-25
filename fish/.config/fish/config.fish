@@ -171,3 +171,5 @@ if status --is-interactive && type -q fastfetch
 end
 
 starship init fish | source
+
+zoxide init fish | source
