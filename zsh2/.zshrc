@@ -39,6 +39,7 @@ bindkey '^[[5~' beginning-of-line
 bindkey '^[[6~' end-of-line
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
+bindkey "\e[3~" delete-char
 
 export TERM="xterm-256color"
 
