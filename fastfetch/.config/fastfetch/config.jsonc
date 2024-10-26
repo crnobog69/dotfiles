@@ -3,7 +3,11 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "~/.config/fastfetch/slika.jpg",
+        // За приказ слике у кометар претовирити `source`, `color` и `type` секције за `aski1.txt`
+      //"source": "~/.config/fastfetch/slika.jpg",
+        "source": "~/.config/fastfetch/aski1.txt",
+        "type": "file",
+        "color":{"1": "red",},
         "height": 19,
         "width": 40,
     },
@@ -11,10 +15,6 @@
         "separator": " -> ",
     },
     "modules": [
-        {
-            "type": "custom",
-            "format": "\n",  // Dodaj prazan red na vrhu
-        },
         {
             "type": "custom",
             "format": "┌────────────────────────────────────────────────────────────┐",

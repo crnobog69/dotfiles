@@ -71,7 +71,7 @@ alias catgit='brave https://github.com/catppuccin'
 alias pasters="~/dotfiles/scripts/pasters/pasters.py"
 alias ls='ls --color'
 alias neovim='nvim'
-alias vim='lvim'
+alias vim='nvim'
 
 # ALIAS -----------------------------------------------------
 

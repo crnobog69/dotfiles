@@ -132,6 +132,7 @@ alias azu='eos-update --aur'
 alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
 alias pasters="~/dotfiles/scripts/pasters/pasters.py"
+alias vim-'nvim'
 
 # ALIAS -----------------------------------------------------
 
