@@ -4,6 +4,6 @@
 
 git add .
 git commit -m "❄️"
-git push origin main
+git push github main
 git push codeberg main
 git push gitlab main

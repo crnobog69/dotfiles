@@ -15,11 +15,17 @@ export PATH=$HOME/.local/bin:$PATH
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/scripts/ftn.sh"
 alias azu='eos-update --aur'
-alias cmd='micro ~/dotfiles/cmd/cmd.md'
+alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
+alias pasters="~/dotfiles/scripts/pasters/pasters.py"
+alias ls='ls --color'
+alias neovim='nvim'
+alias vim='lvim'
 
 # ALIAS -----------------------------------------------------
 
 # ~/.bashrc
 
 eval "$(starship init bash)"
+
+eval "$(zoxide init bash)"

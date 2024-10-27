@@ -1,3 +1,7 @@
 Visual Studio Code Arch Linux Official
-----------------------------------------
+------------------------------------------
 https://archlinux.org/packages/?name=code
+
+Spicetify Marketplace
+------------------------------------------
+https://github.com/spicetify/marketplace/wiki/Installation
