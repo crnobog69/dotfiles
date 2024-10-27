@@ -41,3 +41,10 @@ This contains my entire configuration for **Spicetify**
 📌 I am currently using the [Text theme](https://github.com/spicetify/spicetify-themes/tree/master/text) with the Catppuccin Mocha variant. (there is no option to import/export config files)
 
 🪐 You can use [*my script*](https://github.com/crnobog69/spicetify-bat-installer-autoupdater) to install `Spicetify` for `Windows`.
+
+---
+
+
+```
+sudo pacman -S spcetify-cli-marketplace
+```

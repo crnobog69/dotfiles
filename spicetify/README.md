@@ -42,3 +42,9 @@
 
 🪐 Можете користити [*моју скрипту*](https://github.com/crnobog69/spicetify-bat-installer-autoupdater) за инсталирање `Spicetify` за `Windows`.
 
+---
+
+
+```
+sudo pacman -S spcetify-cli-marketplace
+```
