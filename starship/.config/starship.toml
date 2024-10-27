@@ -96,7 +96,7 @@ style = "#fab387"
 
 [git_branch]
 symbol = " "
-style = "#fab387"
+style = "#b4befe"
 
 [golang]
 symbol = " "
