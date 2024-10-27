@@ -1,82 +1,155 @@
-"$schema" = 'https://starship.rs/config-schema.json'
-
-[line_break]
-disabled = false
-
+## FIRST LINE/ROW: Info & Status
+# First param ─┌
 [username]
-style_user = "#a6da95 bold"
-style_root = "#a6da95 bold"
-format = "{🔻} / [$user]($style) | [$hostname]($style)"
-disabled = false
+format = " [╭─$user]($style)@"
 show_always = true
+style_root = "red"
+style_user = "red"
 
-[package]
-disabled = true
-symbol = "| 📦 "
-
+# Second param
 [hostname]
+disabled = false
+format = "[$hostname]($style) у "
 ssh_only = false
-format =  "[$hostname](bold red) "
-trim_at = ".fritz.box"
+style = "bold dimmed red"
+trim_at = "-"
+
+# Third param
+[directory]
+style = "#a6e3a1"
+truncate_to_repo = true
+truncation_length = 0
+truncation_symbol = "repo: "
+
+# Fourth param
+[sudo]
 disabled = false
 
-[character]
-success_symbol = "[➜](bold green) "
-error_symbol = "[✗](bold red) "
-
-[cmd_duration]
-min_time = 60_000
-format = "took [$duration](bold yellow) "
-
-[directory]
-truncation_length = 5
-truncate_to_repo = true
-style = "#c6a0f6"
-format = "| 📂 [$path](#c6a0f6) "
-
-[git_branch]
-symbol = "| 🌱 "  # Симбол | у стандардној боји
-truncation_length = 4
-truncation_symbol = ""
-style = "bold #f5a97f"
-
-
+# Before all the version info (python, nodejs, php, etc.)
 [git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷"
-stashed = "📦"
-modified = "📝"
-staged = '[++\($count\)](green)'
-renamed = "💭"
-deleted = "🗑"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+deleted = "x"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+format = "[$branch]($style)"  # Промените "on" у "на"
+style = "white"
+
+
+# Last param in the first line/row
+[cmd_duration]
+disabled = false
+format = "за [$duration]($style)"
+min_time = 1
+
+## SECOND LINE/ROW: Prompt
+# Somethere at the beginning
+[battery]
+charging_symbol = ""
+disabled = true
+discharging_symbol = ""
+full_symbol = ""
+
+# Prompt: optional param 1
+[time]
+disabled = true
+format = "   $time($style)\n"
+style = "bright-white"
+time_format = "%T"
+
+# λ - Други знак
+# Prompt: param 2
+[character]
+error_symbol = " [×](bold red)"
+success_symbol = " [╰─](bold red)"
+
+# SYMBOLS
+[status]
+disabled = false
+format = '[\[$symbol$status_common_meaning$status_signal_name$status_maybe_int\]]($style)'
+map_symbol = true
+pipestatus = true
+symbol = "✗"
+
+[aws]
+symbol = " "
+style = "#fab387"
+
+[conda]
+symbol = " "
+style = "#fab387"
+
+[dart]
+symbol = " "
+style = "#fab387"
 
 [docker_context]
-format = "| [🐋 $context](blue bold) "
-
-[nodejs]
-disabled = true
-format = "| [🤖 $version](bold green) "
-
-[python]
-format = "| [🐍 ($version)](bold green) "
-
-[ruby]
-format = "| [💎 $version](bold red) "
-
-[php]
-format = "| [🐘 $version](bold blue) "
-
-[java]
-format = "| [☕ $version](bold orange) "
+symbol = " "
+style = "#fab387"
 
 [elixir]
-format = "| [🌟 $version](bold purple) "
+symbol = " "
+style = "#fab387"
+
+[elm]
+symbol = " "
+style = "#fab387"
+
+[git_branch]
+symbol = " "
+style = "#fab387"
+
+[golang]
+symbol = " "
+style = "#fab387"
+
+[hg_branch]
+symbol = " "
+style = "#fab387"
+
+[java]
+symbol = " "
+style = "#fab387"
+
+[julia]
+symbol = " "
+style = "#fab387"
+
+[nim]
+symbol = " "
+style = "#fab387"
+
+[nix_shell]
+symbol = " "
+style = "#fab387"
+
+[nodejs]
+symbol = " "
+style = "#fab387"
+
+[package]
+symbol = " "
+style = "#fab387"
+
+[perl]
+symbol = " "
+style = "#fab387"
+
+[php]
+symbol = " "
+style = "#fab387"
+
+[python]
+symbol = " "
+style = "#fab387"
+
+[ruby]
+symbol = " "
+style = "#fab387"
 
 [rust]
-format = "| [🦀 $version](bold red) "
+symbol = " "
+style = "#fab387"
 
-[c]
-format = "| [🛠️ $version](bold blue) "
+[swift]
+symbol = "ﯣ "
+style = "#fab387"
