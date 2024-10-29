@@ -2,7 +2,7 @@
 
 ---
 
-  [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
+[Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
 
 ---
 
@@ -16,18 +16,18 @@
 
 # 🐧
 
-| Category            | Details                                    | Other                                  |
-|---------------------|--------------------------------------------|----------------------------------------|
-| **OS**              | Arch Linux (EndeavourOS)                   | Windows 11                             |
-| **DE**              | KDE Plasma 6.2                             | -                                      |
-| **Icons**           | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders)          | -                                      |
-| **Compositor**      | Wayland                                    | -                                      |
-| **Shell**           | zsh (oh-my-zsh, starship, Powerlevel10k theme*)       | fish, bash                                    |
-| **Промт**           | Starship                                 |                                          |
-| **Terminal**        | Kitty                                      | Alacritty, Konsole                      |
-| **IDE**             | VS Codium, VS Code, micro                  | Zed                                     |
-| **File Manager**    | Dolphin                                    | Thunar                                  |
-| **Browser**         | Brave                                      | Firefox Developer Edition              |
+| Category         | Details                                                                                                  | Other                     |
+| ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------- |
+| **OS**           | Arch Linux (EndeavourOS)                                                                                 | Windows 11                |
+| **DE**           | KDE Plasma 6.2                                                                                           | -                         |
+| **Icons**        | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
+| **Compositor**   | Wayland                                                                                                  | -                         |
+| **Shell**        | zsh (oh-my-zsh, starship, Powerlevel10k theme\*)                                                         | fish, bash                |
+| **Промт**        | Starship                                                                                                 |                           |
+| **Terminal**     | Kitty                                                                                                    | Alacritty, Konsole        |
+| **IDE**          | VS Codium, VS Code, micro                                                                                | Zed                       |
+| **File Manager** | Dolphin                                                                                                  | Thunar                    |
+| **Browser**      | Brave                                                                                                    | Firefox Developer Edition |
 
 ---
 
@@ -37,10 +37,9 @@
 > For `zsh` first follow this [**tutorial**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat** and **starship** are to be used with GNU STOW.
+> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv** and **starship** are to be used with GNU STOW.
 
-> [!NOTE]
-> [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
+> [!NOTE] > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
 ---
 
@@ -105,8 +104,7 @@ In [`scripts`](scripts).
 
 ## 🐧 | Other
 
-> [!NOTE]
-> `ftn.` - stand for ***Faculty of Technical Sciences***.
+> [!NOTE] > `ftn.` - stand for **_Faculty of Technical Sciences_**.
 
 - `ftn.sh` - a custom script that shows whether the week is even or odd.
 - `ftn.ps1` - a custom script that shows whether the week is even or odd. (Widnows)
@@ -133,6 +131,7 @@ In [`scripts`](scripts).
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ## Manual setup:
+
 - 🖥️ | [`kde`](kde/README.md) <= guide
 - 🌐 | [`tabliss`](tabliss/README.md) <= guide
 - 💬 | [`vencord`](vencord/README.md) <= guide
@@ -148,24 +147,28 @@ In [`scripts`](scripts).
 - 🧰 | [`assets`](assets/) - images, icons and other
 
 ## Other
+
 - 📰 | [`cmd`](cmd/cmd-en.md) - Basic Commands for Arch Linux
 
 ## 🛠️ Setup
 
 1. Install GNU Stow (Arch Linux):
+
    ```
    sudo pacman -S stow
    ```
 
 2. Clone the repository:
+
    ```
    git clone https://github.com/crnobog69/dotfiles.git
    ```
 
 3. Apply configurations:
+
    ```
    cd ~/.dotfiles
-   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom cava bat
+   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom cava bat mpv
    ```
 
    or (one)

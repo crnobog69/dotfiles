@@ -2,7 +2,7 @@
 
 ---
 
-  [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
+[Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
 
 ---
 
@@ -16,20 +16,18 @@
 
 # 🐧
 
-| Категорија         | Детаљи                                   | Друго                              |
-|--------------------|------------------------------------------|------------------------------------------|
-| **ОС**             | Arch Linux (EndeavourOS)                 | Windows 11                               |
-| **РО**             | KDE Plasma 6.2                           | -                                        |
-| **Иконице**        | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders)        | -                                        |
-| **Композитор**     | Wayland                                  | -                                        |
-| **Шкољка**         | zsh (oh-my-zsh, Starship, Powerlevel10k тема*)| fish, bash                                     |
-| **Промт**          | Starship                                 |                                          |
-| **Терминал**       | Kitty                                    | Alacritty, Konsole                      |
-| **ИРО**            | VS Codium, VS Code, micro                | Zed                                      |
-| **Менаџер датотека** | Dolphin                                | Thunar                                   |
-| **Прегледач**      | Brave                                    | Firefox Developer Edition                |
-
-
+| Категорија           | Детаљи                                                                                                        | Друго                     |
+| -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| **ОС**               | Arch Linux (EndeavourOS)                                                                                      | Windows 11                |
+| **РО**               | KDE Plasma 6.2                                                                                                | -                         |
+| **Иконице**          | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
+| **Композитор**       | Wayland                                                                                                       | -                         |
+| **Шкољка**           | zsh (oh-my-zsh, Starship, Powerlevel10k тема\*)                                                               | fish, bash                |
+| **Промт**            | Starship                                                                                                      |                           |
+| **Терминал**         | Kitty                                                                                                         | Alacritty, Konsole        |
+| **ИРО**              | VS Codium, VS Code, micro                                                                                     | Zed                       |
+| **Менаџер датотека** | Dolphin                                                                                                       | Thunar                    |
+| **Прегледач**        | Brave                                                                                                         | Firefox Developer Edition |
 
 ---
 
@@ -39,10 +37,9 @@
 > За `zsh` прво пратите овај [**туторијал**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**,**bottom**, **fish**, **cava**, **bat** и **starship** су за коришћење уз помоћ GNU STOW.
+> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**,**bottom**, **fish**, **cava**, **bat**, **mpv** и **starship** су за коришћење уз помоћ GNU STOW.
 
-> [!NOTE]
-> [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
+> [!NOTE] > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
 ---
 
@@ -93,7 +90,6 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
 
-
 > [!NOTE]
 > Нема разлике између ове **две скрипте** само је једна на **српском** језику а друга на **енглском** језику.
 > <br>
@@ -109,7 +105,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 ## 🐧 | Остало
 
 > [!NOTE]  
-> `ftn` - означава ***Факултет Техничких Наука***.
+> `ftn` - означава **_Факултет Техничких Наука_**.
 
 - `ftn.sh` - прилагођена скрипта која приказује да ли је недеља парна или непарна
 - `ftn.ps1` - прилагођена скрипта која приказује да ли је недеља парна или непарна (Windows)
@@ -135,8 +131,8 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🦇️ | `bat`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
-
 ## Ручно:
+
 - 🖥️ | [`kde`](kde/README.md) <= упутство
 - 🌐 | [`tabliss`](tabliss/README.md) <= упутство
 - 💬 | [`vencord`](vencord/README.md) <= упутство
@@ -152,24 +148,28 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🧰 | [`assets`](assets/) - слике и иконице и остало
 
 ## Остало
+
 - 📰 | [`cmd`](cmd/cmd.md) - Основне команде за Arch Linux
 
 ## 🛠️ Постављање
 
 1. Преузмите GNU Stow (Arch Linux):
+
    ```
    sudo pacman -S stow
    ```
 
 2. Клонирање:
+
    ```
    git clone https://github.com/crnobog69/dotfiles.git
    ```
 
 3. Примена конфигурација:
+
    ```
    cd ~/.dotfiles
-   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom cava bat
+   stow kitty-cat-green zed zsh fastfetch micro starship fish bottom cava bat mpv
    ```
 
    или (једно)
@@ -201,7 +201,6 @@ git pull
 - 🦀 | [pasters](https://github.com/crnobog69/pasters-terminal)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Творац/Ја](https://github.com/crnobog69)
-
 
 <br>
 
