@@ -23,7 +23,7 @@
 2. Кликнути на иконицу чупчаника
 3. Спустити се до дна
 4. На **Back up/Restore** секцији кликнути **Open**
-5. Кликнути **Import file** и изабрати датотеку или залепити садржај датотеке `spicetify-config.txt` у **Copy/paste your settings here** и кликнути **Import**
+5. Кликнути **Import file** и изабрати датотеку или залепити садржај датотеке `spicetify-config-<боја>.txt` у **Copy/paste your settings here** и кликнути **Import**
 
 🔗 Spicetify [овде](https://github.com/spicetify).
 
@@ -42,3 +42,9 @@
 
 🪐 Можете користити [*моју скрипту*](https://github.com/crnobog69/spicetify-bat-installer-autoupdater) за инсталирање `Spicetify` за `Windows`.
 
+---
+
+
+```
+sudo pacman -S spcetify-cli-marketplace
+```
