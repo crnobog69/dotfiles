@@ -18,7 +18,7 @@
 
 | Категорија           | Детаљи                                                                                                        | Друго                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| **ОС**               | Arch Linux (EndeavourOS)                                                                                      | Windows 11                |
+| **ОС**               | Arch Linux (Garuda Linux)                                                                                      | Windows 11                |
 | **РО**               | KDE Plasma 6.2                                                                                                | -                         |
 | **Иконице**          | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
 | **Композитор**       | Wayland                                                                                                       | -                         |
