@@ -37,11 +37,7 @@
 > За `zsh` прво пратите овај [**туторијал**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
 
 > [!NOTE]
-<<<<<<< HEAD
-> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**,**bottom**, **fish**, **cava**, **bat**, **mpv** и **starship** су за коришћење уз помоћ GNU STOW.
-=======
-> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat** и **starship** су за коришћење уз помоћ GNU STOW.
->>>>>>> 775d7edea6e347694db9b8ed61b59bf77e785533
+> Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** и **starship** су за коришћење уз помоћ GNU STOW.
 
 > [!NOTE] > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
