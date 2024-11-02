@@ -39,7 +39,8 @@
 > [!NOTE]
 > Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** и **starship** су за коришћење уз помоћ GNU STOW.
 
-> [!NOTE] > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
+> [!NOTE] 
+> [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
 ---
 
