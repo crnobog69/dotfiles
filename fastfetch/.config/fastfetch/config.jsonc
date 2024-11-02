@@ -10,12 +10,12 @@
         //    "4": "blue",
         //    "5": "green"
         //}
-        "source": "~/.config/fastfetch/aski1.txt",
+        "source": "~/.config/fastfetch/doom.txt",
         "type": "file",
         "height": 1,
         "width": 34,
         "padding": {
-            "top": 3,
+            "top": 1,
            "left": 4
         }
     },
