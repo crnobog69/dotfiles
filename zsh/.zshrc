@@ -72,6 +72,7 @@ alias pasters="~/dotfiles/scripts/pasters/pasters.py"
 alias ls='ls --color'
 alias neovim='nvim'
 alias vim='nvim'
+alias ls='lsd'
 
 # ALIAS -----------------------------------------------------
 
