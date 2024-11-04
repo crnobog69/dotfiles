@@ -18,7 +18,7 @@
 
 | Category         | Details                                                                                                  | Other                     |
 | ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------- |
-| **OS**           | Arch Linux (Garuda Linux)                                                                                 | Windows 11                |
+| **OS**           | Arch Linux (Garuda Linux)                                                                                | Windows 11                |
 | **DE**           | KDE Plasma 6.2                                                                                           | -                         |
 | **Icons**        | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
 | **Compositor**   | Wayland                                                                                                  | -                         |
@@ -55,6 +55,10 @@ chmod +x scripts/pkg-rs.sh
 
 ```
 chmod +x scripts/pkg-en.sh
+```
+
+```
+chmod +x scripts/kolo.sh
 ```
 
 ```
@@ -110,6 +114,7 @@ In [`scripts`](scripts).
 - `ftn.ps1` - a custom script that shows whether the week is even or odd. (Widnows)
 - [`vhs-en.sh`](scripts/vhs/README-en.md) - Video Processing Script (in `scripts/vhs`)
 - `pasters` - a script that uses the API of [paste.rs](https://paste.rs/)
+- [`kolo`](https://github.com/crnobog69/kolo) - Script for searching Arch Linux depositories (AUR included)
 
 ---
 
@@ -198,6 +203,7 @@ git pull
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
 - 📝 | [Notesnook](https://github.com/crnobog69/notesnook)
 - 🦀 | [pasters](https://github.com/crnobog69/pasters-terminal)
+- 📻 | [kolo](https://github.com/crnobog69/kolo)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Creator/Me](https://github.com/crnobog69)
 

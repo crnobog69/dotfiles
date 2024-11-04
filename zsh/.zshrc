@@ -1,6 +1,13 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
 
 
 
@@ -63,9 +70,14 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # ALIAS -----------------------------------------------------
 
+# EndeavourOS - ONLY
+
+alias azu='eos-update --aur'
+
+# -----------------------------------------------------------
+
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/scripts/ftn.sh"
-alias azu='eos-update --aur'
 alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
 alias pasters="~/dotfiles/scripts/pasters/pasters.py"
@@ -74,6 +86,7 @@ alias neovim='nvim'
 alias vim='nvim'
 alias lsd='lsd'
 alias ls='lsd -1'
+alias kolo='~/dotfiles/scripts/kolo.sh'
 
 # ALIAS -----------------------------------------------------
 

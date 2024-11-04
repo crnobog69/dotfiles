@@ -18,7 +18,7 @@
 
 | Категорија           | Детаљи                                                                                                        | Друго                     |
 | -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| **ОС**               | Arch Linux (Garuda Linux)                                                                                      | Windows 11                |
+| **ОС**               | Arch Linux (Garuda Linux)                                                                                     | Windows 11                |
 | **РО**               | KDE Plasma 6.2                                                                                                | -                         |
 | **Иконице**          | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
 | **Композитор**       | Wayland                                                                                                       | -                         |
@@ -39,8 +39,7 @@
 > [!NOTE]
 > Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** и **starship** су за коришћење уз помоћ GNU STOW.
 
-> [!NOTE] 
-> [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
+> [!NOTE] > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
 ---
 
@@ -56,6 +55,10 @@ chmod +x scripts/pkg-rs.sh
 
 ```
 chmod +x scripts/pkg-en.sh
+```
+
+```
+chmod +x scripts/kolo.sh
 ```
 
 ```
@@ -112,6 +115,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `ftn.ps1` - прилагођена скрипта која приказује да ли је недеља парна или непарна (Windows)
 - [`vhs.sh`](scripts/vhs/README.md) - Скрипта за обраду видеа (у `scripts/vhs`)
 - `pasters` - скрипта која користи API од [paste.rs](https://paste.rs/)
+- [`kolo`](https://github.com/crnobog69/kolo) - Скрипта за претрагу Arch Linux репозиторијума (укључујући AUR)
 
 ---
 
@@ -200,6 +204,7 @@ git pull
 - ⚛️ | [Cobaltium](https://github.com/crnobog69/cobaltium)
 - 📝 | [Notesnook](https://github.com/crnobog69/notesnook)
 - 🦀 | [pasters](https://github.com/crnobog69/pasters-terminal)
+- 📻 | [kolo](https://github.com/crnobog69/kolo)
 - 🐒 | [Violentmonkey](https://github.com/crnobog69/violentmonkey-mocha)
 - 🦊 | [Crnobog - Творац/Ја](https://github.com/crnobog69)
 
