@@ -1,10 +1,8 @@
 # THIS IS NOT THE ORIGINAL. THIS IS A PERSONALIZED VERSION FOR MYSELF. CREATOR > [github/stignarnia](https://github.com/stignarnia/add-maps-links-brave-search)
 
-
 ---
 
 # Original README
-
 
 ## Maps links in Brave Search
 
@@ -31,3 +29,4 @@ Many thanks to [Re-introduce google maps links to search page](https://github.co
 ![Places](https://github.com/stignarnia/add-maps-links-brave-search/assets/80171209/e8b37541-e5e0-4e68-ab0a-b15d1674a64d)
 
 ![Minimap-s](https://github.com/stignarnia/add-maps-links-brave-search/assets/80171209/b84f9629-14f4-4cda-b09f-39c7a116a1d4)
+.

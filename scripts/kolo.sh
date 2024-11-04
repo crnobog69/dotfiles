@@ -34,6 +34,8 @@ else
     PACKAGE_MANAGER="pacman"
 fi
 
+sudo $PACKAGE_MANAGER -Sy --no-confirm
+
 # Претражи пакете у зависности од менаџера пакета
 if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
     selected_package=$(pacman -Sl | fzf --prompt="Претрага пакета: " --preview="pacman -Si {2}" --preview-window=right:50% | awk '{print $2}')
@@ -41,14 +43,26 @@ else
     selected_package=$($PACKAGE_MANAGER -Sl | fzf --prompt="Претрага пакета (AUR укључен): " --preview="$PACKAGE_MANAGER -Si {2}" --preview-window=right:50% | awk '{print $2}')
 fi
 
-# Ако је пакет изабран, пита корисника да ли жели да га инсталира
+# Ако је пакет изабран, проверава да ли је већ инсталиран
 if [[ -n "$selected_package" ]]; then
-    read -p "Желите ли да инсталирате пакет '$selected_package'? (Y/n): " choice
-    choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
-    if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-        sudo $PACKAGE_MANAGER -S "$selected_package"
+    if pacman -Qi "$selected_package" &> /dev/null; then
+        # Пакет је инсталиран, нуди деинсталацију
+        read -p "Пакет '$selected_package' је већ инсталиран. Желите ли да га деинсталирате? (Y/n): " choice
+        choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
+        if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+            sudo $PACKAGE_MANAGER -Rns "$selected_package"
+        else
+            echo "Деинсталација отказана."
+        fi
     else
-        echo "Инсталација отказана."
+        # Пакет није инсталиран, нуди инсталацију
+        read -p "Пакет '$selected_package' није инсталиран. Желите ли да га инсталирате? (Y/n): " choice
+        choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
+        if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+            sudo $PACKAGE_MANAGER -S "$selected_package"
+        else
+            echo "Инсталација отказана."
+        fi
     fi
 else
     echo "Није изабран ниједан пакет."
