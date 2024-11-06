@@ -23,6 +23,9 @@ if [[ "$1" == "--aur" ]]; then
     USE_AUR=true
 fi
 
+# Додавање трапа за хапшење CTRL+C (SIGINT)
+trap "echo; echo 'Скрипта прекинута коришћењем CTRL+C.'; exit" SIGINT
+
 # Подешавање менаџера пакета
 if $USE_AUR; then
     PACKAGE_MANAGER=$(find_aur_helper)
