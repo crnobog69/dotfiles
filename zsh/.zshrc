@@ -95,8 +95,6 @@ export "MICRO_TRUECOLOR=1"
 
 export EDITOR="micro"
 
-eval "$(ssh-agent -s)"
-
 # Shell integrations
 eval "$(fzf --zsh)"
 
