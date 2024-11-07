@@ -87,6 +87,7 @@ alias vim='nvim'
 alias lsd='lsd'
 alias ls='lsd -1'
 alias kolo='~/dotfiles/scripts/kolo.sh'
+alias zed-'zeditor'
 
 # ALIAS -----------------------------------------------------
 

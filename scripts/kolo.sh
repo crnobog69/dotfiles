@@ -37,7 +37,7 @@ else
     PACKAGE_MANAGER="pacman"
 fi
 
-sudo $PACKAGE_MANAGER -Sy --no-confirm
+sudo $PACKAGE_MANAGER -Sy --noconfirm
 
 # Претражи пакете у зависности од менаџера пакета
 if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
