@@ -29,3 +29,5 @@ alias vim='lvim'
 eval "$(starship init bash)"
 
 eval "$(zoxide init bash)"
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
