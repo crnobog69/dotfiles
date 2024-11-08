@@ -72,11 +72,11 @@ symbol = "✗"
 
 [aws]
 symbol = " "
-style = "#fab387"
+style = "#e5c890"
 
 [conda]
 symbol = " "
-style = "#fab387"
+style = "#a6d189"
 
 [dart]
 symbol = " "
@@ -84,7 +84,7 @@ style = "#fab387"
 
 [docker_context]
 symbol = " "
-style = "#fab387"
+style = "#81c8be"
 
 [elixir]
 symbol = " "
@@ -100,7 +100,7 @@ style = "#b4befe"
 
 [golang]
 symbol = " "
-style = "#fab387"
+style = "#8aadf4"
 
 [hg_branch]
 symbol = " "
@@ -108,7 +108,7 @@ style = "#fab387"
 
 [java]
 symbol = " "
-style = "#fab387"
+style = "#ef9f76"
 
 [julia]
 symbol = " "
@@ -116,7 +116,7 @@ style = "#fab387"
 
 [nim]
 symbol = " "
-style = "#fab387"
+style = "#e5c890"
 
 [nix_shell]
 symbol = " "
@@ -124,7 +124,7 @@ style = "#fab387"
 
 [nodejs]
 symbol = " "
-style = "#fab387"
+style = "#a6da95"
 
 [package]
 symbol = " "
@@ -132,19 +132,19 @@ style = "#fab387"
 
 [perl]
 symbol = " "
-style = "#fab387"
+style = "#89dceb"
 
 [php]
 symbol = " "
-style = "#fab387"
+style = "#b4befe"
 
 [python]
 symbol = " "
-style = "#fab387"
+style = "#94e2d5"
 
 [ruby]
 symbol = " "
-style = "#fab387"
+style = "#d20f39"
 
 [rust]
 symbol = " "
@@ -153,3 +153,7 @@ style = "#fab387"
 [swift]
 symbol = "ﯣ "
 style = "#fab387"
+
+[c]
+symbol = " "
+style = "#8caaee"

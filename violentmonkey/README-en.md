@@ -100,6 +100,7 @@ Userscripts for ani/manga and other 🖥️🔧
 - 🛟 | [`AniListEnhancer+`](https://greasyfork.org/en/scripts/504859-anilistenhancer)
 - 🙂 | [`Animoji`](https://greasyfork.org/en/scripts/444181-animoji)
 - 📈 | [`AniList Unlimited - Score in Header`](https://greasyfork.org/en/scripts/404465-anilist-unlimited-score-in-header)
+- 📼 | [`Intro skipper`](https://greasyfork.org/en/scripts/33779-intro-skipper)
 
 <br>
 
