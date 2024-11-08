@@ -88,10 +88,12 @@ alias pasters="~/dotfiles/scripts/pasters/pasters.py"
 alias ls='ls --color'
 alias neovim='nvim'
 alias vim='nvim'
-alias lsd='lsd'
-alias ls='lsd -1'
 alias kolo='~/dotfiles/scripts/kolo.sh'
 alias zed-'zeditor'
+
+# ls | lsd
+# alias ls='lsd -1'
+alias ls='lsd --group-directories-first'
 
 # ALIAS -----------------------------------------------------
 
