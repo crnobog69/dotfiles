@@ -147,7 +147,7 @@ symbol = " "
 style = "#d20f39"
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
 style = "#fab387"
 
 [swift]

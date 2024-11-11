@@ -90,7 +90,13 @@ alias neovim='nvim'
 alias vim='nvim'
 alias kolo='~/dotfiles/scripts/kolo.sh'
 alias zed='zeditor'
+
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
+
+# DOOM / Eternal
+
+alias corrax='./dotfiles/scripts/corrax'
+alias doom='./dotfiles/scripts/doom'
 
 # ls | lsd
 # alias ls='lsd -1'
