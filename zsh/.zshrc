@@ -84,12 +84,13 @@ alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/scripts/ftn.sh"
 alias cmd='bat ~/dotfiles/cmd/cmd.md'
 alias catgit='brave https://github.com/catppuccin'
-alias pasters="~/dotfiles/scripts/pasters/pasters.py"
+alias pasters="cd dotfiles/scripts/pasters && python pasters.py"
 alias ls='ls --color'
 alias neovim='nvim'
 alias vim='nvim'
 alias kolo='~/dotfiles/scripts/kolo.sh'
-alias zed-'zeditor'
+alias zed='zeditor'
+# alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
 # ls | lsd
 # alias ls='lsd -1'
