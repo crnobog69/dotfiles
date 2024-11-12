@@ -22,7 +22,7 @@
 | **РО**               | KDE Plasma 6.2                                                                                                | -                         |
 | **Иконице**          | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
 | **Композитор**       | Wayland                                                                                                       | -                         |
-| **Шкољка**           | zsh (oh-my-zsh, Starship, Powerlevel10k тема\*)                                                               | fish, bash                |
+| **Шкољка**           | zsh (Starship, Zoxide, Zinit)                                                                                 | fish, bash                |
 | **Промт**            | Starship                                                                                                      |                           |
 | **Терминал**         | Kitty                                                                                                         | Alacritty, Konsole        |
 | **ИРО**              | VS Codium, VS Code, micro                                                                                     | Zed                       |
@@ -39,7 +39,8 @@
 > [!NOTE]
 > Само **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** и **starship** су за коришћење уз помоћ GNU STOW.
 
-> [!NOTE] > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
+> [!NOTE]
+> [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
 ---
 
