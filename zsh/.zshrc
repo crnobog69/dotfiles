@@ -71,6 +71,7 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':fzf-tab:complete:z:*' fzf-preview 'ls --color $realpath'
 
 # ALIAS -----------------------------------------------------
 
@@ -90,13 +91,14 @@ alias neovim='nvim'
 alias vim='nvim'
 alias kolo='~/dotfiles/scripts/kolo.sh'
 alias zed='zeditor'
+alias crc='~/dotfiles/scripts/crc.sh'
 
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
 # DOOM / Eternal
 
-alias corrax='./dotfiles/scripts/corrax'
-alias doom='./dotfiles/scripts/doom'
+alias corrax='~/dotfiles/scripts/corrax'
+alias doom='~/dotfiles/scripts/doom'
 
 # ls | lsd
 # alias ls='lsd -1'

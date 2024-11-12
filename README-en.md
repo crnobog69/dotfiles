@@ -66,6 +66,10 @@ chmod +x scripts/ftn.sh
 ```
 
 ```
+chmod +x scripts/crc.sh
+```
+
+```
 chmod +x push.sh
 ```
 
@@ -115,6 +119,7 @@ In [`scripts`](scripts).
 - [`vhs-en.sh`](scripts/vhs/README-en.md) - Video Processing Script (in `scripts/vhs`)
 - `pasters` - a script that uses the API of [paste.rs](https://paste.rs/)
 - [`kolo`](https://github.com/crnobog69/kolo) - Script for searching Arch Linux depositories (AUR included)
+- `crc.sh` - a customized script for compiling programs written in the `C` programming language using `gcc`
 
 ---
 

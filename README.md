@@ -66,6 +66,10 @@ chmod +x scripts/ftn.sh
 ```
 
 ```
+chmod +x scripts/crc.sh
+```
+
+```
 chmod +x push.sh
 ```
 
@@ -116,6 +120,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - [`vhs.sh`](scripts/vhs/README.md) - Скрипта за обраду видеа (у `scripts/vhs`)
 - `pasters` - скрипта која користи API од [paste.rs](https://paste.rs/)
 - [`kolo`](https://github.com/crnobog69/kolo) - Скрипта за претрагу Arch Linux репозиторијума (укључујући AUR)
+- `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `Ц` програмском језику уз помоћ `gcc`
 
 ---
 
