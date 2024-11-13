@@ -5,7 +5,8 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
-BLUE='\033[0;34m'
+PEACH='\033[38;2;250;183;135m'
+LAVANDER='\033[38;2;180;191;254m'
 RESET='\033[0m'
 
 # Проверимо да ли је аргумент прослеђен
@@ -20,30 +21,35 @@ fi
 if [ "$1" == "--help" ]; then
     echo "==================================================================="
     echo
-    echo -e "${RED}Алат за једноставно компајлирање програма написаних у 'C'.${RESET}"
+    echo -e "${RED} Алат за једноставно компајлирање програма написаних у 'C'.${RESET}"
     echo
-    echo -e "${CYAN}'crc.sh' Скрипта / Помоћ (Compile, Run, C)${RESET}"
+    echo -e "${CYAN} 'crc.sh'${RESET} ${RED}Скрипта | Помоћ${RESET} ${CYAN}(Compile, Run, C)${RESET}"
     echo
     echo "==================================================================="    
     echo
-    echo -e "${YELLOW}Коришћење:${RESET}"
-    echo -e "${BLUE}  ./crc.sh ime_datoteke.c додатне_опције${RESET}"
+    echo -e "${YELLOW} Коришћење:${RESET}"
     echo
-    echo -e "${YELLOW}Опис:${RESET}"
+    echo -e "${CYAN}   ./crc.sh${RESET} ${LAVANDER}ime_datoteke.c${RESET} ${PEACH}додатне_опције${RESET}"
+    echo
+    echo -e "${YELLOW} Опис:${RESET}"
+    echo
     echo "  Овај алат компајлира програме написане у C и поседује опцију"
     echo "  додавања библиотеке ако је потребно."
-    echo -e "${RED}  Пример 1:${RESET} ${BLUE}./crc.sh program.c${RESET}"
-    echo -e "${RED}  Пример 2:${RESET} ${BLUE}./crc.sh program.c -lm -lncurses${RESET}"
-    echo -e "${RED}  Пример 3:${RESET} ${BLUE}./crc.sh program.c -lm${RESET}"
+    echo
+    echo -e "${RED}  Пример 1:${RESET} ${CYAN}./crc.sh${RESET} ${LAVANDER}program.c${RESET}"
+    echo -e "${RED}  Пример 2:${RESET} ${CYAN}./crc.sh${RESET} ${LAVANDER}program.c${RESET} ${PEACH}-lm -lncurses${RESET}"
+    echo -e "${RED}  Пример 3:${RESET} ${CYAN}./crc.sh${RESET} ${LAVANDER}program.c${RESET} ${PEACH}-lm${RESET}"
     echo
     echo "==================================================================="
     echo
-    echo -e "${YELLOW}Додатне опције:${RESET}"
-    echo "  --help        Приказује ову помоћ."
-    echo "  -lm           Додаје математичку библиотеку."
-    echo "  -lncurses     Додаје библиотеку за рад са терминалом."
-    echo "  -lpthread     Додаје библиотеку за рад са нитима."
-    echo "  Или нека друга библиотека, исто као 'gcc'."
+    echo -e "${YELLOW} Додатне опције:${RESET}"
+    echo
+    echo -e "  ${PEACH}--help${RESET}        Приказује ову помоћ."
+    echo -e "  ${PEACH}-lm${RESET}           Додаје математичку библиотеку."
+    echo -e "  ${PEACH}-lncurses${RESET}     Додаје библиотеку за рад са терминалом."
+    echo -e "  ${PEACH}-lpthread${RESET}     Додаје библиотеку за рад са нитима."
+    echo
+    echo -e "  Или нека друга библиотека, исто као ${RED}'gcc'${RESET} компајлер."
     echo
     echo "==================================================================="
     exit 0
