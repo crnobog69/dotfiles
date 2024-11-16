@@ -3,6 +3,7 @@
 # Боје за излаз
 GREEN='\033[0;32m'
 RED='\033[0;31m'
+LAVANDER='\033[38;2;180;191;254m'
 NC='\033[0m' # Без боје
 
 # Провери да ли је инсталиран jq
@@ -41,37 +42,83 @@ show_packages_status() {
     done
 }
 
+# Функција која проверава да ли има неинсталираних пакета у категорији
+has_uninstalled_packages() {
+    local packages=("${!1}")
+    for package in "${packages[@]}"; do
+        if ! is_installed "$package" && ! is_aur_installed "$package"; then
+            return 0  # Постоји бар један неинсталиран пакет
+        fi
+    done
+    return 1  # Сви пакети су инсталирани
+}
+
+# Функција која пита корисника да ли жели да инсталира пакете из одређене категорије
+prompt_install_all() {
+    local package_type="$1"
+    read -rp "Да ли желите да инсталирате све пакете из категорије ${package_type}? [y/N]: " response
+    if [[ "$response" =~ ^[Yy]$ ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
 # Инсталирај пакете преко pacman-а
 install_pacman() {
     show_packages_status "Pacman" pacman_packages[@]
-    for package in "${pacman_packages[@]}"; do
-        if ! is_installed "$package"; then
-            echo -e "\n==> Инсталирање пакета: $package"
-            sudo pacman -S --needed --noconfirm "$package"
+    if has_uninstalled_packages pacman_packages[@]; then
+        if prompt_install_all "Pacman"; then
+            for package in "${pacman_packages[@]}"; do
+                if ! is_installed "$package"; then
+                    echo -e "\n==> Инсталирање пакета: $package"
+                    sudo pacman -S --needed --noconfirm "$package"
+                fi
+            done
+        else
+            echo -e "${RED}Прескакање инсталације Pacman пакета.${NC}"
         fi
-    done
+    else
+        echo -e "${LAVANDER}Сви Pacman пакети су већ инсталирани.${NC}"
+    fi
 }
 
 # Инсталирај пакете из chaotic-aur репозиторијума
 install_chaoticaur() {
     show_packages_status "Chaotic AUR" chaoticaur_packages[@]
-    for package in "${chaoticaur_packages[@]}"; do
-        if ! is_installed "$package"; then
-            echo -e "\n==> Инсталирање Chaotic AUR пакета: $package"
-            sudo pacman -S --needed --noconfirm chaotic-aur/"$package"
+    if has_uninstalled_packages chaoticaur_packages[@]; then
+        if prompt_install_all "Chaotic AUR"; then
+            for package in "${chaoticaur_packages[@]}"; do
+                if ! is_installed "$package"; then
+                    echo -e "\n==> Инсталирање Chaotic AUR пакета: $package"
+                    sudo pacman -S --needed --noconfirm chaotic-aur/"$package"
+                fi
+            done
+        else
+            echo -e "${RED}Прескакање инсталације Chaotic AUR пакета.${NC}"
         fi
-    done
+    else
+        echo -e "${LAVANDER}Сви Chaotic AUR пакети су већ инсталирани.${NC}"
+    fi
 }
 
 # Инсталирај AUR пакете преко yay-а
 install_yay() {
     show_packages_status "AUR" aur_packages[@]
-    for package in "${aur_packages[@]}"; do
-        if ! is_aur_installed "$package"; then
-            echo -e "\n==> Инсталирање AUR пакета: $package"
-            yay -S --needed --noconfirm "$package"
+    if has_uninstalled_packages aur_packages[@]; then
+        if prompt_install_all "AUR"; then
+            for package in "${aur_packages[@]}"; do
+                if ! is_aur_installed "$package"; then
+                    echo -e "\n==> Инсталирање AUR пакета: $package"
+                    yay -S --needed --noconfirm "$package"
+                fi
+            done
+        else
+            echo -e "${RED}Прескакање инсталације AUR пакета.${NC}"
         fi
-    done
+    else
+        echo -e "${LAVANDER}Сви AUR пакети су већ инсталирани.${NC}"
+    fi
 }
 
 # Учитај пакете из JSON датотеке користећи jq
@@ -84,11 +131,6 @@ load_packages() {
     pacman_packages=($(jq -r '.pacman[]' "$1"))
     chaoticaur_packages=($(jq -r '.chaoticaur[]' "$1"))
     aur_packages=($(jq -r '.aur[]' "$1"))
-
-    if [ ${#pacman_packages[@]} -eq 0 ] && [ ${#chaoticaur_packages[@]} -eq 0 ] && [ ${#aur_packages[@]} -eq 0 ]; then
-        echo -e "${RED}Ниједан пакет није учитан из '$1'.${NC}"
-        exit 1
-    fi
 }
 
 # Мени за кориснички избор
@@ -118,32 +160,12 @@ main() {
     show_menu
 
     case $choice in
-        1)
-            install_pacman
-            ;;
-        2)
-            install_pacman
-            install_chaoticaur
-            ;;
-        3)
-            check_yay
-            install_yay
-            ;;
-        4)
-            install_pacman
-            check_yay
-            install_yay
-            ;;
-        5)
-            install_pacman
-            install_chaoticaur
-            check_yay
-            install_yay
-            ;;
-        *)
-            echo -e "${RED}Погрешан избор.${NC}"
-            exit 1
-            ;;
+        1) install_pacman ;;
+        2) install_pacman; install_chaoticaur ;;
+        3) check_yay; install_yay ;;
+        4) install_pacman; check_yay; install_yay ;;
+        5) install_pacman; install_chaoticaur; check_yay; install_yay ;;
+        *) echo -e "${RED}Погрешан избор.${NC}"; exit 1 ;;
     esac
 }
 
