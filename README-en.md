@@ -23,7 +23,7 @@
 | **Icons**        | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
 | **Compositor**   | Wayland                                                                                                  | -                         |
 | **Shell**        | zsh (Starship, Zoxide, Zinit)                                                                            | fish, bash                |
-| **Промт**        | Starship                                                                                                 |                           |
+| **Промт**        | Starship                                                                                                 | -                         |
 | **Terminal**     | Kitty                                                                                                    | Alacritty, Konsole        |
 | **IDE**          | VS Codium, VS Code, micro                                                                                | Zed                       |
 | **File Manager** | Dolphin                                                                                                  | Thunar                    |
@@ -39,8 +39,7 @@
 > [!NOTE]
 > Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** and **starship** are to be used with GNU STOW.
 
-> [!NOTE]
-> [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
+> [!NOTE] > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
 ---
 
