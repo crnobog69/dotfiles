@@ -73,13 +73,27 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:z:*' fzf-preview 'ls --color $realpath'
 
-# ALIAS -----------------------------------------------------
+# Ажурирање -------------------------------------------------
+
+# ================================
 
 # EndeavourOS - ONLY
 
-alias azu='eos-update --aur'
+#alias azu-eos='eos-update --aur'
 
-# -----------------------------------------------------------
+# ================================
+
+# Garuda Linux - ONLY
+
+#alias azu-gar='garuda-update'
+
+# ================================
+
+# Универзало ажурирање
+
+alias zap='~/dotfiles/scripts/zap.sh'
+
+# ALIAS -----------------------------------------------------
 
 alias linutil="curl -fsSL https://christitus.com/linux | sh"
 alias ftn="~/dotfiles/scripts/ftn.sh"
@@ -92,6 +106,7 @@ alias vim='nvim'
 alias kolo='~/dotfiles/scripts/kolo.sh'
 alias zed='zeditor'
 alias crc='~/dotfiles/scripts/crc.sh'
+alias entropy='~/dotfiles/scripts/entropy.sh'
 
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
