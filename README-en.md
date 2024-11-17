@@ -146,18 +146,8 @@ In [`scripts`](scripts).
 
 ### Manual setup:
 
-- 🖥️ | [`kde`](kde/README.md) <= guide
-- 🌐 | [`tabliss`](tabliss/README.md) <= guide
-- 💬 | [`vencord`](vencord/README.md) <= guide
-- 🎵 | [`spicetify`](spicetify/README.md) <= guide
-- 🐇 | [`mangadex`](mangadex/README.md) <= guide
-- 🐈 | [`miruro`](miruro/README.md) <= guide
-- 🐒 | [`violentmonkey`](violentmonkey/README.md) <= guide
-- 🦊 | [`firefox`](firefox/README.md) <= guide
-- ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= guide
-- 🦁 | [`brave`](brave/README.md) <= guide
-- 📝 | [`notesnook`](notesnook/README-en.md)
-- 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [`cobaltium`](https://github.com/crnobog69/cobaltium))
+- Visit [`crnobog69/extra`](https://github.com/crnobog69/extra)
+
 - 🧰 | [`assets`](assets/) - images, icons and other
 
 ### Other
