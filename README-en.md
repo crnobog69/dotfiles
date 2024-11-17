@@ -86,9 +86,7 @@ In [`scripts`](scripts).
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
 
 > [!NOTE]
-> There is no difference between these **two scripts** except that one is in **Serbian** and the other is in **English**.
-> <br>
-> If you want to **add/remove** any **package/program**, just **open** the script (the script in the **language** of your choice) with a **text editor** of your choice and **edit it**.
+> The only difference is the language. To adjust, modify the file `scripts/packages.json`.
 
 ## 🔄 | Git
 
