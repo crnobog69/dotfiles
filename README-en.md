@@ -158,7 +158,7 @@ In [`scripts`](scripts).
 ## 🛠️ Setup
 
 > [!NOTE]
-> For `Tmux` you need to install: [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm), [`tmuxplugins/tmux-cpu`](https://github.com/tmux-plugins/tmux-cpu) and [`catppuccin/tmux`](https://github.com/catppuccin/tmux).
+> For `Tmux` you need to install: [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm), [`tmuxplugins/tmux-cpu`](https://github.com/tmux-plugins/tmux-cpu) and (optional) [`catppuccin/tmux`](https://github.com/catppuccin/tmux).
 
 1. Install GNU Stow (Arch Linux):
 

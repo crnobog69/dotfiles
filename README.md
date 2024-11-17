@@ -182,7 +182,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 ## 🛠️ Постављање
 
 > [!NOTE]
-> За постављане `Tmux` потребно је испратити: [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm), [`tmuxplugins/tmux-cpu`](https://github.com/tmux-plugins/tmux-cpu) и [`catppuccin/tmux`](https://github.com/catppuccin/tmux).
+> За постављане `Tmux` потребно је испратити: [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm), [`tmuxplugins/tmux-cpu`](https://github.com/tmux-plugins/tmux-cpu) и (опционално) [`catppuccin/tmux`](https://github.com/catppuccin/tmux).
 
 1. Преузмите GNU Stow (Arch Linux):
 
