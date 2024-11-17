@@ -36,7 +36,8 @@
 
 <br>
 
-> [!NOTE] > [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
+> [!NOTE]
+> Додатак за претраживач [brave-maps](brave-maps) - За сада само за [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) претраживаче
 
 ---
 

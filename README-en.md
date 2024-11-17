@@ -36,7 +36,8 @@
 
 <br>
 
-> [!NOTE] > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
+> [!NOTE]
+> Browser extension[brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
 ---
 
