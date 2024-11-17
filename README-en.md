@@ -120,13 +120,21 @@ In [`scripts`](scripts).
 - 🖋️ | `micro` (Mocha Transparent, Mocha)
 - ⚡ | `zed`
 - 🐚 | `zsh`
+- 🐚 | `bash`
+- 🐟 | `fish`
 - 🖼️ | `fastfetch`
 - 🌴 | `alacritty`
 - 🚀 | `starship`
-- 🐟 | `fish`
 - 🥺 | `bottom`
 - 📢 | `cava`
 - 🦇️ | `bat`
+- 🏆 | `btop`
+- 🏖️ | `rio`
+- 🦆 | `yazi`
+- 🔄 | `apdatifier`
+- 🌈 | `lsd`
+- 🎥 | `mpv`
+- ⚙️ | `nvim`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ## Manual setup:
