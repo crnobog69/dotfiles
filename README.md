@@ -88,7 +88,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
 
 > [!NOTE]
-> Разлика је само у језику. За прилагођавање изменити датотетку `scripts/packages.json`
+> Разлика је само у језику. За прилагођавање изменити датотетку [`scripts/packages.json`](scripts/packages.json).
 
 ## 🔄 | Git
 

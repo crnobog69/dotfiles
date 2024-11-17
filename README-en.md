@@ -87,7 +87,7 @@ In [`scripts`](scripts).
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
 
 > [!NOTE]
-> The only difference is the language. To adjust, modify the file `scripts/packages.json`.
+> The only difference is the language. To adjust, modify the file [`scripts/packages.json`](scripts/packages.json).
 
 ## 🔄 | Git
 
