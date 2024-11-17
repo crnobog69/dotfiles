@@ -8,9 +8,9 @@
 
 # Table of Contents:
 
-- ## 📜 | [Scripts](#scripts)
-- ## 🗼 | [Personal configuration files | Gnu Stow](#personal-configuration-files)
-- ## 🪐 | [Other](#other)
+- ### 📜 | [Scripts](#scripts)
+- ###🗼 | [Personal configuration files | Gnu Stow](#personal-configuration-files)
+- ### 🪐 | [Other](#other)
 
 ---
 
