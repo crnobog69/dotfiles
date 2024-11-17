@@ -214,7 +214,7 @@ git pull
 
 <br>
 
-Репозиторијуми (Dotfiles):
+#### Репозиторијуми (Dotfiles):
 
 🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/dotfiles)
 
@@ -224,7 +224,7 @@ git pull
 
 <br>
 
-Репозиторијуми (Extra):
+#### Репозиторијуми (Extra):
 
 🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/extra)
 

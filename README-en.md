@@ -210,7 +210,7 @@ git pull
 
 <br>
 
-Repositories (Dotfiles):
+#### Repositories (Dotfiles):
 
 🐙 | [`Github | Repository`](https://github.com/crnobog69/dotfiles)
 
@@ -220,7 +220,7 @@ Repositories (Dotfiles):
 
 <br>
 
-Repositories (Extra):
+#### Repositories (Extra):
 
 🐙 | [`Github | Repository`](https://github.com/crnobog69/extra)
 
