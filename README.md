@@ -48,6 +48,7 @@
 Прво морате да дате дозволу скрипти/ама:
 
 ```
+cd dotfiles
 chmod +x scripts/pkg-rs.sh
 chmod +x scripts/pkg-en.sh
 chmod +x scripts/kolo.sh
@@ -62,7 +63,7 @@ chmod +x pull.sh
 /
 
 ```
-chmod +x scripts/pkg-rs.sh scripts/pkg-en.sh scripts/kolo.sh scripts/ftn.sh scripts/crc.sh scripts/entropy.sh scripts/zap.sh push.sh pull.sh
+cd dotfiles && chmod +x scripts/pkg-rs.sh scripts/pkg-en.sh scripts/kolo.sh scripts/ftn.sh scripts/crc.sh scripts/entropy.sh scripts/zap.sh push.sh pull.sh
 
 ```
 

@@ -36,7 +36,12 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-zinit load atuinsh/atuin
+zinit light atuinsh/atuin
+
+#zinit ice as"command" from"gh-r" \
+#          atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+#          atpull"%atclone" src"init.zsh"
+#zinit light starship/starship
 
 # Load completions
 autoload -Uz compinit && compinit
