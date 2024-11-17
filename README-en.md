@@ -142,6 +142,7 @@ In [`scripts`](scripts).
 - 🌈 | `lsd`
 - 🎥 | `mpv`
 - ⚙️ | `nvim`
+- 💽 | `tmux`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ### Manual setup:
@@ -155,6 +156,9 @@ In [`scripts`](scripts).
 - 📰 | [`cmd`](cmd/cmd-en.md) - Basic Commands for Arch Linux
 
 ## 🛠️ Setup
+
+> [!NOTE]
+> For `Tmux` you need to install: [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm), [`tmuxplugins/tmux-cpu`](https://github.com/tmux-plugins/tmux-cpu) and [`catppuccin/tmux`](https://github.com/catppuccin/tmux).
 
 1. Install GNU Stow (Arch Linux):
 

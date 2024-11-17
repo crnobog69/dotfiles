@@ -166,6 +166,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🌈 | `lsd`
 - 🎥 | `mpv`
 - ⚙️ | `nvim`
+- 💽 | `tmux`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ### Ручно:
@@ -180,6 +181,9 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 
 ## 🛠️ Постављање
 
+> [!NOTE]
+> За постављане `Tmux` потребно је испратити: [`tmux-plugins/tpm`](https://github.com/tmux-plugins/tpm), [`tmuxplugins/tmux-cpu`](https://github.com/tmux-plugins/tmux-cpu) и [`catppuccin/tmux`](https://github.com/catppuccin/tmux).
+
 1. Преузмите GNU Stow (Arch Linux):
 
    ```
@@ -190,6 +194,12 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 
    ```
    git clone https://github.com/crnobog69/dotfiles.git
+   ```
+
+   /
+
+   ```
+   git clone https://codeberg.org/crnobog/dotfiles.git && git clone https://github.com/crnobog69/extra.git
    ```
 
 3. Примена конфигурација:
