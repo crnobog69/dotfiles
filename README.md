@@ -1,10 +1,20 @@
+<div align="center">
+
 # 🪐 Dotfiles (GNU STOW)
+
+</div>
+
+<div align="center">
 
 ---
 
 [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
 
 ---
+
+</div>
+
+</div>
 
 <br>
 
