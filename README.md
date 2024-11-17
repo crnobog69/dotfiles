@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🪐 Dotfiles (GNU STOW)
+# 🪐 | Dotfiles (GNU STOW)
 
 </div>
 
