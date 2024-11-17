@@ -36,9 +36,6 @@
 
 <br>
 
-> [!IMPORTANT]
-> For `zsh` first follow this [**tutorial**](https://www.youtube.com/watch?v=ud7YxC33Z3w).
-
 > [!NOTE]
 > Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** and **starship** are to be used with GNU STOW.
 
