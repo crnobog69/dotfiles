@@ -6,10 +6,10 @@
 
 ---
 
-# Table of Contents:
+## Table of Contents:
 
 - ### 📜 | [Scripts](#scripts)
-- ###🗼 | [Personal configuration files | Gnu Stow](#personal-configuration-files)
+- ### 🗼 | [Personal configuration files | Gnu Stow](#personal-configuration-files)
 - ### 🪐 | [Other](#other)
 
 ---
@@ -41,9 +41,9 @@
 
 ---
 
-# Scripts:
+## Scripts:
 
-## Linux
+### Linux
 
 You need to give permission to script(s):
 
@@ -66,38 +66,38 @@ chmod +x pull.sh
 cd dotfiles && chmod +x scripts/pkg-rs.sh scripts/pkg-en.sh scripts/kolo.sh scripts/ftn.sh scripts/crc.sh scripts/entropy.sh scripts/zap.sh push.sh pull.sh
 ```
 
-## Windows
+### Windows
 
-### Power Shell
+#### Power Shell
 
 ```
 Set-ExecutionPolicy RemoteSigned
 ```
 
-### CMD (Admininstrator)
+#### CMD (Admininstrator)
 
 ```
 powershell -Command "Set-ExecutionPolicy RemoteSigned"
 ```
 
-## 📦 | Packages
+### 📦 | Packages
 
 In [`scripts`](scripts).
 
-- 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
+- 🇷🇸 | `pkg.sh` - листа пакета/програма које користим
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
 
 > [!NOTE]
 > The only difference is the language. To adjust, modify the file [`scripts/packages.json`](scripts/packages.json).
 
-## 🔄 | Git
+### 🔄 | Git
 
 - `push.sh` - customized `pull`/`push` script for my `dotfiles`
 - `pull.sh` - customized `pull` script for my `dotfiles`
 - `push.ps1` - customized `pull`/`push` script (Windows)
 - `pull.ps1` - customized `pull` script (Windows)
 
-## 🐧 | Other
+### 🐧 | Other
 
 > [!NOTE] > `ftn.` - stand for **_Faculty of Technical Sciences_**.
 
@@ -112,9 +112,9 @@ In [`scripts`](scripts).
 
 ---
 
-# Personal configuration files:
+## Personal configuration files:
 
-## `GNU Stow`
+### `GNU Stow`
 
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
 - 🖋️ | `micro` (Mocha Transparent, Mocha)
@@ -131,13 +131,12 @@ In [`scripts`](scripts).
 - 🏆 | `btop`
 - 🏖️ | `rio`
 - 🦆 | `yazi`
-- 🔄 | `apdatifier`
 - 🌈 | `lsd`
 - 🎥 | `mpv`
 - ⚙️ | `nvim`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
-## Manual setup:
+### Manual setup:
 
 - 🖥️ | [`kde`](kde/README.md) <= guide
 - 🌐 | [`tabliss`](tabliss/README.md) <= guide
@@ -153,7 +152,7 @@ In [`scripts`](scripts).
 - 🗺️ | [`brave-maps`](https://github.com/crnobog69/cobaltium) <= guide (same as [`cobaltium`](https://github.com/crnobog69/cobaltium))
 - 🧰 | [`assets`](assets/) - images, icons and other
 
-## Other
+### Other
 
 - 📰 | [`cmd`](cmd/cmd-en.md) - Basic Commands for Arch Linux
 
@@ -185,7 +184,7 @@ In [`scripts`](scripts).
    stow zed
    ```
 
-## 🔄 Updating
+### 🔄 Updating
 
 ```
 cd ~/.dotfiles
@@ -194,7 +193,7 @@ git pull
 
 ---
 
-# Other
+## Other
 
 - 😺 | [Catppuccin](https://github.com/catppuccin)
 - 🗼 | [Tokyo Night](https://github.com/tokyo-night)
@@ -211,13 +210,23 @@ git pull
 
 <br>
 
-Repositories:
+Repositories (Dotfiles):
 
 🐙 | [`Github | Repository`](https://github.com/crnobog69/dotfiles)
 
 🏔️ | [`Codeberg | Repository`](https://codeberg.org/crnobog/dotfiles)
 
 🦊 | [`GitLab Repository`](https://gitlab.com/crnobog/dotfiles)
+
+<br>
+
+Repositories (Extra):
+
+🐙 | [`Github | Repository`](https://github.com/crnobog69/extra)
+
+🏔️ | [`Codeberg | Repository`](https://codeberg.org/crnobog/extra)
+
+🦊 | [`GitLab Repository`](https://gitlab.com/crnobog/extra)
 
 <br>
 

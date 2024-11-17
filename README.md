@@ -6,10 +6,12 @@
 
 ---
 
-# Табела садржаја:
+## Табела садржаја:
 
 - ### 📜 | [Скрипте](#скрипте)
+
 - ### 🗼 | [Личне конфигурацијске датотеке | GNU Stow](#личне-конфигурацијске-датотеке)
+
 - ### 🪐 | [Остало](#остало)
 
 ---
@@ -43,7 +45,7 @@
 
 # Скрипте:
 
-## Linux
+### Linux
 
 Прво морате да дате дозволу скрипти/ама:
 
@@ -67,38 +69,38 @@ cd dotfiles && chmod +x scripts/pkg-rs.sh scripts/pkg-en.sh scripts/kolo.sh scri
 
 ```
 
-## Windows
+### Windows
 
-### Power Shell
+#### Power Shell
 
 ```
 Set-ExecutionPolicy RemoteSigned
 ```
 
-### CMD (Админинстратор)
+#### CMD (Админинстратор)
 
 ```
 powershell -Command "Set-ExecutionPolicy RemoteSigned"
 ```
 
-## 📦 | Пакети
+### 📦 | Пакети
 
 У [`scripts`](scripts).
 
-- 🇷🇸 | `pkg-rs.sh` - листа пакета/програма које користим
+- 🇷🇸 | `pkg.sh` - листа пакета/програма које користим
 - 🇬🇧 | `pkg-en-sh` - list of packages/programs I use
 
 > [!NOTE]
 > Разлика је само у језику. За прилагођавање изменити датотетку [`scripts/packages.json`](scripts/packages.json).
 
-## 🔄 | Git
+### 🔄 | Git
 
 - `push.sh` - прилагођена `pull`/`push` скрипта за моје `dotfiles`
 - `pull.sh` - прилагођена `pull` скрипта за моје `dotfiles`
 - `push.ps1` - прилагођена `pull`/`push` скрипта (Windows)
 - `pull.ps1` - прилагођена `pull` скрипта (Windows)
 
-## 🐧 | Остало
+### 🐧 | Остало
 
 > [!NOTE]  
 > `ftn` - означава **_Факултет Техничких Наука_**.
@@ -108,15 +110,15 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - [`vhs.sh`](scripts/vhs/README.md) - Скрипта за обраду видеа (у `scripts/vhs`)
 - `pasters` - скрипта која користи API од [paste.rs](https://paste.rs/)
 - [`kolo`](https://github.com/crnobog69/kolo) - Скрипта за претрагу Arch Linux репозиторијума (укључујући AUR)
-- `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `Ц` програмском језику уз помоћ `gcc`
+- `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `C` програмском језику уз помоћ `gcc`
 - `entropy.sh` - прилагођена скрипта за чишћење система
 - `zap.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
 
 ---
 
-# Личне конфигурацијске датотеке:
+## Личне конфигурацијске датотеке:
 
-## `GNU Stow`
+### `GNU Stow`
 
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
 - 🖋️ | `micro` (Mocha Transparent, Mocha)
@@ -133,13 +135,12 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🏆 | `btop`
 - 🏖️ | `rio`
 - 🦆 | `yazi`
-- 🔄 | `apdatifier`
 - 🌈 | `lsd`
 - 🎥 | `mpv`
 - ⚙️ | `nvim`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
-## Ручно:
+### Ручно:
 
 - 🖥️ | [`kde`](kde/README.md) <= упутство
 - 🌐 | [`tabliss`](tabliss/README.md) <= упутство
@@ -152,10 +153,10 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - ⚛️ | [`cobaltium`](https://github.com/crnobog69/cobaltium) <= упутство
 - 🦁 | [`brave`](brave/README.md) <= упутство
 - 🗺️ | [`brave-maps`](brave-maps) <= упутство (исто као [`cobaltium`](https://github.com/crnobog69/cobaltium))
-- 📝 | [`notesnook`](notesnook/README.md)
+- 📝 | [`notesnook`](notesnook/README.md) <= упутство
 - 🧰 | [`assets`](assets/) - слике и иконице и остало
 
-## Остало
+### Остало
 
 - 📰 | [`cmd`](cmd/cmd.md) - Основне команде за Arch Linux
 
@@ -187,7 +188,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
    stow zed
    ```
 
-## 🔄 Ажурирање
+### 🔄 Ажурирање
 
 ```
 cd ~/.dotfiles
@@ -196,7 +197,7 @@ git pull
 
 ---
 
-# Остало
+## Остало
 
 - 😺 | [Catppuccin](https://github.com/catppuccin)
 - 🗼 | [Tokyo Night](https://github.com/tokyo-night)
@@ -213,13 +214,23 @@ git pull
 
 <br>
 
-Репозиторијуми:
+Репозиторијуми (Dotfiles):
 
 🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/dotfiles)
 
 🏔️ | [`Codeberg | Репозиторијум`](https://codeberg.org/crnobog/dotfiles)
 
 🦊 | [`GitLab | Репозиторијум`](https://gitlab.com/crnobog/dotfiles)
+
+<br>
+
+Репозиторијуми (Extra):
+
+🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/extra)
+
+🏔️ | [`Codeberg | Репозиторијум`](https://codeberg.org/crnobog/extra)
+
+🦊 | [`GitLab | Репозиторијум`](https://gitlab.com/crnobog/extra)
 
 <br>
 
