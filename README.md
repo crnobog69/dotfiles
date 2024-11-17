@@ -27,6 +27,8 @@
 </p>
 </div>
 
+![](assets/fastfetch-doom.png)<br/><br/>
+
 ---
 
 ## Табела садржаја:
