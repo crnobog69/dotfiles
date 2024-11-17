@@ -37,9 +37,7 @@
 <br>
 
 > [!NOTE]
-> Only **kitty**, **micro**, **zed**, **zsh**, **fastfetch**, **alacritty**, **transparency.toggle**, **plasmusic-toolbar**, **zayron.simple.separator**, **apdatifier**, **bottom**, **fish**, **cava**, **bat**, **mpv**, **yazi**, **nvim** and **starship** are to be used with GNU STOW.
-
-> [!NOTE] > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
+> [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
 ---
 
@@ -135,7 +133,7 @@ In [`scripts`](scripts).
 
 # Personal configuration files:
 
-`GNU Stow`
+## `GNU Stow`
 
 - 😺 | `kitty` (Mocha Green, Mocha Purple, Tokyo Night)
 - 🖋️ | `micro` (Mocha Transparent, Mocha)
