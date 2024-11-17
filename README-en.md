@@ -36,8 +36,7 @@
 
 <br>
 
-> [!NOTE]
-> [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
+> [!NOTE] > [brave-maps](brave-maps) - For now only for [`Chromium`](https://alternativeto.net/category/browsers/chromium-based/) browsers
 
 ---
 
@@ -49,38 +48,20 @@ You need to give permission to script(s):
 
 ```
 chmod +x scripts/pkg-rs.sh
-```
-
-```
 chmod +x scripts/pkg-en.sh
-```
-
-```
 chmod +x scripts/kolo.sh
-```
-
-```
 chmod +x scripts/ftn.sh
-```
-
-```
 chmod +x scripts/crc.sh
-```
-
-```
 chmod +x scripts/entropy.sh
-```
-
-```
 chmod +x scripts/zap.sh
-```
-
-```
 chmod +x push.sh
+chmod +x pull.sh
 ```
 
+/
+
 ```
-chmod +x pull.sh
+chmod +x scripts/pkg-rs.sh scripts/pkg-en.sh scripts/kolo.sh scripts/ftn.sh scripts/crc.sh scripts/entropy.sh scripts/zap.sh push.sh pull.sh
 ```
 
 ## Windows
