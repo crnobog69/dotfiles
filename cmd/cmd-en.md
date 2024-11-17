@@ -2,17 +2,29 @@
 
 ---
 
-  [Српски (🇷🇸)](cmd.md) | [English (🇬🇧)](cmd-en.md)
+[Српски (🇷🇸)](cmd.md) | [English (🇬🇧)](cmd-en.md)
 
 ---
 
 ## Navigation Commands
+
 - **`cd directory_name`** - Change to a directory.
 - **`cd ..`** - Go back to the parent directory.
 - **`cd ~`** - Change to the home directory.
 - **`pwd`** - Displays the current directory path.
 
+## Kitty Terminal (Horizontal Division)
+
+- **`Ctrl + Shift + e`** - Horizontal Division
+- **`Ctrl + Shift + Enter`** - Horizontal Division
+- **`Ctrl + Shift + s`** - Rotate the window
+- **`Ctrl + left_arrow`** - Previous window
+- **`Ctrl + right_arrow`** - Next window
+- **`Ctrl + up_arrow`** - Top window
+- **`Ctrl + down_arrow`** - Bottom window
+
 ## File and Directory Management
+
 - **`mkdir directory_name`** - Create a new directory.
 - **`touch file_name`** - Create an empty file.
 - **`rm file_name`** - Remove a file.
@@ -37,14 +49,15 @@
 - **`yay -Rns package_name`** - Remove a package with `yay`.
 - **`yay -Ss package_name`** - Search for a packagewith `yay` .
 
-
 ## Service Management
+
 - **`sudo systemctl start service_name`** - Start a service.
 - **`sudo systemctl stop service_name`** - Stop a service.
 - **`systemctl status service_name`** - Check the status of a service.
 - **`sudo systemctl enable service_name`** - Enable a service to start automatically.
 
 ## Bluetooth Management
+
 - **`sudo systemctl start bluetooth.service`** - Start the Bluetooth service.
 - **`sudo systemctl stop bluetooth.service`** - Stop the Bluetooth service.
 - **`sudo systemctl enable bluetooth.service`** - Enable the Bluetooth service to start automatically.
@@ -55,6 +68,7 @@
   - **`pair [MAC address]`** - Pair with a device.
 
 ## Other Commands
+
 - **`ncdu`** - Displays disk usage (install it with `sudo pacman -S ncdu`).
 - **`df -h`** - Check disk space.
 - **`free -h`** - Check memory.
@@ -64,13 +78,43 @@
 - **`btm`** - Cross-platform graphical process/system monitor. (install it with `sudo pacman -S bottom`)
 - **`fzf`** A command-line fuzzy finder (install it with `sudo pacman -S fzf`)
   - **`CTRL + T`** - Activates `fzf` for any commands
-  /
-  - **`any_command ** + TAB`** - Write `**` (two asterisk) and press `TAB` and it will activate `fzf`
+    /
+  - **`any_command ** + TAB`** - Write `\*\*`(two asterisk) and press`TAB`and it will activate`fzf`
   - **`CTRL + R`** - `fzf` history
 - **`bat`** - `cat` цлоне with syntax highlighting - a terminal file viewer (install it with `sudo pacman -S bat`)
 - **`fuck`** - if a command is misstyped, by typing the `fuck` command, the command will be correctly written
-  
-## Custom Commands
-- **`ftn`** - Custom script that shows whether the week is even or odd.
-- **`azu`** - Shortcut for `eos-update --aur`.
-- **`linutil`** - Utility for Linux systems by Chris Titus from GitHub - [`ChrisTitusTech/linutil`](https://github.com/ChrisTitusTech/linutil).
+- **`linutil`** - Utility for Linux systems by Chris Titus from GitHub - [`ChrisTitusTech/linutil`](https://github.com/ChrisTitusTech/linutil)
+- **`ftn`** - Custom script that shows whether the week is even or odd
+- **`cmd`** - Opens the `cmd.md` file in `bat` viewer with syntax highlighting
+- **`catgit`** - Opens the Catppuccin GitHub page in Brave browser
+- **`pasters`** - Script that uses the API of [paste.rs](https://paste.rs/)
+- **`neovim`** / **`vim`** - Launches `nvim`, an alternative to Vim
+- **`kolo`** - Script for searching Arch Linux depositories (AUR included)
+- **`zed`** - Launches Zed Exitor
+- **`crc`** - Custom script for compiling programs written in the `C` programming language using `gcc`
+- **`entropy`** - Custom script for system cleanup
+- **`gzdoom`** - Launches GZDoom
+  - **`gzdoom name_of_wad`** - Launches GZDoom with WAD from `name_of_wad`
+  - **`gzdoom name_of_pk3`** - Launches GZDoom with PK3 from `name_of_pk3`
+
+## Commands for updating
+
+- **`azu-eos`** - Update EndeavourOS with AUR
+
+### Garuda Linux
+
+- **`azu-gar`** - Update Garuda Linux
+
+### Universal update
+
+- **`zap`** - Custom script for updating the system with support for multiple operating systems
+
+## DOOM / Eternal
+
+- **`corrax`** - Mysterious program
+- **`doom`** - Launches the program that displays DOOM Ghost
+
+## Commands for `ls` / `lsd`
+
+- **`ls`** - Displays the content of directories with grouping of directories first, using `lsd --group-directories-first`.
+- **`ls`** - Displays the content of directories with colors using `ls --color`.

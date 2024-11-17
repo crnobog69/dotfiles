@@ -84,13 +84,13 @@ zstyle ':fzf-tab:complete:z:*' fzf-preview 'ls --color $realpath'
 
 # EndeavourOS - ONLY
 
-#alias azu-eos='eos-update --aur'
+alias azu-eos='eos-update --aur'
 
 # ================================
 
 # Garuda Linux - ONLY
 
-#alias azu-gar='garuda-update'
+alias azu-gar='garuda-update'
 
 # ================================
 
