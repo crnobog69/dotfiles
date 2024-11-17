@@ -28,6 +28,9 @@
 </div>
 
 ![](assets/fastfetch-doom.png)<br/><br/>
+![](assets/image-1.png)<br/><br/>
+![](assets/image-2.png)<br/><br/>
+![](assets/image-3.png)<br/><br/>
 
 ---
 
