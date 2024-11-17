@@ -262,7 +262,7 @@ git pull
 
 <br>
 
-#### Репозиторијум (dotwin | Windows):
+#### Репозиторијуми (dotwin | Windows):
 
 🐙 | [`Github | Репозиторијум`](https://github.com/crnobog69/dotwin)
 

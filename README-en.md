@@ -232,7 +232,7 @@ git pull
 
 <br>
 
-#### Repository (dotwin | Windows):
+#### Repositories (dotwin | Windows):
 
 🐙 | [`Github | Repository`](https://github.com/crnobog69/dotwin)
 
