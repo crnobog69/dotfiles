@@ -14,20 +14,23 @@
 
 ---
 
-# 🐧
+<details>
+  <summary>🐧 | Конфигурација рачзнара</summary>
+  
+  | Категорија           | Детаљи                                                                                                        | Друго                     |
+  | -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
+  | **ОС**               | Arch Linux (Garuda Linux)                                                                                     | Windows 11                |
+  | **РО**               | KDE Plasma 6.2                                                                                                | -                         |
+  | **Иконице**          | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
+  | **Композитор**       | Wayland                                                                                                       | -                         |
+  | **Шкољка**           | zsh (Starship, Zoxide, Zinit)                                                                                 | fish, bash                |
+  | **Промт**            | Starship                                                                                                      | -                         |
+  | **Терминал**         | Kitty                                                                                                         | Alacritty, Konsole        |
+  | **ИРО**              | VS Codium, VS Code, micro                                                                                     | Zed                       |
+  | **Менаџер датотека** | Dolphin                                                                                                       | Thunar                    |
+  | **Прегледач**        | Brave                                                                                                         | Firefox Developer Edition |
 
-| Категорија           | Детаљи                                                                                                        | Друго                     |
-| -------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| **ОС**               | Arch Linux (Garuda Linux)                                                                                     | Windows 11                |
-| **РО**               | KDE Plasma 6.2                                                                                                | -                         |
-| **Иконице**          | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
-| **Композитор**       | Wayland                                                                                                       | -                         |
-| **Шкољка**           | zsh (Starship, Zoxide, Zinit)                                                                                 | fish, bash                |
-| **Промт**            | Starship                                                                                                      | -                         |
-| **Терминал**         | Kitty                                                                                                         | Alacritty, Konsole        |
-| **ИРО**              | VS Codium, VS Code, micro                                                                                     | Zed                       |
-| **Менаџер датотека** | Dolphin                                                                                                       | Thunar                    |
-| **Прегледач**        | Brave                                                                                                         | Firefox Developer Edition |
+</details>
 
 ---
 
@@ -67,6 +70,14 @@ chmod +x scripts/ftn.sh
 
 ```
 chmod +x scripts/crc.sh
+```
+
+```
+chmod +x scripts/entropy.sh
+```
+
+```
+chmod +x scripts/zap.sh
 ```
 
 ```
@@ -121,6 +132,8 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `pasters` - скрипта која користи API од [paste.rs](https://paste.rs/)
 - [`kolo`](https://github.com/crnobog69/kolo) - Скрипта за претрагу Arch Linux репозиторијума (укључујући AUR)
 - `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `Ц` програмском језику уз помоћ `gcc`
+- `entropy.sh` - прилагођена скрипта за чишћење система
+- `zap.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
 
 ---
 

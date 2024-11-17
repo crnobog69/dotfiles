@@ -14,7 +14,8 @@
 
 ---
 
-# 🐧
+<details>
+  <summary>🐧 | PC Configuration</summary>
 
 | Category         | Details                                                                                                  | Other                     |
 | ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------- |
@@ -28,6 +29,8 @@
 | **IDE**          | VS Codium, VS Code, micro                                                                                | Zed                       |
 | **File Manager** | Dolphin                                                                                                  | Thunar                    |
 | **Browser**      | Brave                                                                                                    | Firefox Developer Edition |
+
+</details>
 
 ---
 
@@ -67,6 +70,14 @@ chmod +x scripts/ftn.sh
 
 ```
 chmod +x scripts/crc.sh
+```
+
+```
+chmod +x scripts/entropy.sh
+```
+
+```
+chmod +x scripts/zap.sh
 ```
 
 ```
@@ -120,6 +131,8 @@ In [`scripts`](scripts).
 - `pasters` - a script that uses the API of [paste.rs](https://paste.rs/)
 - [`kolo`](https://github.com/crnobog69/kolo) - Script for searching Arch Linux depositories (AUR included)
 - `crc.sh` - a customized script for compiling programs written in the `C` programming language using `gcc`
+- `entropy.sh` - customized script for system cleanup
+- `zap.sh` - customized script for system update with support for multiple operating systems
 
 ---
 
