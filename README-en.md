@@ -17,18 +17,18 @@
 <details>
   <summary>🐧 | PC Configuration</summary>
 
-| Category         | Details                                                                                                  | Other                     |
-| ---------------- | -------------------------------------------------------------------------------------------------------- | ------------------------- |
-| **OS**           | Arch Linux (Garuda Linux)                                                                                | Windows 11                |
-| **DE**           | KDE Plasma 6.2                                                                                           | -                         |
-| **Icons**        | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) | -                         |
-| **Compositor**   | Wayland                                                                                                  | -                         |
-| **Shell**        | zsh (Starship, Zoxide, Zinit)                                                                            | fish, bash                |
-| **Промт**        | Starship                                                                                                 | -                         |
-| **Terminal**     | Kitty                                                                                                    | Alacritty, Konsole        |
-| **IDE**          | VS Codium, VS Code, micro                                                                                | Zed                       |
-| **File Manager** | Dolphin                                                                                                  | Thunar                    |
-| **Browser**      | Brave                                                                                                    | Firefox Developer Edition |
+| Category         | Details                       | Other                                                                                                    |
+| ---------------- | ----------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **OS**           | Arch Linux (Garuda Linux)     | Windows 11                                                                                               |
+| **DE**           | KDE Plasma 6.2                | -                                                                                                        |
+| **Icons**        | BeautyLine                    | Custom Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders) |
+| **Compositor**   | Wayland                       | -                                                                                                        |
+| **Shell**        | zsh (Starship, Zoxide, Zinit) | fish, bash                                                                                               |
+| **Промт**        | Starship                      | -                                                                                                        |
+| **Terminal**     | Kitty                         | Alacritty, Konsole                                                                                       |
+| **IDE**          | VS Codium, VS Code, micro     | Zed                                                                                                      |
+| **File Manager** | Dolphin                       | Thunar                                                                                                   |
+| **Browser**      | Brave                         | Firefox Developer Edition                                                                                |
 
 </details>
 
