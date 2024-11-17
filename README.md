@@ -53,7 +53,7 @@
   | **РО**               | KDE Plasma 6.2                                                                                                | -                         |
   | **Иконице**          | BeautyLine                                                                                                    | Прилагођене Papirus-Dark - [Catppuccin Latte Lavender Folders](https://github.com/catppuccin/papirus-folders)|
   | **Композитор**       | Wayland                                                                                                       | -                         |
-  | **Шкољка**           | zsh (Starship, Zoxide, Zinit)                                                                                 | fish, bash                |
+  | **Шкољка**           | zsh (Starship, Zoxide, Zinit, Tmux)                                                                                 | fish, bash                |
   | **Промт**            | Starship                                                                                                      | -                         |
   | **Терминал**         | Kitty                                                                                                         | Alacritty, Konsole        |
   | **ИРО**              | VS Codium, VS Code, micro                                                                                     | Zed                       |
