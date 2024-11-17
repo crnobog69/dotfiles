@@ -153,7 +153,7 @@ In [`scripts`](scripts).
 
 ### Other
 
-- 📰 | [`cmd`](cmd/cmd-en.md) - Basic Commands for Arch Linux
+- 📰 | [`cmd`](cmd/cmd-en.md) - Basic Commands for Arch Linux and custom commands
 
 ## 🛠️ Setup
 
