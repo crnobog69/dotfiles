@@ -138,3 +138,5 @@ eval $(thefuck --alias fk)
 eval "$(starship init zsh)"
 
 eval "$(zoxide init zsh)"
+
+eval $(thefuck --alias)
