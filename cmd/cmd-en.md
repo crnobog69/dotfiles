@@ -18,10 +18,10 @@
 - **`Ctrl + Shift + e`** - Horizontal Division
 - **`Ctrl + Shift + Enter`** - Horizontal Division
 - **`Ctrl + Shift + s`** - Rotate the window
-- **`Ctrl + left_arrow`** - Previous window
-- **`Ctrl + right_arrow`** - Next window
-- **`Ctrl + up_arrow`** - Top window
-- **`Ctrl + down_arrow`** - Bottom window
+- **`Ctrl + Shift + left_arrow`** - Previous window
+- **`Ctrl + Shift + right_arrow`** - Next window
+- **`Ctrl + Shift + up_arrow`** - Top window
+- **`Ctrl + Shift + down_arrow`** - Bottom window
 
 ## File and Directory Management
 
@@ -69,6 +69,8 @@
 
 ## Other Commands
 
+- **`ls`** - Displays the content of directories with grouping of directories first, using `lsd --group-directories-first`.
+- **`ls`** - Displays the content of directories with colors using `ls --color`.
 - **`ncdu`** - Displays disk usage (install it with `sudo pacman -S ncdu`).
 - **`df -h`** - Check disk space.
 - **`free -h`** - Check memory.
@@ -113,8 +115,3 @@
 
 - **`corrax`** - Mysterious program
 - **`doom`** - Launches the program that displays DOOM Ghost
-
-## Commands for `ls` / `lsd`
-
-- **`ls`** - Displays the content of directories with grouping of directories first, using `lsd --group-directories-first`.
-- **`ls`** - Displays the content of directories with colors using `ls --color`.
