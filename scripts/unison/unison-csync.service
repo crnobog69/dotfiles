@@ -1,0 +1,11 @@
+[Unit]
+Description=Unison C Sync Service
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/lain/dotfiles/scripts/unison-csync.sh
+User=lain
+
+[Install]
+WantedBy=multi-user.target

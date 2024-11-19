@@ -32,7 +32,9 @@
     "starship",
     "stow",
     "thefuck",
-    "ttf-jetbrains-mono-nerd"
+    "ttf-jetbrains-mono-nerd",
+    "unison",
+    "cronie"
   ],
   "chaoticaur": [
     "brave-bin",
