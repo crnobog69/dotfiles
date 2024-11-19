@@ -1,24 +1,36 @@
 #!/bin/bash
 
-unison c_sync.prf
+# Unison инсталациона скрипта
+# Креира systemd timer за пкретање скрипте свака 3 сата
 
-# Make script executable
-echo "Making sync script executable..."
+# Unison инсталација
+# Креирање директоријума
+mkdir -p /home/lain/.unison/
+
+# Копирање конфигурационог фајла
+cp /home/lain/dotfiles/scripts/unison/c_sync.prf home/lain/.unison/
+
+# Позив унисона
+echo "Pozivam unison..."
+unison c_sync.prf -batch
+
+# Права доступа за синхронизацију скрипте
+echo "Права доступа за синхронизацију скрипте..."
 chmod +x /home/lain/dotfiles/scripts/unison-csync.sh
 
-# Copy systemd files
-echo "Copying systemd files..."
+# Копирање systemd датотека
+echo "Копирање systemd датотека..."
 sudo cp unison-csync.service /etc/systemd/system/ || { echo "Failed to copy service file"; exit 1; }
 sudo cp unison-csync.timer /etc/systemd/system/ || { echo "Failed to copy timer file"; exit 1; }
 
-# Reload systemd
-echo "Reloading systemd..."
+# Поновно поретање systemd
+echo "Поновно поретање systemd..."
 sudo systemctl daemon-reload
 
-# Enable and start timer
-echo "Enabling and starting timer..."
+# Омогућавање и покретање тајмера
+echo "Омогућавање и покретање тајмера..."
 sudo systemctl enable unison-csync.timer
 sudo systemctl start unison-csync.timer
 
-echo "Installation complete. Checking timer status..."
+echo "Инсталација завршена. Испитивање статуса тајмера..."
 systemctl list-timers unison-csync.timer

@@ -1,0 +1,16 @@
+# Прва фасцикла
+root = /home/lain/Desktop/c-zadaci/
+
+# Друга фасцикла
+root = /run/media/lain/VERMAHT/Linux/KODOVANJE/C/
+
+# Игнориши непотребне фајлове
+ignore = Name *.tmp
+ignore = Name .DS_Store
+ignore = Name *.swp
+
+# Подеси која фасцикла има предност у случају конфликта
+prefer = /home/lain/Desktop/c-zadaci/
+
+perms = 0
+fat = true

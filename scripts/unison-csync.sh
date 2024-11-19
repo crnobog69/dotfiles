@@ -1,3 +1,3 @@
 #!/bin/bash
 
-unison c_sync.prf
+unison c_sync.prf -batch
