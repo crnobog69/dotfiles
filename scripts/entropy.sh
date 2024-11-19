@@ -108,14 +108,14 @@ echo -e "=== ${RED} | Канта${NC} =======================================
 echo 
 
 echo -e "${YELLOW}Величина канте пре чишћења:${NC}"
-du -sh ~/.config | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+du -sh ~/.local/share/Trash/files/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
 
 rm -rf ~/.local/share/Trash/files/*
 
 echo
 
 echo -e "${YELLOW}Величина канте након чишћења:${NC}"
-du -sh ~/.config | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+du -sh ~/.local/share/Trash/files/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
 
 echo
 
