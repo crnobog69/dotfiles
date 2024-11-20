@@ -98,6 +98,8 @@
 - **`gzdoom`** - Покреће GZDoom
   - **`gzdoom ime_od_wad`** - Покреће GZDoom са WAD-ом из `ime_od_wad`
   - **`gzdoom ime_od_pk3`** - Покреће GZDoom са PK3-ом из `ime_od_pk3`
+- **`catbox`** - ./catbox.sh --help
+- **`litterbox`** - ./litterbox.sh --help
 
 ## Команде за ажурирање
 

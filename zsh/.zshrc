@@ -113,6 +113,8 @@ alias zed='zeditor'
 alias crc='~/dotfiles/scripts/crc.sh'
 alias entropy='~/dotfiles/scripts/entropy.sh'
 alias trash='~/dotfiles/scripts/trash.sh'
+alias catbox='~/dotfiles/scripts/catbox.sh'
+alias litterbox='~/dotfiles/scripts/litterbox.sh'
 
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 

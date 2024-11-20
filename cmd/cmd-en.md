@@ -98,6 +98,8 @@
 - **`gzdoom`** - Launches GZDoom
   - **`gzdoom name_of_wad`** - Launches GZDoom with WAD from `name_of_wad`
   - **`gzdoom name_of_pk3`** - Launches GZDoom with PK3 from `name_of_pk3`
+- **`catbox`** - ./catbox.sh --help
+- **`litterbox`** - ./litterbox.sh --help
 
 ## Commands for updating
 

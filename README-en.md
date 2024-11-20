@@ -64,6 +64,8 @@ chmod +x scripts/ftn.sh
 chmod +x scripts/crc.sh
 chmod +x scripts/entropy.sh
 chmod +x scripts/zap.sh
+chmod +x scripts/catbox.sh
+chmod +x scripts/litterbox.sh
 chmod +x push.sh
 chmod +x pull.sh
 ```
@@ -117,6 +119,8 @@ In [`scripts`](scripts).
 - `crc.sh` - a customized script for compiling programs written in the `C` programming language using `gcc`
 - `entropy.sh` - customized script for system cleanup
 - `zap.sh` - customized script for system update with support for multiple operating systems
+- `catbox.sh` - customized script for using [catbox.moe](https://catbox.moe/)
+- `litterbox.sh` - customized script for using [litterbox.moe](https://litterbox.moe/)
 
 ---
 

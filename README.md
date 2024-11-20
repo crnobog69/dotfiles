@@ -86,6 +86,8 @@ chmod +x scripts/ftn.sh
 chmod +x scripts/crc.sh
 chmod +x scripts/entropy.sh
 chmod +x scripts/zap.sh
+chmod +x scripts/catbox.sh
+chmod +x scripts/litterbox.sh
 chmod +x push.sh
 chmod +x pull.sh
 ```
@@ -141,6 +143,8 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `C` програмском језику уз помоћ `gcc`
 - `entropy.sh` - прилагођена скрипта за чишћење система
 - `zap.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
+- `catbox.sh` - прилагођена скрипта за коришћење [catbox.moe](https://catbox.moe/)
+- `litterbox.sh` - прилагођена скрипта за коришћење [litterbox.moe](https://litterbox.moe/)
 
 ---
 
