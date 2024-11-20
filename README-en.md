@@ -121,6 +121,7 @@ In [`scripts`](scripts).
 - `zap.sh` - customized script for system update with support for multiple operating systems
 - `catbox.sh` - customized script for using [catbox.moe](https://catbox.moe/)
 - `litterbox.sh` - customized script for using [litterbox.catbox.moe](https://litterbox.catbox.moe/)
+- `install-wakapi.sh` - personalized install script for [wakapi](https://github.com/flyingrub/wakapi) for self-hosting
 
 ---
 
