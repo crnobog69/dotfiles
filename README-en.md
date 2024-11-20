@@ -120,7 +120,7 @@ In [`scripts`](scripts).
 - `entropy.sh` - customized script for system cleanup
 - `zap.sh` - customized script for system update with support for multiple operating systems
 - `catbox.sh` - customized script for using [catbox.moe](https://catbox.moe/)
-- `litterbox.sh` - customized script for using [litterbox.moe](https://litterbox.moe/)
+- `litterbox.sh` - customized script for using [litterbox.catbox.moe](https://litterbox.catbox.moe/)
 
 ---
 

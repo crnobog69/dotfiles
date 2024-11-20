@@ -144,7 +144,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `entropy.sh` - прилагођена скрипта за чишћење система
 - `zap.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
 - `catbox.sh` - прилагођена скрипта за коришћење [catbox.moe](https://catbox.moe/)
-- `litterbox.sh` - прилагођена скрипта за коришћење [litterbox.moe](https://litterbox.moe/)
+- `litterbox.sh` - прилагођена скрипта за коришћење [litterbox.catbox.moe](https://litterbox.catbox.moe/)
 
 ---
 
