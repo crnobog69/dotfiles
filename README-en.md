@@ -123,6 +123,7 @@ In [`scripts`](scripts).
 - `litterbox.sh` - customized script for using [litterbox.catbox.moe](https://litterbox.catbox.moe/)
 - `install-wakapi.sh` - personalized install script for [wakapi](https://github.com/flyingrub/wakapi) for self-hosting
 - `desktopify.sh` - personalized script for creating `.desktop` file for AppImage application
+- `cgit.sh` - personalized script for `git`
 
 ---
 

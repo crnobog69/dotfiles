@@ -116,6 +116,7 @@ alias trash='~/dotfiles/scripts/trash.sh'
 alias catbox='~/dotfiles/scripts/catbox.sh'
 alias litterbox='~/dotfiles/scripts/litterbox.sh'
 alias cursor='~/Applications/Cursor/cursor.appimage'
+alias cgit='~/dotfiles/scripts/cgit.sh'
 
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
