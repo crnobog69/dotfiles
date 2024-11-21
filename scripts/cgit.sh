@@ -26,6 +26,7 @@ DOTFILES_REPO="${HOME}/dotfiles"
 EXTRA_REPO="${HOME}/extra"
 SCRIPTS_REPO="${HOME}/scripts"
 WEBSITE_REPO="${HOME}/crnobog69.github.io"
+CBPASTE_REPO="${HOME}/cbpaste"
 
 # Функција за гурање на све remote-ове
 push_to_all_remotes() {
@@ -70,6 +71,7 @@ show_help() {
     echo -e "  ${PEACH}-e${NC}, ${PEACH}--extra${NC}     Гурај само extra"
     echo -e "  ${PEACH}-s${NC}, ${PEACH}--scripts${NC}   Гурај само scripts"
     echo -e "  ${PEACH}-w${NC}, ${PEACH}--website${NC}   Гурај само website (crnobog69.github.io)"
+    echo -e "  ${PEACH}-c${NC}, ${PEACH}--cbpaste${NC}   Гурај само cbpaste"
     echo -e "  ${PEACH}-h${NC}, ${PEACH}--help${NC}      Прикажи ову помоћ"
     echo
     echo "==================================================================="
@@ -88,6 +90,7 @@ case "$1" in
         push_to_all_remotes "$EXTRA_REPO"
         push_to_github "$SCRIPTS_REPO"
         push_to_github "$WEBSITE_REPO"
+        push_to_github "$CBPASTE_REPO"
         ;;
     -d|--dotfiles)
         push_to_all_remotes "$DOTFILES_REPO"
@@ -100,6 +103,9 @@ case "$1" in
         ;;
     -w|--website)
         push_to_github "$WEBSITE_REPO"
+        ;;
+    -c|--cbpaste)
+        push_to_github "$CBPASTE_REPO"
         ;;
     -h|--help)
         show_help
