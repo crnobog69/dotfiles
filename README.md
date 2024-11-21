@@ -146,6 +146,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `catbox.sh` - прилагођена скрипта за коришћење [catbox.moe](https://catbox.moe/)
 - `litterbox.sh` - прилагођена скрипта за коришћење [litterbox.catbox.moe](https://litterbox.catbox.moe/)
 - `install-wakapi.sh` - персонализован инсталациона скрипта за [wakapi](https://github.com/flyingrub/wakapi) за лочно хостовање
+- `desktopify.sh` - персонализована скрипта за креирање `.desktop` датотеке за AppImage апликације
 
 ---
 

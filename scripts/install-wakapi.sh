@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Lokacija gde se nalazi binarna datoteka Wakapi (direktno u /home/lain)
+# Локација где се налази бинарна датотека Wakapi (директно у /home/lain)
 WAKAPI_BIN="/home/lain/wakapi"
 
-# Kreiranje systemd servisa
-echo "Kreiranje systemd servisa za Wakapi..."
+# Креирање systemd сервиса
+echo "Креирање systemd сервиса за Wakapi..."
 
 cat <<EOF | sudo tee /etc/systemd/system/wakapi.service > /dev/null
 [Unit]
@@ -22,14 +22,14 @@ Group=lain
 WantedBy=multi-user.target
 EOF
 
-# Omogućavanje servisa da se automatski pokrene pri startovanju sistema
-echo "Omogućavanje servisa da se pokrene pri startovanju sistema..."
+# Омогућавање сервиса да се покрене при стартовању система
+echo "Омогућавање сервиса да се покрене при стартовању система..."
 sudo systemctl enable wakapi.service
 
-# Pokretanje servisa
-echo "Pokretanje Wakapi servisa..."
+# Покретање сервиса
+echo "Покретање Wakapi сервиса..."
 sudo systemctl start wakapi.service
 
-# Provera statusa servisa
-echo "Provera statusa Wakapi servisa..."
+# Провера статуса сервиса
+echo "Провера статуса Wakapi сервиса..."
 sudo systemctl status wakapi.service
