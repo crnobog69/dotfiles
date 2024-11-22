@@ -125,6 +125,7 @@ In [`scripts`](scripts).
 - `desktopify.sh` - personalized script for creating `.desktop` file for AppImage application
 - `cgit.sh` - personalized script for `git`
 - `papirus.sh` - personalized script for customizing [Papirus-Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- `lama.sh` - personalized script for using [Ollama](https://github.com/ollama/ollama)
 
 ---
 

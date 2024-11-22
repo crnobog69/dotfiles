@@ -149,6 +149,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - `desktopify.sh` - персонализована скрипта за креирање `.desktop` датотеке за AppImage апликације
 - `cgit.sh` - персонализована скрипта за `git`
 - `papirus.sh` - персонализована скрипта за прилагођавање [Papirus-Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- `lama.sh` - персонализована скрипта за коришћење [Ollama](https://github.com/ollama/ollama)
 
 ---
 

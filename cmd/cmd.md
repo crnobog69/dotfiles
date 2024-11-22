@@ -100,6 +100,7 @@
   - **`gzdoom ime_od_pk3`** - Покреће GZDoom са PK3-ом из `ime_od_pk3`
 - **`catbox`** - ./catbox.sh --help
 - **`litterbox`** - ./litterbox.sh --help
+- **`lama`** - ./lama.sh --help
 
 ## Команде за ажурирање
 

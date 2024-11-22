@@ -100,6 +100,7 @@
   - **`gzdoom name_of_pk3`** - Launches GZDoom with PK3 from `name_of_pk3`
 - **`catbox`** - ./catbox.sh --help
 - **`litterbox`** - ./litterbox.sh --help
+- **`lama`** - ./lama.sh --help
 
 ## Commands for updating
 

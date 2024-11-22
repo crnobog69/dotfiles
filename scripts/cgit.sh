@@ -61,6 +61,7 @@ push_to_github() {
 # Функција за приказ помоћи
 show_help() {
     echo "==================================================================="
+    echo
     echo -e "${RED}     цгит | cgit / црнигит | crnigit | blackgit - скрипта за git${NC}"
     echo
     echo -e "${LAVANDER}Употреба:${NC} $0 [опција]"
