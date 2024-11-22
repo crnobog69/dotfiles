@@ -117,7 +117,6 @@ alias catbox='~/dotfiles/scripts/catbox.sh'
 alias litterbox='~/dotfiles/scripts/litterbox.sh'
 alias cursor='~/Applications/Cursor/cursor.appimage'
 alias cgit='~/dotfiles/scripts/cgit.sh'
-alias lama='~/dotfiles/scripts/lama.sh'
 
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
@@ -129,6 +128,17 @@ alias doom='~/dotfiles/scripts/doom'
 # ls | lsd
 # alias ls='lsd -1'
 alias ls='lsd --group-directories-first'
+
+# OLLAMA ----------------------------------------------------
+
+alias lama='~/dotfiles/scripts/lama.sh'
+
+alias ollamastop="sudo systemctl stop ollama.service"
+alias ollamastart="sudo systemctl start ollama.service"
+alias ollamastatus="sudo systemctl status ollama.service"
+
+alias ollamallama="ollama run dolphin-llama3"
+alias ollamaqwen="ollama run qwen2.5-coder:1.5b"
 
 # ALIAS -----------------------------------------------------
 
