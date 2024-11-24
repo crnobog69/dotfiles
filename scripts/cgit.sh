@@ -74,6 +74,7 @@ show_help() {
     echo -e "  ${PEACH}-s${NC}, ${PEACH}--scripts${NC}   Гурај само scripts"
     echo -e "  ${PEACH}-w${NC}, ${PEACH}--website${NC}   Гурај само website (crnobog69.github.io)"
     echo -e "  ${PEACH}-c${NC}, ${PEACH}--cbpaste${NC}   Гурај само cbpaste"
+    echo -e "  ${PEACH}-r${NC}, ${PEACH}--cbrss${NC}     Гурај само cbrss"
     echo -e "  ${PEACH}-h${NC}, ${PEACH}--help${NC}      Прикажи ову помоћ"
     echo
     echo "==================================================================="

@@ -1,12 +1,5 @@
 #zmodload zsh/zprof
 
-autoload -Uz compinit 
-if [[ -n ${ZDOTDIR}/.zcompdump(#qN.mh+24) ]]; then
-	compinit;
-else
-	compinit -C;
-fi;
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -42,25 +35,21 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in zsh plugins
 # Load completions first
-zinit ice wait"1" lucid blockf
-zinit light "zsh-users/zsh-completions"
 
-# fzf-tab next
-zinit ice wait"1" lucid
-zinit light "Aloxaf/fzf-tab"
+zinit light zsh-users/zsh-syntax-highlighting
 
-# History and suggestions
-zinit ice wait"1" lucid
+zinit light zsh-users/zsh-completions
+
+zinit light zsh-users/zsh-autosuggestions
+
+zinit light Aloxaf/fzf-tab
+
 zinit light "atuinsh/atuin"
 
-zinit ice wait"1" lucid
-zinit light "zsh-users/zsh-autosuggestions"
+autoload -Uz compinit
+compinit
+zinit cdreplay -q
 
-# Syntax highlighting must be last
-zinit ice wait"1" lucid atload"zicdreplay"
-zinit light "zsh-users/zsh-syntax-highlighting"
-
-#zinit cdreplay -q
 
 #zinit ice as"command" from"gh-r" \
 #          atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
