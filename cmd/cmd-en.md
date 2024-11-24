@@ -81,7 +81,6 @@
 - **`fzf`** A command-line fuzzy finder (install it with `sudo pacman -S fzf`)
   - **`CTRL + T`** - Activates `fzf` for any commands
     /
-  - **`any_command ** + TAB`** - Write `\*\*`(two asterisk) and press`TAB`and it will activate`fzf`
   - **`CTRL + R`** - `fzf` history
 - **`bat`** - `cat` цлоне with syntax highlighting - a terminal file viewer (install it with `sudo pacman -S bat`)
 - **`fuck`** - if a command is misstyped, by typing the `fuck` command, the command will be correctly written
