@@ -33,7 +33,8 @@
     "stow",
     "thefuck",
     "ttf-jetbrains-mono-nerd",
-    "unison"
+    "unison",
+    "bun"
   ],
   "chaoticaur": [
     "brave-bin",
