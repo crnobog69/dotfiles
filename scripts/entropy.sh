@@ -103,6 +103,103 @@ du -sh ~/.cache | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\03
 
 echo
 
+echo -e "=== ${RED} | Brave${NC} ============================================================="
+
+echo
+
+if [ -d ~/.config/BraveSoftware/Brave-Browser/Default/Service\ Worker/CacheStorage/ ]; then
+    echo -e "${YELLOW}Величина кеша Brave:${NC}"
+    du -sh ~/.config/BraveSoftware/Brave-Browser/Default/Service\ Worker/CacheStorage/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    echo
+    echo -e "${GREEN}Брисање кеша Brave...${NC}"
+    rm -rf ~/.config/BraveSoftware/Brave-Browser/Default/Service\ Worker/CacheStorage/*
+    echo
+    echo -e "${YELLOW}Величина кеша Brave:${NC}"
+    du -sh ~/.config/BraveSoftware/Brave-Browser/Default/Service\ Worker/CacheStorage/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+else
+    echo -e "${YELLOW}Brave није инсталиран${NC}"
+fi
+
+echo
+
+echo -e "=== ${RED} | Vesktop${NC} ==========================================================="
+
+echo
+
+if [ -d ~/.config/vesktop/sessionData/ ]; then
+    echo -e "${YELLOW}Величина кеша Vesktop:${NC}"
+    du -sh ~/.config/vesktop/sessionData/Cache/Cache_Data/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    du -sh ~/.config/vesktop/sessionData/Code\ Cache/js/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    echo
+    echo -e "${GREEN}Брисање кеша Vesktop...${NC}"
+    rm -rf ~/.config/vesktop/sessionData/Cache/Cache_Data/*
+    rm -rf ~/.config/vesktop/sessionData/Code\ Cache/js/*
+    echo
+    echo -e "${YELLOW}Величина кеша Vesktop:${NC}"
+    du -sh ~/.config/vesktop/sessionData/Cache/Cache_Data/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    du -sh ~/.config/vesktop/sessionData/Code\ Cache/js/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+else
+    echo -e "${YELLOW}Vesktop није инсталиран${NC}"
+fi
+
+echo
+
+echo -e "=== ${RED}󰨞 | Code${NC} =============================================================="
+
+echo
+
+if [ -d ~/.config/Code/CachedData/ ]; then
+    echo -e "${YELLOW}Величина кеша Code:${NC}"
+    du -sh ~/.config/Code/CachedData/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    echo
+    echo -e "${GREEN}Брисање кеша Code...${NC}"
+    rm -rf ~/.config/Code/CachedData/*
+    echo
+    echo -e "${YELLOW}Величина кеша Code:${NC}"
+    du -sh ~/.config/Code/CachedData/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+else
+    echo -e "${YELLOW}VS Code није инсталиран${NC}"
+fi
+
+echo
+
+echo -e "=== ${RED}󰇀 | Cursor${NC} ============================================================"
+
+echo
+
+if [ -d ~/.config/Cursor/CachedData/ ]; then
+    echo -e "${YELLOW}Величина кеша Cursor:${NC}"
+    du -sh ~/.config/Cursor/CachedData/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    echo
+    echo -e "${GREEN}Брисање кеша Cursor...${NC}"
+    rm -rf ~/.config/Cursor/CachedData/*
+    echo
+    echo -e "${YELLOW}Величина кеша Cursor:${NC}"
+    du -sh ~/.config/Cursor/CachedData/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+else
+    echo -e "${YELLOW}Cursor није инсталиран${NC}"
+fi
+
+echo
+
+echo -e "=== ${RED} | Bun${NC} ==============================================================="
+
+echo
+
+if [ -d ~/.bun/install/cache ]; then
+    echo -e "${YELLOW}Величина кеша Bun:${NC}"
+    du -sh ~/.bun/install/cache/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    echo
+    echo -e "${GREEN}Брисање кеша Bun...${NC}"
+    rm -rf ~/.bun/install/cache/*
+    echo
+    echo -e "${YELLOW}Величина кеша Bun:${NC}"
+    du -sh ~/.bun/install/cache/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+else
+    echo -e "${YELLOW}Bun није инсталиран${NC}"
+fi
+echo
+
 echo -e "=== ${RED} | Канта${NC} ============================================================="
 
 echo 
@@ -119,7 +216,7 @@ du -sh ~/.local/share/Trash/files/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;
 
 echo
 
-echo -e "=== ${RED}  | Остало${NC} ==========================================================="
+echo -e "=== ${RED} | Остало${NC} ============================================================"
 
 
 echo
