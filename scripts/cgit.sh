@@ -28,6 +28,7 @@ SCRIPTS_REPO="${HOME}/scripts"
 WEBSITE_REPO="${HOME}/crnobog69.github.io"
 CBPASTE_REPO="${HOME}/cbpaste"
 CBRSS_REPO="${HOME}/cbrss"
+PROTO_ORBITA_REPO="${HOME}/proto-orbita"
 
 # Функција за гурање на све remote-ове
 push_to_all_remotes() {
@@ -75,6 +76,7 @@ show_help() {
     echo -e "  ${PEACH}-w${NC}, ${PEACH}--website${NC}   Гурај само website (crnobog69.github.io)"
     echo -e "  ${PEACH}-c${NC}, ${PEACH}--cbpaste${NC}   Гурај само cbpaste"
     echo -e "  ${PEACH}-r${NC}, ${PEACH}--cbrss${NC}     Гурај само cbrss"
+    echo -e "  ${PEACH}-p${NC}, ${PEACH}--proto-orbita${NC} Гурај само proto-orbita"
     echo -e "  ${PEACH}-h${NC}, ${PEACH}--help${NC}      Прикажи ову помоћ"
     echo
     echo "==================================================================="
@@ -95,6 +97,7 @@ case "$1" in
         push_to_github "$WEBSITE_REPO"
         push_to_github "$CBPASTE_REPO"
         push_to_github "$CBRSS_REPO"
+        push_to_github "$PROTO_ORBIT_REPO"
         ;;
     -d|--dotfiles)
         push_to_all_remotes "$DOTFILES_REPO"
@@ -113,6 +116,9 @@ case "$1" in
         ;;
     -r|--cbrss)
         push_to_github "$CBRSS_REPO"
+        ;;
+    -p|--proto-orbita)
+        push_to_github "$PROTO_ORBITA_REPO"
         ;;
     -h|--help)
         show_help
