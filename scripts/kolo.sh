@@ -54,7 +54,11 @@ if [[ -n "$selected_package" ]]; then
         read -p "Пакет '$selected_package' је већ инсталиран. Желите ли да га деинсталирате? (Y/n): " choice
         choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
         if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-            sudo $PACKAGE_MANAGER -Rns "$selected_package"
+            if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
+                sudo $PACKAGE_MANAGER -Rns "$selected_package"
+            else
+                $PACKAGE_MANAGER -Rns "$selected_package"
+            fi
         else
             echo "Деинсталација отказана."
         fi
@@ -63,7 +67,11 @@ if [[ -n "$selected_package" ]]; then
         read -p "Пакет '$selected_package' није инсталиран. Желите ли да га инсталирате? (Y/n): " choice
         choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
         if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-            sudo $PACKAGE_MANAGER -S "$selected_package"
+            if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
+                sudo $PACKAGE_MANAGER -S "$selected_package"
+            else
+                $PACKAGE_MANAGER -S "$selected_package"
+            fi
         else
             echo "Инсталација отказана."
         fi
