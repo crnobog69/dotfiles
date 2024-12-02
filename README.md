@@ -140,7 +140,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - [`vhs.sh`](scripts/vhs/README.md) - Скрипта за обраду видеа (у `scripts/vhs`)
 - `pasters` - скрипта која користи API од [paste.rs](https://paste.rs/)
 - [`kolo`](https://github.com/crnobog69/kolo) - Скрипта за претрагу Arch Linux репозиторијума (укључујући AUR)
-- `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `C` програмском језику уз помоћ `gcc`
+- `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `C` програмском језику уз помоћ `gcc`-а
 - `entropy.sh` - прилагођена скрипта за чишћење система
 - `zap.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
 - `catbox.sh` - прилагођена скрипта за коришћење [catbox.moe](https://catbox.moe/)
