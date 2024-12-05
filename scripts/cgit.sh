@@ -97,7 +97,7 @@ case "$1" in
         push_to_github "$WEBSITE_REPO"
         push_to_github "$CBPASTE_REPO"
         push_to_github "$CBRSS_REPO"
-        push_to_github "$PROTO_ORBIT_REPO"
+        push_to_github "$PROTO_ORBITA_REPO"
         ;;
     -d|--dotfiles)
         push_to_all_remotes "$DOTFILES_REPO"
