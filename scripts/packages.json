@@ -34,13 +34,15 @@
     "thefuck",
     "ttf-jetbrains-mono-nerd",
     "unison",
-    "bun"
+    "bun",
+    "bore"
   ],
   "chaoticaur": [
     "brave-bin",
     "visual-studio-code-bin",
     "spicetify-cli",
-    "portmaster-stub-bin"
+    "portmaster-stub-bin",
+    "ngrok"
   ],
   "aur": ["vencord-bin", "catppuccin-cursors-mocha", "cava"]
 }
