@@ -1,0 +1,38 @@
+{
+  "security.workspace.trust.untrustedFiles": "open",
+  "tabnine.experimentalAutoImports": true,
+  "workbench.productIconTheme": "material-product-icons",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+  "window.titleBarStyle": "custom",
+  "editor.linkedEditing": true,
+  "vscodeGoogleTranslate.preferredLanguage": "Serbian",
+  "settingsSync.ignoredExtensions": ["illixion.vscode-vibrancy-continued"],
+  "workbench.editorAssociations": {
+    "*.mp3": "vscode.audioPreview",
+    "*.jpg": "luna.editor"
+  },
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "terminal.background": "#00000000"
+  },
+  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
+  "catppuccin.colorOverrides": {},
+  "catppuccin.accentColor": "green",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "glassit.alpha": 250,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "editor.fontSize": 15,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "supermaven.enableFixWithSupermaven": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}

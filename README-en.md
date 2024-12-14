@@ -152,6 +152,7 @@ In [`scripts`](scripts).
 - 🎥 | `mpv`
 - ⚙️ | `nvim`
 - 💽 | `tmux`
+- 🦌 | `vs-code`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ### Manual setup:

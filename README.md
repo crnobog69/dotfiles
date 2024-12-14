@@ -176,6 +176,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - 🎥 | `mpv`
 - ⚙️ | `nvim`
 - 💽 | `tmux`
+- 🦌 | `vs-code`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ### Ручно:
