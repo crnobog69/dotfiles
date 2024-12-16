@@ -127,6 +127,8 @@ alias cursor='~/Applications/Cursor/cursor.appimage'
 alias cgit='~/dotfiles/scripts/cgit.sh'
 alias cspicetify='~/dotfiles/scripts/spicetify.sh'
 
+alias filen-cli="~/filen-cli"
+
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
 # DOOM / Eternal
