@@ -154,6 +154,7 @@ In [`scripts`](scripts).
 - ⚙️ | `nvim`
 - 💽 | `tmux`
 - 🦌 | `vs-code`
+- 🦝 | `filen`
 - 🐧 | `transparency.toggle`, `plasmusic-toolbar`, `zayron.simple.separator`, `apdatifier`
 
 ### Manual setup:
