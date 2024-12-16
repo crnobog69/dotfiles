@@ -88,6 +88,7 @@ chmod +x scripts/entropy.sh
 chmod +x scripts/zap.sh
 chmod +x scripts/catbox.sh
 chmod +x scripts/litterbox.sh
+chmod +x scripts/spicetify.sh
 chmod +x push.sh
 chmod +x pull.sh
 ```

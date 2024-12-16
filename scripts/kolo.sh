@@ -1,59 +1,67 @@
 #!/bin/bash
 
-# Функција за проналажење доступног AUR хелпера
+# Функција за проналажење доступног AUR помоћника
 find_aur_helper() {
-    if command -v yay &> /dev/null; then
-        echo "yay"
-    elif command -v paru &> /dev/null; then
-        echo "paru"
-    elif command -v pikaur &> /dev/null; then
-        echo "pikaur"
-    elif command -v trizen &> /dev/null; then
-        echo "trizen"
-    elif command -v aura &> /dev/null; then
-        echo "aura"
-    else
-        echo ""
-    fi
+    local helpers=("yay" "paru" "pikaur" "trizen" "aura")
+    for helper in "${helpers[@]}"; do
+        if command -v "$helper" &> /dev/null; then
+            echo "$helper"
+            return 0
+        fi
+    done
+    return 1
 }
 
-# Подеси да ли користимо AUR на основу аргумената
+# Постављање хвата за CTRL+C (SIGINT)
+trap 'echo -e "\nСкрипта прекинута коришћењем CTRL+C."; exit 1' SIGINT
+
+# Парсирање аргумената командне линије
 USE_AUR=false
-if [[ "$1" == "--aur" ]]; then
-    USE_AUR=true
-fi
+SYNC_DB=false
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        --aur) USE_AUR=true ;;
+        --sync) SYNC_DB=true ;;
+        *) echo "Непознат параметар: $1"; exit 1 ;;
+    esac
+    shift
+done
 
-# Додавање трапа за хапшење CTRL+C (SIGINT)
-trap "echo; echo 'Скрипта прекинута коришћењем CTRL+C.'; exit" SIGINT
-
-# Подешавање менаџера пакета
+# Постављање менаџера пакета
 if $USE_AUR; then
     PACKAGE_MANAGER=$(find_aur_helper)
     if [[ -z "$PACKAGE_MANAGER" ]]; then
-        echo "Није пронађен ниједан AUR хелпер."
+        echo "Није пронађен AUR помоћник. Молимо инсталирајте један (нпр. yay, paru) да бисте користили AUR."
         exit 1
     fi
 else
     PACKAGE_MANAGER="pacman"
 fi
 
-# Ажурирање при сваком покретању 'kolo' команде
-# sudo $PACKAGE_MANAGER -Sy --noconfirm
+# Синхронизација базе пакета ако је затражено
+if $SYNC_DB; then
+    echo "Синхронизовање базе пакета..."
+    if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
+        sudo $PACKAGE_MANAGER -Sy --noconfirm
+    else
+        $PACKAGE_MANAGER -Sy --noconfirm
+    fi
+fi
 
-# Претражи пакете у зависности од менаџера пакета
+# Претраживање пакета
 if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
     selected_package=$(pacman -Sl | fzf --prompt="Претрага пакета: " --preview="pacman -Si {2}" --preview-window=right:50% | awk '{print $2}')
 else
-    selected_package=$($PACKAGE_MANAGER -Sl | fzf --prompt="Претрага пакета (AUR укључен): " --preview="$PACKAGE_MANAGER -Si {2}" --preview-window=right:50% | awk '{print $2}')
+    selected_package=$($PACKAGE_MANAGER -Sl | fzf --prompt="Претрага пакета (укључујући AUR): " --preview="$PACKAGE_MANAGER -Si {2}" --preview-window=right:50% | awk '{print $2}')
 fi
 
-# Ако је пакет изабран, проверава да ли је већ инсталиран
+# Ако је пакет изабран, провери да ли је већ инсталиран
 if [[ -n "$selected_package" ]]; then
     if pacman -Qi "$selected_package" &> /dev/null; then
-        # Пакет је инсталиран, нуди деинсталацију
-        read -p "Пакет '$selected_package' је већ инсталиран. Желите ли да га деинсталирате? (Y/n): " choice
-        choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
-        if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+        # Пакет је инсталиран, понуди деинсталацију
+        read -p "Пакет '$selected_package' је већ инсталиран. Да ли желите да га деинсталирате? (Y/n): " choice
+        choice=${choice:-Y}
+        if [[ "$choice" =~ ^[Yy]$ ]]; then
             if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
                 sudo $PACKAGE_MANAGER -Rns "$selected_package"
             else
@@ -63,10 +71,10 @@ if [[ -n "$selected_package" ]]; then
             echo "Деинсталација отказана."
         fi
     else
-        # Пакет није инсталиран, нуди инсталацију
-        read -p "Пакет '$selected_package' није инсталиран. Желите ли да га инсталирате? (Y/n): " choice
-        choice=${choice:-y}  # Ако је унос празан, подразумевано је "y"
-        if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+        # Пакет није инсталиран, понуди инсталацију
+        read -p "Пакет '$selected_package' није инсталиран. Да ли желите да га инсталирате? (Y/n): " choice
+        choice=${choice:-Y}
+        if [[ "$choice" =~ ^[Yy]$ ]]; then
             if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
                 sudo $PACKAGE_MANAGER -S "$selected_package"
             else
@@ -78,4 +86,11 @@ if [[ -n "$selected_package" ]]; then
     fi
 else
     echo "Није изабран ниједан пакет."
+fi
+
+# Прикажи резултат извршавања скрипте
+if [[ $? -eq 0 ]]; then
+    echo "Операција успешно завршена."
+else
+    echo "Дошло је до грешке током операције."
 fi
