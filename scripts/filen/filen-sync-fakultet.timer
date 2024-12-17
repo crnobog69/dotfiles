@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for filen-sync-fakultet service
+
+[Timer]
+OnBootSec=25s
+Unit=filen-sync-fakultet.service
+
+[Install]
+WantedBy=timers.target

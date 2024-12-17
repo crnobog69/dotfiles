@@ -1,0 +1,9 @@
+[Unit]
+Description=Timer for filen-sync-nacizam service
+
+[Timer]
+OnBootSec=25s
+Unit=filen-sync-nacizam.service
+
+[Install]
+WantedBy=timers.target
