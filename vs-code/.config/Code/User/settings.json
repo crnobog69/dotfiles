@@ -34,5 +34,6 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "supermaven.enableFixWithSupermaven": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "github.copilot.editor.enableAutoCompletions": false
 }
