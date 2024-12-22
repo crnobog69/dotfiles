@@ -104,7 +104,7 @@ alias azu-gar='garuda-update'
 
 # Универзало ажурирање
 
-alias zap='~/dotfiles/scripts/zap.sh'
+alias up='~/dotfiles/scripts/up.sh'
 
 # ALIAS -----------------------------------------------------
 

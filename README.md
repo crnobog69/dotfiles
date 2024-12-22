@@ -143,7 +143,7 @@ powershell -Command "Set-ExecutionPolicy RemoteSigned"
 - [`kolo`](https://github.com/crnobog69/kolo) - Скрипта за претрагу Arch Linux репозиторијума (укључујући AUR)
 - `crc.sh` - прилагођена скирпта за компајлирање програма написаних у `C` програмском језику уз помоћ `gcc`-а
 - `entropy.sh` - прилагођена скрипта за чишћење система
-- `zap.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
+- `up.sh` - прилагођена скрипта за ажурирање система са подршком за више операцисних система
 - `catbox.sh` - прилагођена скрипта за коришћење [catbox.moe](https://catbox.moe/)
 - `litterbox.sh` - прилагођена скрипта за коришћење [litterbox.catbox.moe](https://litterbox.catbox.moe/)
 - `install-wakapi.sh` - персонализован инсталациона скрипта за [wakapi](https://github.com/flyingrub/wakapi) за лочно хостовање
