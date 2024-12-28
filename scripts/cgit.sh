@@ -29,6 +29,7 @@ WEBSITE_REPO="${HOME}/crnobog69.github.io"
 CBPASTE_REPO="${HOME}/cbpaste"
 CBRSS_REPO="${HOME}/cbrss"
 PROTO_ORBITA_REPO="${HOME}/proto-orbita"
+GALERIJA_REPO="${HOME}/galerija"
 
 # Функција за гурање на све remote-ове
 push_to_all_remotes() {
@@ -77,6 +78,7 @@ show_help() {
     echo -e "  ${PEACH}-c${NC}, ${PEACH}--cbpaste${NC}   Гурај само cbpaste"
     echo -e "  ${PEACH}-r${NC}, ${PEACH}--cbrss${NC}     Гурај само cbrss"
     echo -e "  ${PEACH}-p${NC}, ${PEACH}--proto-orbita${NC} Гурај само proto-orbita"
+    echo -e "  ${PEACH}-g${NC}, ${PEACH}--galerija${NC}   Гурај само galerija"
     echo -e "  ${PEACH}-h${NC}, ${PEACH}--help${NC}      Прикажи ову помоћ"
     echo
     echo "==================================================================="
@@ -98,6 +100,7 @@ case "$1" in
         push_to_github "$CBPASTE_REPO"
         push_to_github "$CBRSS_REPO"
         push_to_github "$PROTO_ORBITA_REPO"
+        push_to_github "$GALERIJA_REPO"
         ;;
     -d|--dotfiles)
         push_to_all_remotes "$DOTFILES_REPO"
@@ -122,6 +125,9 @@ case "$1" in
         ;;
     -h|--help)
         show_help
+        ;;
+    -g|--galerija)
+        push_to_github "$GALERIJA_REPO"
         ;;
     *)
         echo -e "${RED}Непозната опција: $1${NC}"
