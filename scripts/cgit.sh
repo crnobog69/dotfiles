@@ -43,7 +43,7 @@ push_to_all_remotes() {
         echo -e "${YELLOW}Гурам на $remote...${NC}"
         git add .
         git commit -m "❄️"
-        git push "$remote" || echo -е "${RED}Неуспешно гурање на $remote${NC}"
+        git push "$remote" || echo -e "${RED}Неуспешно гурање на $remote${NC}"
     done
     echo -e "${PEACH}----------------${NC}"
 }
@@ -51,7 +51,7 @@ push_to_all_remotes() {
 # Функција за гурање само на GitHub
 push_to_github() {
     local repo=$1
-    echo -e "${LAVANDER}Гурам репозиторијум:${NC} ${PEACH}$repo${NC} ${LAVАНDER}на GitHub${NC}"
+    echo -e "${LAVANDER}Гурам репозиторијум:${NC} ${PEACH}$repo${NC} ${LAVANDER}на GitHub${NC}"
     cd "$repo" || exit
     
     echo -e "${YELLOW}Гурам на github...${NC}"
