@@ -30,6 +30,7 @@ CBPASTE_REPO="${HOME}/cbpaste"
 CBRSS_REPO="${HOME}/cbrss"
 PROTO_ORBITA_REPO="${HOME}/proto-orbita"
 GALERIJA_REPO="${HOME}/galerija"
+BITARCTIC_REPO="${HOME}/bitarctic"
 
 # Функција за гурање на све remote-ове
 push_to_all_remotes() {
@@ -93,6 +94,7 @@ show_help() {
     echo -e "  ${PEACH}-r${NC}, ${PEACH}--cbrss${NC}     Гурај само cbrss"
     echo -e "  ${PEACH}-p${NC}, ${PEACH}--proto-orbita${NC} Гурај само proto-orbita"
     echo -e "  ${PEACH}-g${NC}, ${PEACH}--galerija${NC}   Гурај само galerija"
+    echo -e "  ${PEACH}-b${NC}, ${PEACH}--bitarctic${NC}  Гурај само bitarctic"
     echo -e "  ${PEACH}-h${NC}, ${PEACH}--help${NC}      Прикажи ову помоћ"
     echo -e "  ${PEACH}--pull-all${NC}   Повлачи све репозиторијуме"
     echo
@@ -116,6 +118,7 @@ case "$1" in
         push_to_github "$CBRSS_REPO"
         push_to_github "$PROTO_ORBITA_REPO"
         push_to_github "$GALERIJA_REPO"
+        push_to_github "$BITARCTIC_REPO"
         ;;
     -d|--dotfiles)
         push_to_all_remotes "$DOTFILES_REPO"
@@ -143,6 +146,9 @@ case "$1" in
         ;;
     -g|--galerija)
         push_to_github "$GALERIJA_REPO"
+        ;;
+    -b|--bitarctic)
+        push_to_github "$BITARCTIC_REPO"
         ;;
     --pull-all)
         pull_from_all_remotes "$DOTFILES_REPO"
