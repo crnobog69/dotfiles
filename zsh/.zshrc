@@ -126,6 +126,7 @@ alias litterbox='~/dotfiles/scripts/litterbox.sh'
 alias cursor='~/Applications/Cursor/cursor.appimage'
 alias cgit='~/dotfiles/scripts/cgit.sh'
 alias cspicetify='~/dotfiles/scripts/spicetify.sh'
+alias y='yazi'
 
 alias filen-cli="~/filen-cli"
 

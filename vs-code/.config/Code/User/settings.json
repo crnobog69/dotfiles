@@ -33,7 +33,6 @@
   "editor.fontSize": 15,
   "workbench.colorTheme": "Catppuccin Mocha",
   "supermaven.enableFixWithSupermaven": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "github.copilot.editor.enableAutoCompletions": false
 }
