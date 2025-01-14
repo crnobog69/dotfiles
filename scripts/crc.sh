@@ -1,174 +1,97 @@
 #!/bin/bash
 
-COLOR_PRIMARY="#e54b4b"    # imperial-red
-COLOR_SUCCESS="#ffa987"    # atomic-tangerine
-COLOR_ERROR="#444140"      # jet
-COLOR_HIGHLIGHT="#f7ebe8"  # seashell
-COLOR_ACCENT="#1e1e24"     # raisin-black
-COLOR_BORDER="#e54b4b"     # imperial-red for border
+# Боје
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+CYAN='\033[0;36m'
+PEACH='\033[38;2;250;183;135m'
+LAVANDER='\033[38;2;180;191;254m'
+RESET='\033[0m'
 
-# Check if Gum is installed
-if ! command -v gum &> /dev/null; then
-    echo "Gum is not installed. Please install it first."
+# Функција за проверу грешака
+check_error() {
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}Грешка: $1${NC}"
+        return 1
+    fi
+    return 0
+}
+
+# Проверимо да ли је аргумент прослеђен
+if [ -z "$1" ]; then
+    echo -e "${RED}Унесите име датотеке са .c на крају!${RESET}"
+    echo "Пример коришћења: ./crc.sh program.c -lm"
+    echo -e "${YELLOW}За помоћ укуцати ./crc.sh --help${RESET}"
     exit 1
 fi
 
-# Repository paths
-DOTFILES_REPO="${HOME}/dotfiles"
-EXTRA_REPO="${HOME}/extra"
-SCRIPTS_REPO="${HOME}/scripts"
-WEBSITE_REPO="${HOME}/crnobog69.github.io"
-CBPASTE_REPO="${HOME}/cbpaste"
-CBRSS_REPO="${HOME}/cbrss"
-PROTO_ORBITA_REPO="${HOME}/proto-orbita"
-GALERIJA_REPO="${HOME}/galerija"
-BITARCTIC_REPO="${HOME}/bitarctic"
+# Ако је корисник унео --help, приказујемо помоћ
+if [ "$1" == "--help" ]; then
+    echo "==================================================================="
+    echo
+    echo -e "${RED} Алат за једноставно компајлирање програма написаних у 'C'.${RESET}"
+    echo
+    echo -e "${CYAN} 'crc.sh'${RESET} ${RED}Скрипта | Помоћ${RESET} ${CYAN}(Compile, Run, C)${RESET}"
+    echo
+    echo "==================================================================="    
+    echo
+    echo -e "${YELLOW} Коришћење:${RESET}"
+    echo
+    echo -e "${CYAN}   ./crc.sh${RESET} ${LAVANDER}ime_datoteke.c${RESET} ${PEACH}додатне_опције${RESET}"
+    echo
+    echo -e "${YELLOW} Опис:${RESET}"
+    echo
+    echo "  Овај алат компајлира програме написане у C и поседује опцију"
+    echo "  додавања библиотеке ако је потребно."
+    echo
+    echo -e "${RED}  Пример 1:${RESET} ${CYAN}./crc.sh${RESET} ${LAVANDER}program.c${RESET}"
+    echo -e "${RED}  Пример 2:${RESET} ${CYAN}./crc.sh${RESET} ${LAVANDER}program.c${RESET} ${PEACH}-lm -lncurses${RESET}"
+    echo -e "${RED}  Пример 3:${RESET} ${CYAN}./crc.sh${RESET} ${LAVANDER}program.c${RESET} ${PEACH}-lm${RESET}"
+    echo
+    echo "==================================================================="
+    echo
+    echo -e "${YELLOW} Додатне опције:${RESET}"
+    echo
+    echo -e "  ${PEACH}--help${RESET}        Приказује ову помоћ."
+    echo -e "  ${PEACH}-lm${RESET}           Додаје математичку библиотеку."
+    echo -e "  ${PEACH}-lncurses${RESET}     Додаје библиотеку за рад са терминалом."
+    echo -e "  ${PEACH}-lpthread${RESET}     Додаје библиотеку за рад са нитима."
+    echo
+    echo -e "  Или нека друга библиотека, исто као ${RED}'gcc'${RESET} компајлер."
+    echo
+    echo "==================================================================="
+    exit 0
+fi
 
-# gum style \
-#     --border double \
-#     --align center \
-#     --width 65 \
-#     --margin "1" \
-#     --padding "1" \
-#     --foreground "$COLOR_HIHGLIGHT" \
-#     --border-foreground "$COLOR_BORDER" \
-#     "  _  _  ____  _  _  _ __  ____  _ __  ____ 
-#  / \( \(  _ \/ )( \/ )  )/  __)/ )  )(_  _)
-#  ) (/ ( ) __/) __ (\    \) (   \    \  )(  
-# \___\/(__)  \_)(_/(__(_/\_/   (__(_/ (__) "
+# Име датотеке са екстензијом
+FILE=$1
 
-push_to_all_remotes() {
-    local repo=$1
-    gum style --border normal "Гурање директоријума: $(gum style --foreground "$COLOR_HIGHLIGHT" "$repo") на све удаљене репозиторијуме"
-    cd "$repo" || exit
-    
-    for remote in github gitlab codeberg; do
-        gum spin --spinner.foreground="$COLOR_PRIMARY" --title "Гурање на $remote..." --spinner dot -- sleep 1
-        git add .
-        git commit -m "❄️" || true
-        if git push "$remote"; then
-            gum style --foreground "$COLOR_SUCCESS" "Успешно погурано на $remote"
-        else
-            gum style --foreground "$COLOR_ERROR" "Грешла у гурању на $remote"
-        fi
-    done
-}
+# Проверимо да ли датотека има .c екстензију
+if [[ "$FILE" != *.c ]]; then
+    echo -e "${RED}Унесите име датотеке са .c на крају!${RESET}"
+    echo -e "${YELLOW}За помоћ укуцати ./crc.sh --help${RESET}"
+    exit 1
+fi
 
-push_to_github() {
-    local repo=$1
-    gum style --border normal "Гурање репозиторијума: $(gum style --foreground "$COLOR_HIGHLIGHT" "$repo") на GitHub"
-    cd "$repo" || exit
-    
-    gum spin --spinner.foreground="$COLOR_PRIMARY" --title "Гурање на GitHub..." --spinner dot -- sleep 1
-    git add .
-    git commit -m "❄️" || true
-    if git push github; then
-        gum style --foreground "$COLOR_SUCCESS" "Испешбо погурано на GitHub"
-    else
-        gum style --foreground "$COLOR_ERROR" "Грешка у гурању на GitHub"
-    fi
-}
+# Уклонити .c екстензију да добијемо име извршне датотеке
+FILENAME=${FILE%.c}
 
-pull_from_all_remotes() {
-    local repo=$1
-    gum style --border normal "Повлачење репозиторијума: $(gum style --foreground "$COLOR_HIGHLIGHT" "$repo")"
-    cd "$repo" || exit
-    
-    for remote in github gitlab codeberg; do
-        gum spin --spinner.foreground="$COLOR_PRIMARY" --title "Pulling from $remote..." --spinner dot -- sleep 1
-        if git pull "$remote"; then
-            gum style --foreground "$COLOR_SUCCESS" "Успешно повучено са $remote !"
-        else
-            gum style --foreground "$COLOR_ERROR" "Грешка у повлачењу са $remote !"
-        fi
-    done
-}
+# Додатне библиотеке (ако постоје)
+shift # Уклонити први аргумент (име фајла)
+LIBRARIES=$@
 
-main_menu() {
-    local choice
-    choice=$(gum choose \
-        --header=" Црнибог - Git Helper " \
-        --header.foreground="$COLOR_PRIMARY" \
-        --cursor.foreground="#e54b4b" \
-        --item.foreground="#f7ebe8" \
-        --selected.foreground="#ffa987" \
-        "Гурај све репозиторијуме" \
-        "Гурај Dotfiles" \
-        "Гурај Extra" \
-        "Гурај Scripts" \
-        "Гурај вебсајт" \
-        "Гурај CBPaste" \
-        "Гурај CBRSS" \
-        "Гурај Proto-Orbita" \
-        "Гурај Galerija" \
-        "Гурај Bitarctic" \
-        "Повуци све репозиторијуме" \
-        "Излаз")
+# Компилација са додатним библиотекама
+echo -e "${CYAN}Компајлирање...${RESET}"
+gcc "$FILE" -o "$FILENAME" $LIBRARIES
+if [ $? -ne 0 ]; then
+    echo -e "${RED}Грешка приликом компајлирања!${RESET}"
+    echo -e "${YELLOW}За помоћ укуцати ./crc.sh --help${RESET}"
+    exit 1
+fi
 
-    case "$choice" in
-        "Гурај све репозиторијуме")
-            push_to_all_remotes "$DOTFILES_REPO"
-            push_to_all_remotes "$EXTRA_REPO"
-            push_to_github "$SCRIPTS_REPO"
-            push_to_github "$WEBSITE_REPO"
-            push_to_github "$CBPASTE_REPO"
-            push_to_github "$CBRSS_REPO"
-            push_to_github "$PROTO_ORBITA_REPO"
-            push_to_github "$GALERIJA_REPO"
-            push_to_github "$BITARCTIC_REPO"
-            ;;
-        "Гурај Dotfiles")
-            push_to_all_remotes "$DOTFILES_REPO"
-            ;;
-        "Гурај Extrta")
-            push_to_all_remotes "$EXTRA_REPO"
-            ;;
-        "Гурај Scripts")
-            push_to_github "$SCRIPTS_REPO"
-            ;;
-        "Гурај вебсајт")
-            push_to_github "$WEBSITE_REPO"
-            ;;
-        "Гурај CBPASTE")
-            push_to_github "$CBPASTE_REPO"
-            ;;
-        "Гурај CBRSS")
-            push_to_github "$CBRSS_REPO"
-            ;;
-        "Гурај Proto-Orbita")
-            push_to_github "$PROTO_ORBITA_REPO"
-            ;;
-        "Гурај Galerija")
-            push_to_github "$GALERIJA_REPO"
-            ;;
-        "Гурај Bitarctic")
-            push_to_github "$BITARCTIC_REPO"
-            ;;
-        "Повуци све репозиторијуме")
-            pull_from_all_remotes "$DOTFILES_REPO"
-            pull_from_all_remotes "$EXTRA_REPO"
-            pull_from_all_remotes "$SCRIPTS_REPO"
-            pull_from_all_remotes "$WEBSITE_REPO"
-            pull_from_all_remotes "$CBPASTE_REPO"
-            pull_from_all_remotes "$CBRSS_REPO"
-            pull_from_all_remotes "$PROTO_ORBITA_REPO"
-            pull_from_all_remotes "$GALERIJA_REPO"
-            ;;
-        "Излаз")
-            gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
-            exit 0
-            ;;
-    esac
-    
-    if gum confirm \
-        --prompt.foreground="#f7ebe8" \
-        --selected.background="#e54b4b" \
-        --unselected.background="#1e1e24" \
-        "Желите ли да извршите још неку операцију?"; then
-        main_menu
-    else
-        gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
-    fi
-}
-
-main_menu
+# Покретање извршне датотеке
+echo -e "${GREEN}Покретање извршне датотеке: ./${FILENAME}${RESET}"
+echo "--------------------------" 
+echo
+./"$FILENAME"
