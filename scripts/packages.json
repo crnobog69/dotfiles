@@ -35,14 +35,18 @@
     "ttf-jetbrains-mono-nerd",
     "unison",
     "bun",
-    "bore"
+    "bore",
+    "gum"
   ],
   "chaoticaur": [
     "brave-bin",
     "visual-studio-code-bin",
     "spicetify-cli",
     "portmaster-stub-bin",
-    "ngrok"
+    "ngrok",
+    "vesktop",
+    "cava",
+    "catppuccin-cursors-mocha"
   ],
-  "aur": ["vencord-bin", "catppuccin-cursors-mocha", "cava"]
+  "aur": [ ]
 }
