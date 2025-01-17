@@ -34,5 +34,8 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "supermaven.enableFixWithSupermaven": true,
   "editor.formatOnSave": true,
-  "github.copilot.editor.enableAutoCompletions": false
+  "github.copilot.editor.enableAutoCompletions": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "matlab.interrupt"
+  ]
 }
