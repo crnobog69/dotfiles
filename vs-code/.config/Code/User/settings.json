@@ -31,11 +31,37 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "editor.fontSize": 15,
-  "workbench.colorTheme": "Evondev Dracula Night Contrast",
   "supermaven.enableFixWithSupermaven": true,
   "editor.formatOnSave": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "terminal.integrated.commandsToSkipShell": [
     "matlab.interrupt"
-  ]
+  ],
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "editor.tokenColorCustomizations": {
+    "[Catppuccin Mocha]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": [
+            "keyword.control",
+            "keyword.operator",
+            "storage.type",
+            "storage.modifier",
+            "entity.name.function"
+          ],
+          "settings": {
+            "fontStyle": "italic"
+          }
+        }
+      ]
+    }
+  }
 }

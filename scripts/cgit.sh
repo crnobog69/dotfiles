@@ -23,6 +23,7 @@ CBRSS_REPO="${HOME}/cbrss"
 PROTO_ORBITA_REPO="${HOME}/proto-orbita"
 GALERIJA_REPO="${HOME}/galerija"
 BITARCTIC_REPO="${HOME}/bitarctic"
+C_ZADACI_REPO="${HOME}/Desktop/c-zadaci"
 
 # gum style \
 #     --border double \
@@ -97,6 +98,7 @@ main_menu() {
         "Гурај Extra" \
         "Гурај Scripts" \
         "Гурај вебсајт" \
+        "Гурај c-zadaci" \
         "Гурај CBPaste" \
         "Гурај CBRSS" \
         "Гурај Proto-Orbita" \
@@ -116,6 +118,7 @@ main_menu() {
             push_to_github "$PROTO_ORBITA_REPO"
             push_to_github "$GALERIJA_REPO"
             push_to_github "$BITARCTIC_REPO"
+            push_to_github "$C_ZADACI_REPO"
             ;;
         "Гурај Dotfiles")
             push_to_all_remotes "$DOTFILES_REPO"
@@ -128,6 +131,9 @@ main_menu() {
             ;;
         "Гурај вебсајт")
             push_to_github "$WEBSITE_REPO"
+            ;;
+        "Гурај c-zadaci")
+            push_to_github "$C_ZADACI_REPO"
             ;;
         "Гурај CBPASTE")
             push_to_github "$CBPASTE_REPO"
@@ -153,6 +159,7 @@ main_menu() {
             pull_from_all_remotes "$CBRSS_REPO"
             pull_from_all_remotes "$PROTO_ORBITA_REPO"
             pull_from_all_remotes "$GALERIJA_REPO"
+            pull_from_all_remotes "$C_ZADACI_REPO"
             ;;
         "Излаз")
             gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
