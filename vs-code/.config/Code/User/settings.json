@@ -31,7 +31,7 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "editor.fontSize": 15,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Evondev Dracula Night Contrast",
   "supermaven.enableFixWithSupermaven": true,
   "editor.formatOnSave": true,
   "github.copilot.editor.enableAutoCompletions": false,
