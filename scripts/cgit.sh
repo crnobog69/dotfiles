@@ -113,12 +113,12 @@ main_menu() {
             push_to_all_remotes "$EXTRA_REPO"
             push_to_github "$SCRIPTS_REPO"
             push_to_github "$WEBSITE_REPO"
+            push_to_github "$C_ZADACI_REPO"
             push_to_github "$CBPASTE_REPO"
             push_to_github "$CBRSS_REPO"
             push_to_github "$PROTO_ORBITA_REPO"
             push_to_github "$GALERIJA_REPO"
             push_to_github "$BITARCTIC_REPO"
-            push_to_github "$C_ZADACI_REPO"
             ;;
         "Гурај Dotfiles")
             push_to_all_remotes "$DOTFILES_REPO"
@@ -155,11 +155,11 @@ main_menu() {
             pull_from_all_remotes "$EXTRA_REPO"
             pull_from_all_remotes "$SCRIPTS_REPO"
             pull_from_all_remotes "$WEBSITE_REPO"
+            pull_from_all_remotes "$C_ZADACI_REPO"
             pull_from_all_remotes "$CBPASTE_REPO"
             pull_from_all_remotes "$CBRSS_REPO"
             pull_from_all_remotes "$PROTO_ORBITA_REPO"
             pull_from_all_remotes "$GALERIJA_REPO"
-            pull_from_all_remotes "$C_ZADACI_REPO"
             ;;
         "Излаз")
             gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
