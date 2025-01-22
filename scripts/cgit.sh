@@ -24,6 +24,7 @@ PROTO_ORBITA_REPO="${HOME}/proto-orbita"
 GALERIJA_REPO="${HOME}/galerija"
 BITARCTIC_REPO="${HOME}/bitarctic"
 C_ZADACI_REPO="${HOME}/Desktop/c-zadaci"
+PY_ZADACI_REPO="${HOME}/Desktop/py-zadaci"
 
 # gum style \
 #     --border double \
@@ -98,6 +99,7 @@ main_menu() {
         "Гурај Extra" \
         "Гурај Scripts" \
         "Гурај вебсајт" \
+        "Гурај py-zadaci" \
         "Гурај c-zadaci" \
         "Гурај CBPaste" \
         "Гурај CBRSS" \
@@ -113,6 +115,7 @@ main_menu() {
             push_to_all_remotes "$EXTRA_REPO"
             push_to_github "$SCRIPTS_REPO"
             push_to_github "$WEBSITE_REPO"
+            push_to_github "$PY_ZADACI_REPO"
             push_to_github "$C_ZADACI_REPO"
             push_to_github "$CBPASTE_REPO"
             push_to_github "$CBRSS_REPO"
@@ -131,6 +134,9 @@ main_menu() {
             ;;
         "Гурај вебсајт")
             push_to_github "$WEBSITE_REPO"
+            ;;
+        "Гурај py-zadaci")
+            push_to_github "$PY_ZADACI_REPO"
             ;;
         "Гурај c-zadaci")
             push_to_github "$C_ZADACI_REPO"
@@ -155,6 +161,7 @@ main_menu() {
             pull_from_all_remotes "$EXTRA_REPO"
             pull_from_all_remotes "$SCRIPTS_REPO"
             pull_from_all_remotes "$WEBSITE_REPO"
+            pull_from_all_remotes "$PY_ZADACI_REPO"
             pull_from_all_remotes "$C_ZADACI_REPO"
             pull_from_all_remotes "$CBPASTE_REPO"
             pull_from_all_remotes "$CBRSS_REPO"
