@@ -126,7 +126,7 @@ main_menu() {
         "Гурај Dotfiles")
             push_to_all_remotes "$DOTFILES_REPO"
             ;;
-        "Гурај Extrta")
+        "Гурај Extra")
             push_to_all_remotes "$EXTRA_REPO"
             ;;
         "Гурај Scripts")
