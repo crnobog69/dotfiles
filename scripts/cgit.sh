@@ -196,7 +196,7 @@ main_menu() {
         local choice
         choice=$(gum choose \
             --header="    ЦрниГит " \
-            --header.foreground="$COLOR_SUCCESS" \
+            --header.foreground="$RED" \
             --cursor.foreground="#e54b4b" \
             --item.foreground="#f7ebe8" \
             --selected.foreground="#ffa987" \
