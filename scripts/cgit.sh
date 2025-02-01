@@ -1,15 +1,11 @@
 #!/bin/bash
 
-COLOR_PRIMARY="#e54b4b"    # imperial-red
-COLOR_SUCCESS="#ffa987"    # atomic-tangerine
-COLOR_ERROR="#444140"      # jet
-COLOR_HIGHLIGHT="#f7ebe8"  # seashell
-COLOR_ACCENT="#1e1e24"     # raisin-black
-COLOR_BORDER="#e54b4b"     # imperial-red for border
 RED="#f38ba8"
 YELLOW="#f9e2af"
 GREEN="#a6e3a1"
-LAVENDER="#b4befe"
+LAVENDER="#cdd6f4"
+DARK_RED="#e78284"
+DARK_LAVENDER="#babbf1"
 
 # Check if Gum is installed
 if ! command -v gum &> /dev/null; then
@@ -51,7 +47,7 @@ push_to_all_remotes() {
     cd "$repo" || exit
     
     for remote in github gitlab codeberg; do
-        gum spin --spinner.foreground="$YELLOW" --title "Гурање на $remote..." --spinner dot -- sleep 1
+        gum spin --spinner.foreground="$RED" --title "Гурање на $remote..." --spinner dot -- sleep 1
         git add .
         git commit -m "❄️" || true
         if git push "$remote"; then
@@ -67,7 +63,7 @@ push_to_github() {
     gum style --border normal "Гурање репозиторијума: $(gum style --foreground "$YELLOW" "$repo") на GitHub"
     cd "$repo" || exit
     
-    gum spin --spinner.foreground="$YELLOW" --title "Гурање на GitHub..." --spinner dot -- sleep 1
+    gum spin --spinner.foreground="$RED" --title "Гурање на GitHub..." --spinner dot -- sleep 1
     git add .
     git commit -m "❄️" || true
     if git push github; then
@@ -113,10 +109,10 @@ handle_repository() {
     local operation
     operation=$(gum choose \
         --header=" Операције за $repo_name " \
-        --header.foreground="$COLOR_PRIMARY" \
-        --cursor.foreground="#e54b4b" \
-        --item.foreground="#f7ebe8" \
-        --selected.foreground="#ffa987" \
+        --header.foreground="$YELLOW" \
+        --cursor.foreground="${RED}" \
+        --item.foreground="${LAVENDER}" \
+        --selected.foreground="${RED}" \
         " Гурај" \
         " Повуци" \
         " Назад")
@@ -196,10 +192,10 @@ main_menu() {
         local choice
         choice=$(gum choose \
             --header="    ЦрниГит " \
-            --header.foreground="$RED" \
-            --cursor.foreground="#e54b4b" \
-            --item.foreground="#f7ebe8" \
-            --selected.foreground="#ffa987" \
+            --header.foreground="$YELLOW" \
+            --cursor.foreground="${RED}" \
+            --item.foreground="${LAVENDER}" \
+            --selected.foreground="${RED}" \
             "  Претрага" \
             "  | Dotfiles" \
             "  | Extra" \
@@ -301,11 +297,11 @@ main_menu() {
         esac
 
         if ! gum confirm \
-            --prompt.foreground="#f7ebe8" \
-            --selected.background="#e54b4b" \
-            --unselected.background="#1e1e24" \
+            --prompt.foreground="${YELLOW}" \
+            --selected.background="${DARK_RED}" \
+            --unselected.background="${DARK_LAVENDER}" \
             "Желите ли да извршите још неку операцију?"; then
-            gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
+            gum style --foreground "$YELLOW" " Довиђења!"
             exit 0
         fi
     done
@@ -315,10 +311,10 @@ handle_all_repositories() {
     local operation
     operation=$(gum choose \
         --header=" Операције за све репозиторијуме " \
-        --header.foreground="$COLOR_PRIMARY" \
-        --cursor.foreground="#e54b4b" \
-        --item.foreground="#f7ebe8" \
-        --selected.foreground="#ffa987" \
+        --header.foreground="$YELLOW" \
+        --cursor.foreground="${RED}" \
+        --item.foreground="${LAVENDER}" \
+        --selected.foreground="${RED}" \
         " Гурај све" \
         " Повуци све" \
         " Назад")
