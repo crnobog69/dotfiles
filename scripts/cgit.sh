@@ -70,7 +70,7 @@ push_to_github() {
     git commit -m "❄️" || true
     if git push github; then
         echo
-        gum style --foreground "${GREEN}" " Испешбо погурано на GitHub"
+        gum style --foreground "${GREEN}" " Успешно погурано на GitHub"
         echo
     else
         gum style --foreground "${RED}" " Грешка у гурању на GitHub"
