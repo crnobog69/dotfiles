@@ -8,6 +8,12 @@ PEACH='\033[38;2;250;183;135m'
 PURPLE='\033[38;2;150;50;200m'
 NC="\e[0m" # Без боје
 
+# Check if Gum is installed
+if ! command -v gum &> /dev/null; then
+    echo "Gum is not installed. Please install it first."
+    exit 1
+fi
+
 echo -e "${RED}"
 echo =============================================
 echo "[  _  _  ____  _  _   __  ____   __   ____  ]"
@@ -95,7 +101,10 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
 fi
 
 # Питање за ажурирање система
-read -p "Да ли желите да ажурирате систем? (y/n): " update_answer
+if ! gum confirm --prompt.foreground="#f9e2af" --selected.background="#e78284" --unselected.background="#b4befe" "Да ли желите да покренете ажурирање система?"; then
+    echo -e "${RED}Чишћење је отказано.${NC}"
+    exit 1
+fi
 
 # Ако је одговор y/Y, покрените одговарајући алат за ажурирање
 if [[ -z "$update_answer" || "$update_answer" =~ ^[Yy]$ ]]; then

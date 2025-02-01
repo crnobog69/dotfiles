@@ -37,7 +37,6 @@ check_error() {
     return 0
 }
 
-# Replace confirmation prompt with gum
 if ! gum confirm --prompt.foreground="#f9e2af" --selected.background="#e78284" --unselected.background="#b4befe" "Да ли желите да покренете чишћење система?"; then
     echo -e "${RED}Чишћење је отказано.${NC}"
     exit 1
