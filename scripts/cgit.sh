@@ -43,53 +43,53 @@ PY_ZADACI_REPO="${HOME}/Desktop/py-zadaci"
 
 push_to_all_remotes() {
     local repo=$1
-    gum style --border normal "Гурање директоријума: $(gum style --foreground "$YELLOW" "$repo") на све удаљене репозиторијуме"
+    gum style --border normal "Гурање директоријума: $(gum style --foreground "${YELLOW}" "$repo") на све удаљене репозиторијуме"
     cd "$repo" || exit
     
     for remote in github gitlab codeberg; do
-        gum spin --spinner.foreground="$RED" --title " Гурање на $remote..." --spinner dot -- sleep 1
+        gum spin --spinner.foreground="${RED}" --title " Гурање на $remote..." --spinner dot -- sleep 1
         git add .
         git commit -m "❄️" || true
         if git push "$remote"; then
             echo
-            gum style --foreground "$GREEN" " Успешно погурано на $remote"
+            gum style --foreground "${GREEN}" " Успешно погурано на $remote"
             echo
         else
-            gum style --foreground "$RED" " Грешла у гурању на $remote"
+            gum style --foreground "${RED}" " Грешла у гурању на $remote"
         fi
     done
 }
 
 push_to_github() {
     local repo=$1
-    gum style --border normal "Гурање репозиторијума: $(gum style --foreground "$YELLOW" "$repo") на GitHub"
+    gum style --border normal "Гурање репозиторијума: $(gum style --foreground "${YELLOW}" "$repo") на GitHub"
     cd "$repo" || exit
     
-    gum spin --spinner.foreground="$RED" --title " Гурање на GitHub..." --spinner dot -- sleep 1
+    gum spin --spinner.foreground="${RED}" --title " Гурање на GitHub..." --spinner dot -- sleep 1
     git add .
     git commit -m "❄️" || true
     if git push github; then
         echo
-        gum style --foreground "$GREEN" " Испешбо погурано на GitHub"
+        gum style --foreground "${GREEN}" " Испешбо погурано на GitHub"
         echo
     else
-        gum style --foreground "$RED" " Грешка у гурању на GitHub"
+        gum style --foreground "${RED}" " Грешка у гурању на GitHub"
     fi
 }
 
 pull_from_all_remotes() {
     local repo=$1
-    gum style --border normal "Повлачење репозиторијума: $(gum style --foreground "$YELLOW" "$repo")"
+    gum style --border normal "Повлачење репозиторијума: $(gum style --foreground "${YELLOW}" "$repo")"
     cd "$repo" || exit
     
     for remote in github gitlab codeberg; do
-        gum spin --spinner.foreground="$YELLOW" --title "Pulling from $remote..." --spinner dot -- sleep 1
+        gum spin --spinner.foreground="${YELLOW}" --title "Pulling from $remote..." --spinner dot -- sleep 1
         if git pull "$remote"; then
             echo
-            gum style --foreground "$GREEN" " Успешно повучено са $remote !"
+            gum style --foreground "${GREEN}" " Успешно повучено са $remote !"
             echo
         else
-            gum style --foreground "$RED" " Грешка у повлачењу са $remote !"
+            gum style --foreground "${RED}" " Грешка у повлачењу са $remote !"
         fi
     done
 }
