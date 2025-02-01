@@ -7,7 +7,7 @@ COLOR_HIGHLIGHT="#f7ebe8"  # seashell
 COLOR_ACCENT="#1e1e24"     # raisin-black
 COLOR_BORDER="#e54b4b"     # imperial-red for border
 RED="#f38ba8"
-YELLO="#f9e2af"
+YELLOW="#f9e2af"
 GREEN="#a6e3a1"
 LAVENDER="#b4befe"
 
