@@ -6,7 +6,7 @@
 
 <div align="center">
 
-> [!CAUTION]
+> [!WARNING]
 > Documentation is located on [***Dotdocs***](https://dotdocs.vercel.app/) website.  
 > <br>
 > Documentation that is located here will not be updated.
