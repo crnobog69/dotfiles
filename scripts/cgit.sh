@@ -13,6 +13,8 @@ if ! command -v gum &> /dev/null; then
     exit 1
 fi
 
+
+
 # Repository paths
 DOTFILES_REPO="${HOME}/dotfiles"
 EXTRA_REPO="${HOME}/extra"
@@ -86,103 +88,269 @@ pull_from_all_remotes() {
     done
 }
 
-main_menu() {
-    local choice
-    choice=$(gum choose \
-        --header=" ЦРНИГИТ - Git Helper " \
+pull_from_github() {
+    local repo=$1
+    gum style --border normal "Повлачење репозиторијума: $(gum style --foreground "$COLOR_HIGHLIGHT" "$repo") са GitHub-а"
+    cd "$repo" || exit
+    
+    gum spin --spinner.foreground="$COLOR_PRIMARY" --title "Повлачење са GitHub..." --spinner dot -- sleep 1
+    if git pull github; then
+        gum style --foreground "$COLOR_SUCCESS" "Успешно повучено са GitHub!"
+    else
+        gum style --foreground "$COLOR_ERROR" "Грешка у повлачењу са GitHub!"
+    fi
+}
+
+handle_repository() {
+    local repo=$1
+    local repo_name=$2
+    local has_all_remotes=$3
+
+    local operation
+    operation=$(gum choose \
+        --header=" Операције за $repo_name " \
         --header.foreground="$COLOR_PRIMARY" \
         --cursor.foreground="#e54b4b" \
         --item.foreground="#f7ebe8" \
         --selected.foreground="#ffa987" \
-        "Гурај све репозиторијуме" \
-        "Гурај Dotfiles" \
-        "Гурај Extra" \
-        "Гурај Scripts" \
-        "Гурај вебсајт" \
-        "Гурај py-zadaci" \
-        "Гурај c-zadaci" \
-        "Гурај CBPaste" \
-        "Гурај CBRSS" \
-        "Гурај Proto-Orbita" \
-        "Гурај Galerija" \
-        "Гурај Bitarctic" \
-        "Повуци све репозиторијуме" \
-        "Излаз")
+        " Гурај" \
+        " Повуци" \
+        " Назад")
 
-    case "$choice" in
-        "Гурај све репозиторијуме")
-            push_to_all_remotes "$DOTFILES_REPO"
-            push_to_all_remotes "$EXTRA_REPO"
-            push_to_github "$SCRIPTS_REPO"
-            push_to_github "$WEBSITE_REPO"
-            push_to_github "$PY_ZADACI_REPO"
-            push_to_github "$C_ZADACI_REPO"
-            push_to_github "$CBPASTE_REPO"
-            push_to_github "$CBRSS_REPO"
-            push_to_github "$PROTO_ORBITA_REPO"
-            push_to_github "$GALERIJA_REPO"
-            push_to_github "$BITARCTIC_REPO"
+    case "$operation" in
+        " Гурај")
+            if [ "$has_all_remotes" = true ]; then
+                push_to_all_remotes "$repo"
+            else
+                push_to_github "$repo"
+            fi
+            return 0
             ;;
-        "Гурај Dotfiles")
-            push_to_all_remotes "$DOTFILES_REPO"
+        " Повуци")
+            if [ "$has_all_remotes" = true ]; then
+                pull_from_all_remotes "$repo"
+            else
+                pull_from_github "$repo"
+            fi
+            return 0
             ;;
-        "Гурај Extra")
-            push_to_all_remotes "$EXTRA_REPO"
-            ;;
-        "Гурај Scripts")
-            push_to_github "$SCRIPTS_REPO"
-            ;;
-        "Гурај вебсајт")
-            push_to_github "$WEBSITE_REPO"
-            ;;
-        "Гурај py-zadaci")
-            push_to_github "$PY_ZADACI_REPO"
-            ;;
-        "Гурај c-zadaci")
-            push_to_github "$C_ZADACI_REPO"
-            ;;
-        "Гурај CBPASTE")
-            push_to_github "$CBPASTE_REPO"
-            ;;
-        "Гурај CBRSS")
-            push_to_github "$CBRSS_REPO"
-            ;;
-        "Гурај Proto-Orbita")
-            push_to_github "$PROTO_ORBITA_REPO"
-            ;;
-        "Гурај Galerija")
-            push_to_github "$GALERIJA_REPO"
-            ;;
-        "Гурај Bitarctic")
-            push_to_github "$BITARCTIC_REPO"
-            ;;
-        "Повуци све репозиторијуме")
-            pull_from_all_remotes "$DOTFILES_REPO"
-            pull_from_all_remotes "$EXTRA_REPO"
-            pull_from_all_remotes "$SCRIPTS_REPO"
-            pull_from_all_remotes "$WEBSITE_REPO"
-            pull_from_all_remotes "$PY_ZADACI_REPO"
-            pull_from_all_remotes "$C_ZADACI_REPO"
-            pull_from_all_remotes "$CBPASTE_REPO"
-            pull_from_all_remotes "$CBRSS_REPO"
-            pull_from_all_remotes "$PROTO_ORBITA_REPO"
-            pull_from_all_remotes "$GALERIJA_REPO"
-            ;;
-        "Излаз")
-            gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
-            exit 0
+        " Назад")
+            return 1
             ;;
     esac
-    
-    if gum confirm \
-        --prompt.foreground="#f7ebe8" \
-        --selected.background="#e54b4b" \
-        --unselected.background="#1e1e24" \
-        "Желите ли да извршите још неку операцију?"; then
-        main_menu
-    else
-        gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
+}
+
+search_repositories() {
+    local selected
+    selected=$(printf "%s\n" \
+        "Dotfiles [$DOTFILES_REPO]" \
+        "Extra [$EXTRA_REPO]" \
+        "Scripts [$SCRIPTS_REPO]" \
+        "Website [$WEBSITE_REPO]" \
+        "CBPaste [$DOTFILES_REPO]" \
+        "CBRSS [$CBPASTE_REPO]" \
+        "Proto-Orbita [$PROTO_ORBITA_REPO]" \
+        "Galerija [$GALERIJA_REPO]" \
+        "Bitarctic [$BITARCTIC_REPO]" \
+        "Py-Zadaci [$PY_ZADACI_REPO]" \
+        "C-Zadaci [$C_ZADACI_REPO]" \
+        "« Назад" | \
+        gum filter \
+            --placeholder "Претражи репозиторијуме..." \
+            --indicator.foreground "$COLOR_PRIMARY" \
+            --prompt.foreground "$COLOR_HIGHLIGHT" \
+            --match.foreground "$COLOR_SUCCESS")
+
+    if [ -n "$selected" ]; then
+        if [ "$selected" = "« Назад" ]; then
+            return 1
+        fi
+        
+        local result=0
+        case "$selected" in
+            "Dotfiles"*)      handle_repository "$DOTFILES_REPO" "Dotfiles" true ;;
+            "Extra"*)         handle_repository "$EXTRA_REPO" "Extra" true ;;
+            "Scripts"*)       handle_repository "$SCRIPTS_REPO" "Scripts" false ;;
+            "Website"*)       handle_repository "$WEBSITE_REPO" "Website" false ;;
+            "CBPaste"*)       handle_repository "$CBPASTE_REPO" "CBPaste" false ;;
+            "CBRSS"*)        handle_repository "$CBRSS_REPO" "CBRSS" false ;;
+            "Proto-Orbita"*) handle_repository "$PROTO_ORBITA_REPO" "Proto-Orbita" false ;;
+            "Galerija"*)     handle_repository "$GALERIJA_REPO" "Galerija" false ;;
+            "Bitarctic"*)    handle_repository "$BITARCTIC_REPO" "Bitarctic" false ;;
+            "Py-Zadaci"*)    handle_repository "$PY_ZADACI_REPO" "Py-Zadaci" false ;;
+            "C-Zadaci"*)     handle_repository "$C_ZADACI_REPO" "C-Zadaci" false ;;
+        esac
+        result=$?
+        [ "$result" -eq 1 ] && return 1
+        return 0
     fi
+    return 1
+}
+
+main_menu() {
+    while true; do
+        local choice
+        choice=$(gum choose \
+            --header="    ЦрниГит " \
+            --header.foreground="$COLOR_SUCCESS" \
+            --cursor.foreground="#e54b4b" \
+            --item.foreground="#f7ebe8" \
+            --selected.foreground="#ffa987" \
+            "  Претрага" \
+            "  | Dotfiles" \
+            "  | Extra" \
+            "  | Scripts" \
+            "  | Website" \
+            "  | CBPaste" \
+            "  | CBRSS" \
+            "  | Proto-Orbita" \
+            "  | Galerija" \
+            "  | Bitarctic" \
+            "  | Py-Zadaci" \
+            "  | C-Zadaci" \
+            "󰒆  Све репозиторијуме" \
+            "󰈆  Излаз")
+
+        case "$choice" in
+            "  Претрага")
+                search_repositories
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Dotfiles")
+                handle_repository "$DOTFILES_REPO" "Dotfiles" true
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Extra")
+                handle_repository "$EXTRA_REPO" "Extra" true
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Scripts")
+                handle_repository "$SCRIPTS_REPO" "Scripts" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Website")
+                handle_repository "$WEBSITE_REPO" "Website" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | CBPaste")
+                handle_repository "$CBPASTE_REPO" "CBPaste" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | CBRSS")
+                handle_repository "$CBRSS_REPO" "CBRSS" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Proto-Orbita")
+                handle_repository "$PROTO_ORBITA_REPO" "Proto-Orbita" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Galerija")
+                handle_repository "$GALERIJA_REPO" "Galerija" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Bitarctic")
+                handle_repository "$BITARCTIC_REPO" "Bitarctic" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Py-Zadaci")
+                handle_repository "$PY_ZADACI_REPO" "Py-Zadaci" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | C-Zadaci")
+                handle_repository "$C_ZADACI_REPO" "C-Zadaci" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "󰒆  Све репозиторијуме")
+                handle_all_repositories
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "󰈆  Излаз")
+                gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
+                exit 0
+                ;;
+        esac
+
+        if ! gum confirm \
+            --prompt.foreground="#f7ebe8" \
+            --selected.background="#e54b4b" \
+            --unselected.background="#1e1e24" \
+            "Желите ли да извршите још неку операцију?"; then
+            gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
+            exit 0
+        fi
+    done
+}
+
+handle_all_repositories() {
+    local operation
+    operation=$(gum choose \
+        --header=" Операције за све репозиторијуме " \
+        --header.foreground="$COLOR_PRIMARY" \
+        --cursor.foreground="#e54b4b" \
+        --item.foreground="#f7ebe8" \
+        --selected.foreground="#ffa987" \
+        " Гурај све" \
+        " Повуци све" \
+        " Назад")
+
+    case "$operation" in
+        " Гурај све")
+            push_to_all_remotes "$DOTFILES_REPO"
+            push_to_all_remotes "$EXTRA_REПО"
+            push_to_github "$SCRIPTS_REПО"
+            push_to_github "$WEBSITE_REПО"
+            push_to_github "$PY_ZADACI_REПО"
+            push_to_github "$C_ZADACI_REПО"
+            push_to_github "$CBPASTE_REПО"
+            push_to_github "$CBRSS_REПО"
+            push_to_github "$PROTO_ORBITA_REПО"
+            push_to_github "$GALERIЈА_REПО"
+            push_to_github "$BITARCTIC_REПО"
+            return 0
+            ;;
+        " Повуци све")
+            pull_from_all_remotes "$DOTFILES_REПО"
+            pull_from_all_remotes "$EXTRA_REПО"
+            pull_from_github "$SCRIPTS_REПО"
+            pull_from_github "$WEBSITE_REПО"
+            pull_from_github "$PY_ZADACI_REПО"
+            pull_from_github "$C_ZADACI_REПО"
+            pull_from_github "$CBPASTE_REПО"
+            pull_from_github "$CBRSS_REПО"
+            pull_from_github "$PROTO_ORBITA_REПО"
+            pull_from_github "$BITARCTIC_REПО"
+            return 0
+            ;;
+        " Назад")
+            return 1
+            ;;
+    esac
 }
 
 main_menu

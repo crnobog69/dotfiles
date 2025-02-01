@@ -200,6 +200,28 @@ else
 fi
 echo
 
+echo -e "=== ${RED} | Gradle${NC} ==============================================================="
+
+echo
+
+if [ -d ~/.bun/install/cache ]; then
+    echo -e "${YELLOW}Величина кеша и врапера Gradle:${NC}"
+    du -sh ~/.gradle/caches/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    du -sh ~/.gradle/wrapper/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    echo
+    echo -e "${GREEN}Брисање кеша и врапера Gradle...${NC}"
+    rm -rf ~/.gradle/caches/*
+    rm -rf ~/.gradle/wrapper/*
+    echo
+    echo -e "${YELLOW}Величина кеша и врапера Gradle:${NC}"
+    du -sh ~/.gradle/caches/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+    du -sh ~/.gradle/wrapper/ | awk '{print "\033[31m"$1"\033[0m \033[38;2;180;191;254m"$2"\033[0m"}'
+else
+    echo -e "${YELLOW}Gradle није инсталиран${NC}"
+fi
+
+echo
+
 echo -e "=== ${RED} | Канта${NC} ============================================================="
 
 echo 
