@@ -27,6 +27,7 @@ GALERIJA_REPO="${HOME}/galerija"
 BITARCTIC_REPO="${HOME}/bitarctic"
 C_ZADACI_REPO="${HOME}/Desktop/c-zadaci"
 PY_ZADACI_REPO="${HOME}/Desktop/py-zadaci"
+DOTDOCS_REPO="${HOME}/dotdocs"
 
 # gum style \
 #     --border double \
@@ -70,7 +71,7 @@ push_to_github() {
     git commit -m "❄️" || true
     if git push github; then
         echo
-        gum style --foreground "${GREEN}" " Успешно погурано на GitHub"
+        gum style --foreground "${GREEN}" " Испешбо погурано на GitHub"
         echo
     else
         gum style --foreground "${RED}" " Грешка у гурању на GitHub"
@@ -160,6 +161,7 @@ search_repositories() {
         "Bitarctic [$BITARCTIC_REPO]" \
         "Py-Zadaci [$PY_ZADACI_REPO]" \
         "C-Zadaci [$C_ZADACI_REPO]" \
+        "DotDocs [$DOTDOCS_REPO]" \
         "« Назад" | \
         gum filter \
             --placeholder "Претражи репозиторијуме..." \
@@ -185,6 +187,7 @@ search_repositories() {
             "Bitarctic"*)    handle_repository "$BITARCTIC_REPO" "Bitarctic" false ;;
             "Py-Zadaci"*)    handle_repository "$PY_ZADACI_REPO" "Py-Zadaci" false ;;
             "C-Zadaci"*)     handle_repository "$C_ZADACI_REPO" "C-Zadaci" false ;;
+            "DotDocs"*)      handle_repository "$DOTDOCS_REPO" "DotDocs" false ;;
         esac
         result=$?
         [ "$result" -eq 1 ] && return 1
@@ -214,6 +217,7 @@ main_menu() {
             "  | Bitarctic" \
             "  | Py-Zadaci" \
             "  | C-Zadaci" \
+            "  | DotDocs" \
             "󰒆  Све репозиторијуме" \
             "󰈆  Излаз")
 
@@ -290,6 +294,12 @@ main_menu() {
                     continue
                 fi
                 ;;
+            "  | DotDocs")
+                handle_repository "$DOTDOCS_REPO" "DotDocs" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
             "󰒆  Све репозиторијуме")
                 handle_all_repositories
                 if [ $? -eq 1 ]; then
@@ -338,6 +348,7 @@ handle_all_repositories() {
             push_to_github "$PROTO_ORBITA_REPO"
             push_to_github "$GALERIJA_REPO"
             push_to_github "$BITARCTIC_REPO"
+            push_to_github "$DOTDOCS_REPO"
             return 0
             ;;
         " Повуци све")
@@ -351,6 +362,7 @@ handle_all_repositories() {
             pull_from_github "$CBRSS_REPO"
             pull_from_github "$PROTO_ORBITA_REPO"
             pull_from_github "$BITARCTIC_REPO"
+            pull_from_github "$DOTDOCS_REPO"
             return 0
             ;;
         " Назад")
