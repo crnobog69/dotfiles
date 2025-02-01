@@ -4,12 +4,12 @@
 
 </div>
 
-<div align="center">
-
 > [!CAUTION]
 > Документација се налази на [***Dotdocs***](https://dotdocs.vercel.app/) вебсајту.
 > <br>
 > Документација која се налази овде више неће бити ажурирана.
+
+<div align="center">
 
 ---
 
