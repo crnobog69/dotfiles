@@ -69,7 +69,9 @@ push_to_github() {
     git add .
     git commit -m "❄️" || true
     if git push github; then
+        echo
         gum style --foreground "$GREEN" " Испешбо погурано на GitHub"
+        echo
     else
         gum style --foreground "$RED" " Грешка у гурању на GitHub"
     fi
@@ -83,7 +85,9 @@ pull_from_all_remotes() {
     for remote in github gitlab codeberg; do
         gum spin --spinner.foreground="$YELLOW" --title "Pulling from $remote..." --spinner dot -- sleep 1
         if git pull "$remote"; then
+            echo
             gum style --foreground "$GREEN" " Успешно повучено са $remote !"
+            echo
         else
             gum style --foreground "$RED" " Грешка у повлачењу са $remote !"
         fi
@@ -149,8 +153,8 @@ search_repositories() {
         "Extra [$EXTRA_REPO]" \
         "Scripts [$SCRIPTS_REPO]" \
         "Website [$WEBSITE_REPO]" \
-        "CBPaste [$DOTFILES_REPO]" \
-        "CBRSS [$CBPASTE_REPO]" \
+        "CBPaste [$CBPASTE_REPO]" \
+        "CBRSS [$CBRSS_REPO]" \
         "Proto-Orbita [$PROTO_ORBITA_REPO]" \
         "Galerija [$GALERIJA_REPO]" \
         "Bitarctic [$BITARCTIC_REPO]" \
@@ -159,9 +163,9 @@ search_repositories() {
         "« Назад" | \
         gum filter \
             --placeholder "Претражи репозиторијуме..." \
-            --indicator.foreground "$COLOR_PRIMARY" \
-            --prompt.foreground "$COLOR_HIGHLIGHT" \
-            --match.foreground "$COLOR_SUCCESS")
+            --indicator.foreground "${RED}" \
+            --prompt.foreground "${RED}" \
+            --match.foreground "${YELLOW}")
 
     if [ -n "$selected" ]; then
         if [ "$selected" = "« Назад" ]; then
