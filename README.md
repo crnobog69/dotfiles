@@ -6,6 +6,11 @@
 
 <div align="center">
 
+> [!CAUTION]
+> Документација се налази на [***Dotdocs***](https://dotdocs.vercel.app/) вебсајту.
+> <br>
+> Документација која се налази овде више неће бити ажурирана.
+
 ---
 
 [Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
