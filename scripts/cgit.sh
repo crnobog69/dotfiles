@@ -162,7 +162,7 @@ search_repositories() {
         "Py-Zadaci [$PY_ZADACI_REPO]" \
         "C-Zadaci [$C_ZADACI_REPO]" \
         "DotDocs [$DOTDOCS_REPO]" \
-        "« Назад" | \
+        " Назад" | \
         gum filter \
             --placeholder "Претражи репозиторијуме..." \
             --indicator.foreground "${RED}" \

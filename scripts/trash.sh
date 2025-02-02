@@ -52,6 +52,7 @@ if ! gum confirm --prompt.foreground="#f9e2af" --selected.background="#e78284" -
 fi
 
 rm -rf ~/.local/share/Trash/files/*
+rm -rf ~/.local/share/Trash/info/*
 
 echo
 
