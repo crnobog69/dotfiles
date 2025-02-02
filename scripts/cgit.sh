@@ -28,6 +28,7 @@ BITARCTIC_REPO="${HOME}/bitarctic"
 C_ZADACI_REPO="${HOME}/Desktop/c-zadaci"
 PY_ZADACI_REPO="${HOME}/Desktop/py-zadaci"
 DOTDOCS_REPO="${HOME}/dotdocs"
+GALERIJA_MEDIA_REPO="${HOME}/galerija-media"
 
 # gum style \
 #     --border double \
@@ -158,11 +159,12 @@ search_repositories() {
         "CBRSS [$CBRSS_REPO]" \
         "Proto-Orbita [$PROTO_ORBITA_REPO]" \
         "Galerija [$GALERIJA_REPO]" \
+        "Galerija-Media [$GALERIJA_MEDIA_REPO]" \
         "Bitarctic [$BITARCTIC_REPO]" \
         "Py-Zadaci [$PY_ZADACI_REPO]" \
         "C-Zadaci [$C_ZADACI_REPO]" \
         "DotDocs [$DOTDOCS_REPO]" \
-        " Назад" | \
+        "  Назад" | \
         gum filter \
             --placeholder "Претражи репозиторијуме..." \
             --indicator.foreground "${RED}" \
@@ -170,7 +172,7 @@ search_repositories() {
             --match.foreground "${YELLOW}")
 
     if [ -n "$selected" ]; then
-        if [ "$selected" = "« Назад" ]; then
+        if [ "$selected" = "  Назад" ]; then
             return 1
         fi
         
@@ -184,6 +186,7 @@ search_repositories() {
             "CBRSS"*)        handle_repository "$CBRSS_REPO" "CBRSS" false ;;
             "Proto-Orbita"*) handle_repository "$PROTO_ORBITA_REPO" "Proto-Orbita" false ;;
             "Galerija"*)     handle_repository "$GALERIJA_REPO" "Galerija" false ;;
+            "Galerija-Media"*) handle_repository "$GALERIJA_MEDIA_REPO" "Galerija-Media" false ;;
             "Bitarctic"*)    handle_repository "$BITARCTIC_REPO" "Bitarctic" false ;;
             "Py-Zadaci"*)    handle_repository "$PY_ZADACI_REPO" "Py-Zadaci" false ;;
             "C-Zadaci"*)     handle_repository "$C_ZADACI_REPO" "C-Zadaci" false ;;
@@ -214,6 +217,7 @@ main_menu() {
             "  | CBRSS" \
             "  | Proto-Orbita" \
             "  | Galerija" \
+            "  | Galerija-Media" \
             "  | Bitarctic" \
             "  | Py-Zadaci" \
             "  | C-Zadaci" \
@@ -272,6 +276,12 @@ main_menu() {
                 ;;
             "  | Galerija")
                 handle_repository "$GALERIJA_REPO" "Galerija" false
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | Galerija-Media")
+                handle_repository "$GALERIJA_MEDIA_REPO" "Galerija-Media" false
                 if [ $? -eq 1 ]; then
                     continue
                 fi
@@ -347,6 +357,7 @@ handle_all_repositories() {
             push_to_github "$CBRSS_REPO"
             push_to_github "$PROTO_ORBITA_REPO"
             push_to_github "$GALERIJA_REPO"
+            push_to_github "$GALERIJA_MEDIA_REPO"
             push_to_github "$BITARCTIC_REPO"
             push_to_github "$DOTDOCS_REPO"
             return 0
@@ -360,6 +371,8 @@ handle_all_repositories() {
             pull_from_github "$C_ZADACI_REPO"
             pull_from_github "$CBPASTE_REPO"
             pull_from_github "$CBRSS_REPO"
+            pull_from_github "$GALERIJA_REPO"
+            pull_from_github "$GALERIJA_MEDIA_REPO"
             pull_from_github "$PROTO_ORBITA_REPO"
             pull_from_github "$BITARCTIC_REPO"
             pull_from_github "$DOTDOCS_REPO"
