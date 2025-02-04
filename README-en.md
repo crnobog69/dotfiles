@@ -7,7 +7,7 @@
 > [!CAUTION]
 > Documentation is located on [***DotDocs***](https://dotdocs.vercel.app/) website.
 > <br>
-> Documentation that is located here will not be updated.
+> Documentation that is located here **WILL NOT BE** be updated.
 
 <div align="center">
 

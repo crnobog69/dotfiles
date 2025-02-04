@@ -33,7 +33,6 @@
   "editor.fontSize": 15,
   "supermaven.enableFixWithSupermaven": true,
   "editor.formatOnSave": true,
-  "github.copilot.editor.enableAutoCompletions": false,
   "terminal.integrated.commandsToSkipShell": [
     "matlab.interrupt"
   ],
