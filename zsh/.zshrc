@@ -158,6 +158,8 @@ export "MICRO_TRUECOLOR=1"
 
 export EDITOR="micro"
 
+export VISUAL=micro
+
 # Shell integrations
 eval "$(starship init zsh)"
 
@@ -186,3 +188,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/home/lain/.spicetify
 export PATH="${HOME}/.local/bin":${PATH}
+. "/home/lain/.deno/env"
+
+export PATH="/home/lain/.bun/bin:$PATH"
