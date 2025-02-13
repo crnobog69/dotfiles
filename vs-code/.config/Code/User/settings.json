@@ -25,7 +25,7 @@
   "catppuccin.colorOverrides": {},
   "catppuccin.accentColor": "green",
   "workbench.iconTheme": "catppuccin-mocha",
-  "glassit.alpha": 250,
+  "glassit.alpha": 255,
   "editor.fontFamily": "'JetBrainsMono Nerd Font'",
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -64,5 +64,9 @@
         }
       ]
     }
-  }
+  },
+  "catppuccin.syncWithIconPack": false,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "workbench.editor.enablePreview": false,
+  "diffEditor.hideUnchangedRegions.enabled": true
 }
