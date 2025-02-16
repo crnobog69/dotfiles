@@ -142,71 +142,32 @@ cd ~
 
 ## CGIT
 
-# Функција за избор протокола
-select_protocol() {
-    echo -e "${RED}Изаберите протокол за клонирање [1-2]:${NC}"
-    echo "1) SSH"
-    echo "2) HTTPS"
-    read -r protocol_choice
-
-    case $protocol_choice in
-        1) echo "ssh" ;;
-        2) echo "https" ;;
-        *) echo "ssh" ;;
-    esac
-}
-
-# Избор протокола
-PROTOCOL=$(select_protocol)
-
-# Функција за преузимање URL-а за репозиторијум на основу протокола
-get_repo_url() {
-    local repo=$1
-    local host=$2
-    if [ "$PROTOCOL" = "ssh" ]; then
-        echo "git@$host:crnobog69/$repo.git"
-    else
-        case $host in
-            "github.com") echo "https://github.com/crnobog69/$repo.git" ;;
-            "gitlab.com") echo "https://gitlab.com/crnobog/$repo.git" ;;
-            "codeberg.org") echo "https://codeberg.org/crnobog/$repo.git" ;;
-            "gitea.com") echo "https://gitea.com/crnobog/$repo.git" ;;
-        esac
-    fi
-}
-
 ### Extra
 echo -e "${GREEN}Клонирање Extra...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "extra" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/extra.git
 cd extra
 git remote rename origin github
-if [ "$PROTOCOL" = "ssh" ]; then
-    git remote add gitlab git@gitlab.com:crnobog/extra.git
-    git remote add codeberg git@codeberg.org/crnobog/extra.git
-    git remote add gitea git@gitea.com:crnobog/extra.git
-else
-    git remote add gitlab https://gitlab.com/crnobog/extra.git
-    git remote add codeberg https://codeberg.org/crnobog/extra.git
-    git remote add gitea https://gitea.com/crnobog/extra.git
-fi
+git remote add gitlab git@gitlab.com:crnobog/extra.git
+git remote add codeberg git@codeberg.org/crnobog/extra.git
+git remote add gitea git@gitea.com:crnobog/extra.git
 echo -e "${GREEN}Extra клониран.${NC}"
 
 ### Scripts
 echo -e "${GREEN}Клонирање Scripts...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "scripts" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/scripts.git
 cd scripts
 git remote rename origin github
+git remote add gitlab git@gitlab.com:crnobog/scripts.git
+git remote add codeberg git@codeberg.org/crnobog/scripts.git
+git remote add gitea git@gitea.com:crnobog/scripts.git
 echo -e "${GREEN}Scripts клониран.${NC}"
 
 ### Website
 echo -e "${GREEN}Клонирање Website...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "crnogob69.github.io" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/crnogob69.github.io.git
 cd crnogob69.github.io
 git remote rename origin github
 echo -e "${GREEN}Website клониран.${NC}"
@@ -214,8 +175,7 @@ echo -e "${GREEN}Website клониран.${NC}"
 ### CBPaste
 echo -e "${GREEN}Клонирање CBPaste...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "cbpaste" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/cbpaste.git
 cd cbpaste
 git remote rename origin github
 echo -e "${GREEN}CBPaste клониран.${NC}"
@@ -223,8 +183,7 @@ echo -e "${GREEN}CBPaste клониран.${NC}"
 ### CBRSS
 echo -e "${GREEN}Клонирање CBRSS...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "cbrss" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/cbrss.git
 cd cbrss
 git remote rename origin github
 echo -e "${GREEN}CBRSS клониран.${NC}"
@@ -232,8 +191,7 @@ echo -e "${GREEN}CBRSS клониран.${NC}"
 ### Proto-Orbita
 echo -e "${GREEN}Клонирање Proto-Orbita...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "proto-orbita" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/proto-orbita.git
 cd proto-orbita
 git remote rename origin github
 echo -e "${GREEN}Proto-Orbita клониран.${NC}"
@@ -241,26 +199,18 @@ echo -e "${GREEN}Proto-Orbita клониран.${NC}"
 ### Galerija
 echo -e "${GREEN}Клонирање Galerija...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "galerija" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/galerija.git
 cd galerija
 git remote rename origin github
 echo -e "${GREEN}Galerija клониран.${NC}"
 
-### Galerija-Media
-echo -e "${GREEN}Клонирање Galerija-Media...${NC}"
-cd ~
-REPO_URL=$(get_repo_url "galerija-media" "github.com")
-git clone "$REPO_URL"
-cd galerija-media
-git remote rename origin github
+### Galerija-MediaGenesis Installation Started
 echo -e "${GREEN}Galerija-Media клониран.${NC}"
 
 ### Bitarctic
 echo -e "${GREEN}Клонирање Bitarctic...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "bitarctic-re" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/bitarctic-re.git
 cd bitarctic-re
 git remote rename origin github
 echo -e "${GREEN}Bitarctic клониран.${NC}"
@@ -268,8 +218,7 @@ echo -e "${GREEN}Bitarctic клониран.${NC}"
 ### Py-Zadaci
 echo -e "${GREEN}Клонирање Py-Zadaci...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "py" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/py.git
 cd py
 git remote rename origin github
 echo -e "${GREEN}Py-Zadaci клониран.${NC}"
@@ -277,8 +226,7 @@ echo -e "${GREEN}Py-Zadaci клониран.${NC}"
 ### C-Zadaci
 echo -e "${GREEN}Клонирање C-Zadaci...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "c" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/c.git
 cd c
 git remote rename origin github
 echo -e "${GREEN}C-Zadaci клониран.${NC}"
@@ -286,8 +234,7 @@ echo -e "${GREEN}C-Zadaci клониран.${NC}"
 ### DotDocs
 echo -e "${GREEN}Клонирање DotDocs...${NC}"
 cd ~
-REPO_URL=$(get_repo_url "dotdocs" "github.com")
-git clone "$REPO_URL"
+git clone git@github.com:crnobog69/dotdocs.git
 cd dotdocs
 git remote rename origin github
 echo -e "${GREEN}DotDocs клониран.${NC}"
@@ -318,7 +265,7 @@ cd ~
 
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
-echo -е "${GREEN}Atuin успешно инсталиран.${NC}"
+echo -e "${GREEN}Atuin успешно инсталиран.${NC}"
 
 cd ~
 
@@ -326,19 +273,19 @@ cd dotfiles/
 
 rm -f ~/.config/atuin/config.toml && stow atuin
 
-echo -е "${GREEN}GNU Stow успешно постављен.${NC}"
+echo -e "${GREEN}GNU Stow успешно постављен.${NC}"
 
 cd ~
 
-echo -е "${RED}Да ли желите да се пријавите на Atuin?${NC}"
+echo -e "${RED}Да ли желите да се пријавите на Atuin?${NC}"
 read ATUIN
 
 if [[ "$ATUIN" =~ ^[Yy]$ ]]; then
-    echo -е "${GREEN}Пријава на Atuin...${NC}"
+    echo -e "${GREEN}Пријава на Atuin...${NC}"
     atuin login
-    echo -е "${GREEN}Пријава на Atuin завршена.${NC}"
+    echo -e "${GREEN}Пријава на Atuin завршена.${NC}"
 else
-    echo -е "${RED}Пријава на Atuin отказана.${NC}"
+    echo -e "${RED}Пријава на Atuin отказана.${NC}"
 fi
 
 echo
@@ -346,24 +293,24 @@ echo
 
 ## Bat
 
-echo -е "${GREEN}Bat${NC}"
+echo -e "${GREEN}Bat${NC}"
 
 cd ~
 
 rm -f ~/.config/bat/config && stow bat
 
-echo -е "${GREEN}Bat конфигурација је завршена.${NC}"
+echo -e "${GREEN}Bat конфигурација је завршена.${NC}"
 
 echo
 #------------------------------------------------------------------------------#
 
 ## Wakapi
 
-echo -е "${GREEN}Wakapi${NC}"
+echo -e "${GREEN}Wakapi${NC}"
 
 cd ~
 
-echo -е "${RED}За постављање Wakapi покрените${NC} ${GREEN}./dotfiles/scripts/install-wakapi.sh${NC}"
+echo -e "${RED}За постављање Wakapi покрените${NC} ${GREEN}./dotfiles/scripts/install-wakapi.sh${NC}"
 
 echo
 #------------------------------------------------------------------------------#
