@@ -11,7 +11,16 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 
-eval $(keychain --quiet --eval --agents ssh id_rsa)
+function git() {
+    if [[ "$1" == "push" ]]; then
+        # Ако SSH агент није покренут, учитај кључ помоћу keychain-а
+        if [ -z "$SSH_AUTH_SOCK" ]; then
+            eval "$(keychain --quiet --eval --agents ssh id_rsa)"
+        fi
+    fi
+    command git "$@"
+}
+
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
