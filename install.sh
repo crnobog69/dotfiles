@@ -283,6 +283,7 @@ read ATUIN
 if [[ "$ATUIN" =~ ^[Yy]$ ]]; then
     echo -e "${GREEN}Пријава на Atuin...${NC}"
     atuin login
+    atuin sync
     echo -e "${GREEN}Пријава на Atuin завршена.${NC}"
 else
     echo -e "${RED}Пријава на Atuin отказана.${NC}"
