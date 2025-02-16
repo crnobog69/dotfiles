@@ -13,7 +13,7 @@
 
 ---
 
-[Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md
+[Српски (🇷🇸)](README.md) | [English (🇬🇧)](README-en.md)
 
 ---
 
