@@ -46,6 +46,8 @@ zinit light Aloxaf/fzf-tab
 
 zinit light "atuinsh/atuin"
 
+# zinit light arzzen/calc.plugin.zsh
+
 autoload -Uz compinit
 compinit
 zinit cdreplay -q
