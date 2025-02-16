@@ -50,9 +50,17 @@ fi
 
 # Претраживање пакета
 if [[ "$PACKAGE_MANAGER" == "pacman" ]]; then
-    selected_package=$(pacman -Sl | fzf --prompt="Претрага пакета: " --preview="pacman -Si {2}" --preview-window=right:50% | awk '{print $2}')
+    selected_package=$(pacman -Sl | \
+        fzf --prompt="Претрага пакета: " \
+            --preview="pacman -Si {2}" \
+            --preview-window="right:50%:wrap" | \
+        awk '{print $2}')
 else
-    selected_package=$($PACKAGE_MANAGER -Sl | fzf --prompt="Претрага пакета (укључујући AUR): " --preview="$PACKAGE_MANAGER -Si {2}" --preview-window=right:50% | awk '{print $2}')
+    selected_package=$($PACKAGE_MANAGER -Sl | \
+        fzf --prompt="Претрага пакета (укључујући AUR): " \
+            --preview="$PACKAGE_MANAGER -Si {2}" \
+            --preview-window="right:50%:wrap" | \
+        awk '{print $2}')
 fi
 
 # Ако је пакет изабран, провери да ли је већ инсталиран
