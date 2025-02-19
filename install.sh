@@ -5,6 +5,11 @@ exec > >(tee -a ~/genesis.log) 2>&1
 
 echo "=== Инсталација је почела: $(date) ==="
 
+echo -e "${RED}УПОЗОРЕЊЕ:${NC}"
+echo -e "${RED}Arch Linux + Wayland${NC}"
+
+echo
+
 set -euo pipefail
 
 sudo pacman -Syu
@@ -86,6 +91,8 @@ echo
 
 echo -e "${GREEN}ssh кључ${} је копиран у међускладиште" && wl-copy < ~/.ssh/id_rsa.pub
 echo -e "${GREEN}GitHub${NC}: https://github.com/settings/keys"
+echo -e "${GREEN}BitBucket${NC}: https://bitbucket.org/account/settings/ssh-keys/"
+echo -e "${GREEN}SourceHut${NC}: https://meta.sr.ht/keys"
 echo -e "${GREEN}GitLab${NC}: https://gitlab.com/-/user_settings/ssh_keys"
 echo -e "${GREEN}Gitea${NC}: https://gitea.com/user/settings/keys"
 echo -e "${GREEN}Codeberg${NC}: https://codeberg.org/user/settings/keys"
@@ -101,6 +108,8 @@ else
     echo -e "${RED}Поставите ssh кључ на Github, GitLab, Codeberg и Gitea-и, па поново покрените скрипту.${NC}"
     echo -e "${GREEN}ssh кључ${} је копиран у међускладиште" && wl-copy < ~/.ssh/id_rsa.pub
     echo -e "${GREEN}GitHub${NC}: https://github.com/settings/keys"
+    echo -e "${GREEN}BitBucket${NC}: https://bitbucket.org/account/settings/ssh-keys/"
+    echo -e "${GREEN}SourceHut${NC}: https://meta.sr.ht/keys"
     echo -e "${GREEN}GitLab${NC}: https://gitlab.com/-/user_settings/ssh_keys"
     echo -e "${GREEN}Gitea${NC}: https://gitea.com/user/settings/keys"
     echo -e "${GREEN}Codeberg${NC}: https://codeberg.org/user/settings/keys"
