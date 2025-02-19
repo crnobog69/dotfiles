@@ -18,6 +18,7 @@ fi
 # Repository paths
 DOTFILES_REPO="${HOME}/dotfiles"
 EXTRA_REPO="${HOME}/extra"
+DOTWIN_REPO="${HOME}/dotwin"
 SCRIPTS_REPO="${HOME}/scripts"
 WEBSITE_REPO="${HOME}/crnobog69.github.io"
 CBPASTE_REPO="${HOME}/cbpaste"
@@ -153,6 +154,7 @@ search_repositories() {
     selected=$(printf "%s\n" \
         "Dotfiles [$DOTFILES_REPO]" \
         "Extra [$EXTRA_REPO]" \
+        "DotWin [$DOTWIN_REPO]" \
         "Scripts [$SCRIPTS_REPO]" \
         "Website [$WEBSITE_REPO]" \
         "CBPaste [$CBPASTE_REPO]" \
@@ -180,6 +182,7 @@ search_repositories() {
         case "$selected" in
             "Dotfiles"*)      handle_repository "$DOTFILES_REPO" "Dotfiles" true ;;
             "Extra"*)         handle_repository "$EXTRA_REPO" "Extra" true ;;
+            "DotWin"*)        handle_repository "$DOTWIN_REPO" "DotWin" true ;;
             "Scripts"*)       handle_repository "$SCRIPTS_REPO" "Scripts" false ;;
             "Website"*)       handle_repository "$WEBSITE_REPO" "Website" false ;;
             "CBPaste"*)       handle_repository "$CBPASTE_REPO" "CBPaste" false ;;
@@ -211,6 +214,7 @@ main_menu() {
             "  Претрага" \
             "  | Dotfiles" \
             "  | Extra" \
+            "  | DotWin" \
             "  | Scripts" \
             "  | Website" \
             "  | CBPaste" \
@@ -240,6 +244,12 @@ main_menu() {
                 ;;
             "  | Extra")
                 handle_repository "$EXTRA_REPO" "Extra" true
+                if [ $? -eq 1 ]; then
+                    continue
+                fi
+                ;;
+            "  | DotWin")
+                handle_repository "$DOTWIN_REPO" "DotWin" true
                 if [ $? -eq 1 ]; then
                     continue
                 fi
@@ -349,6 +359,7 @@ handle_all_repositories() {
         " Гурај све")
             push_to_all_remotes "$DOTFILES_REPO"
             push_to_all_remotes "$EXTRA_REPO"
+            push_to_all_remotes "$DOTWIN_REPO"
             push_to_github "$SCRIPTS_REPO"
             push_to_github "$WEBSITE_REPO"
             push_to_github "$PY_ZADACI_REPO"
@@ -365,6 +376,7 @@ handle_all_repositories() {
         " Повуци све")
             pull_from_all_remotes "$DOTFILES_REPO"
             pull_from_all_remotes "$EXTRA_REPO"
+            pull_from_all_remotes "$DOTWIN_REPO"
             pull_from_github "$SCRIPTS_REPO"
             pull_from_github "$WEBSITE_REPO"
             pull_from_github "$PY_ZADACI_REPO"
