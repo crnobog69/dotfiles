@@ -118,6 +118,8 @@ cd ~
 git clone git@github.com:crnobog69/dotfiles.git
 cd dotfiles
 git remote rename origin github
+git remote add bitbucket git@bitbucket.org:crnobog69/dotfiles.git
+git remote add sourcehut git@git.sr.ht:~crnobog/dotfiles.git
 git remote add gitlab git@gitlab.com:crnobog/dotfiles.git
 git remote add codeberg git@codeberg.org/crnobog/dotfiles.git
 git remote add gitea git@gitea.com:crnobog/dotfiles.git
@@ -148,10 +150,25 @@ cd ~
 git clone git@github.com:crnobog69/extra.git
 cd extra
 git remote rename origin github
+git remote add bitbucket git@bitbucket.org:crnobog69/extra.git
+git remote add sourcehut git@git.sr.ht:~crnobog/extra.git
 git remote add gitlab git@gitlab.com:crnobog/extra.git
 git remote add codeberg git@codeberg.org/crnobog/extra.git
 git remote add gitea git@gitea.com:crnobog/extra.git
 echo -e "${GREEN}Extra клониран.${NC}"
+
+### DotWin
+echo -e "${GREEN}Клонирање DotWin...${NC}"
+cd ~
+git clone git@github.com:crnobog69/dotwin.git
+cd dotwin
+git remote rename origin github
+git remote add bitbucket git@bitbucket.org:crnobog69/dotwin.git
+git remote add sourcehut git@git.sr.ht:~crnobog/dotwin.git
+git remote add gitlab git@gitlab.com:crnobog/dotwin.git
+git remote add codeberg git@codeberg.org/crnobog/dotwin.git
+git remote add gitea git@gitea.com:crnobog/dotwin.git
+echo -e "${GREEN}DotWin клониран.${NC}"
 
 ### Scripts
 echo -e "${GREEN}Клонирање Scripts...${NC}"
@@ -159,9 +176,6 @@ cd ~
 git clone git@github.com:crnobog69/scripts.git
 cd scripts
 git remote rename origin github
-git remote add gitlab git@gitlab.com:crnobog/scripts.git
-git remote add codeberg git@codeberg.org/crnobog/scripts.git
-git remote add gitea git@gitea.com:crnobog/scripts.git
 echo -e "${GREEN}Scripts клониран.${NC}"
 
 ### Website
