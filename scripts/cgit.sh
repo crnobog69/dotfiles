@@ -49,7 +49,7 @@ push_to_all_remotes() {
     gum style --border normal "Гурање директоријума: $(gum style --foreground "${YELLOW}" "$repo") на све удаљене репозиторијуме"
     cd "$repo" || exit
     
-    for remote in github gitlab codeberg gitea bitbucket; do
+    for remote in github gitlab codeberg gitea bitbucket sourcehut; do
         gum spin --spinner.foreground="${RED}" --title " Гурање на $remote..." --spinner dot -- sleep 1
         git add .
         git commit -m "❄️" || true
@@ -85,7 +85,7 @@ pull_from_all_remotes() {
     gum style --border normal "Повлачење репозиторијума: $(gum style --foreground "${YELLOW}" "$repo")"
     cd "$repo" || exit
     
-    for remote in github gitlab codeberg gitea bitbucket; do
+    for remote in github gitlab codeberg gitea bitbucket sourcehut; do
         gum spin --spinner.foreground="${YELLOW}" --title "Повлачење са $remote..." --spinner dot -- sleep 1
         if git pull "$remote"; then
             echo
