@@ -1,9 +1,10 @@
 ```bash
-sudo systemctl enable filen-sync-fakultet.timer
-sudo systemctl start filen-sync-fakultet.timer
-```
-
-```bash
-sudo systemctl enable filen-sync-nacizam.timer
-sudo systemctl start filen-sync-nacizam.timer
+cd ~
+mv filen-cli /usr/local/bin/
+cd ~/dotfiles/scripts/filen
+sudo cp filen-cont.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable filen-cont.service
+sudo systemctl start filen-cont.service
+sudo systemctl status filen-cont.service
 ```

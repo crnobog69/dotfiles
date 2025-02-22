@@ -339,6 +339,30 @@ echo -e "${RED}За постављање Wakapi покрените${NC} ${GREEN}
 echo
 #------------------------------------------------------------------------------#
 
+## Filen.io
+
+echo -e "${GREEN}Filen.io${NC}"
+
+cd ~
+
+curl -sL https://filen.io/cli.sh | bash
+
+echo -e "${GREEN}Filen.io успешно инсталиран.${NC}"
+
+echo -e "${GREEN}Да ли желите да се пријавите на Filen.io?${NC}"
+read FILEN
+
+if [[ "$FILEN" =~ ^[Yy]$ ]]; then
+    echo -e "${GREEN}Пријава на Filen.io...${NC}"
+    filen-cli auth
+    echo -e "${GREEN}Пријава на Filen.io завршена.${NC}"
+else
+    echo -e "${RED}Пријава на Filen.io отказана.${NC}"
+fi
+
+echo
+#------------------------------------------------------------------------------#
+
 cd ~
 
 echo "=== Инсталација завршена: $(date) ==="

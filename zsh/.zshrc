@@ -130,7 +130,8 @@ alias cgit='~/dotfiles/scripts/cgit.sh'
 alias cspicetify='~/dotfiles/scripts/cspicetify.sh'
 alias y='yazi'
 
-alias filen-cli="~/filen-cli"
+# https://filen.io ------------------------------------------
+# alias filen-cli="~/filen-cli"
 
 # alias fzf='fzf --preview 'bat --style=numbers --color=always {}''
 
@@ -169,9 +170,9 @@ eval "$(fzf --zsh)"
 
 eval "$(zoxide init zsh)"
 
-eval $(thefuck --alias fk)
+# eval $(thefuck --alias fk)
 
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 #zprof
 

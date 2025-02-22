@@ -1,0 +1,13 @@
+[Unit]
+Description=Filen Sync Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/filen-cli sync --continuous
+Restart=always
+User=lain
+WorkingDirectory=/home/lain/
+Environment=PATH=/usr/bin:/usr/local/bin
+
+[Install]
+WantedBy=multi-user.target
