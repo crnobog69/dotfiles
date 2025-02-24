@@ -27,7 +27,7 @@ check_requirements() {
     if ! sudo -v &>/dev/null; then
         echo -e "${RED}Грешка: Ова скрипта захтева sudo привилегије${NC}"
         exit 1
-    }
+    fi
 
     for cmd in "${required_commands[@]}"; do
         if ! command -v "$cmd" >/dev/null 2>&1; then
@@ -240,7 +240,7 @@ echo -e "${GREEN}Bitarctic клониран.${NC}"
 
 ### Py-Zadaci
 echo -e "${GREEN}Клонирање Py-Zadaci...${NC}"
-cd ~
+cd ~/Desktop/
 git clone git@github.com:crnobog69/py.git
 cd py
 git remote rename origin github
@@ -248,7 +248,7 @@ echo -e "${GREEN}Py-Zadaci клониран.${NC}"
 
 ### C-Zadaci
 echo -e "${GREEN}Клонирање C-Zadaci...${NC}"
-cd ~
+cd ~/Desktop/
 git clone git@github.com:crnobog69/c.git
 cd c
 git remote rename origin github
