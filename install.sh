@@ -57,6 +57,33 @@ echo -e "${RED}Оперативни систем: ${NC}"
 grep ^NAME= /etc/os-release | cut -d= -f2 | tr -d '"'
 
 echo
+
+echo -e "${GREEN}Клонирање Dotfiles...${NC}"
+
+cd ~
+
+## Dotfiles
+git clone git@github.com:crnobog69/dotfiles.git
+cd dotfiles
+git remote rename origin github
+git remote add bitbucket git@bitbucket.org:crnobog69/dotfiles.git
+git remote add sourcehut git@git.sr.ht:~crnobog/dotfiles.git
+git remote add gitlab git@gitlab.com:crnobog/dotfiles.git
+git remote add codeberg git@codeberg.org/crnobog/dotfiles.git
+git remote add gitea git@gitea.com:crnobog/dotfiles.git
+echo -e "${GREEN}Dotfiles клониран.${NC}"
+
+cd dotfiles/scripts/
+
+chmod +x *.sh
+
+echo -e "${GREEN}Инсталација пакета...${NC}"
+
+./pkg.sh
+
+echo -e "${GREEN}Инсталација пакета завршено.${NC}"
+
+echo
 #------------------------------------------------------------------------------#
 # 
 # echo -e "${RED}Да ли желите да покренете скрипту за постање? [y/N]${NC}"
@@ -115,34 +142,6 @@ else
     echo -e "${GREEN}Codeberg${NC}: https://codeberg.org/user/settings/keys"
     exit 1
 fi
-
-echo
-#------------------------------------------------------------------------------#
-
-echo -e "${GREEN}Клонирање Dotfiles...${NC}"
-
-cd ~
-
-## Dotfiles
-git clone git@github.com:crnobog69/dotfiles.git
-cd dotfiles
-git remote rename origin github
-git remote add bitbucket git@bitbucket.org:crnobog69/dotfiles.git
-git remote add sourcehut git@git.sr.ht:~crnobog/dotfiles.git
-git remote add gitlab git@gitlab.com:crnobog/dotfiles.git
-git remote add codeberg git@codeberg.org/crnobog/dotfiles.git
-git remote add gitea git@gitea.com:crnobog/dotfiles.git
-echo -e "${GREEN}Dotfiles клониран.${NC}"
-
-cd dotfiles/scripts/
-
-chmod +x *.sh
-
-echo -e "${GREEN}Инсталација пакета...${NC}"
-
-./pkg.sh
-
-echo -e "${GREEN}Инсталација пакета завршено.${NC}"
 
 echo
 #------------------------------------------------------------------------------#
