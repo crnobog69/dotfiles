@@ -73,7 +73,7 @@ git remote add codeberg git@codeberg.org/crnobog/dotfiles.git
 git remote add gitea git@gitea.com:crnobog/dotfiles.git
 echo -e "${GREEN}Dotfiles клониран.${NC}"
 
-cd dotfiles/scripts/
+cd scripts/
 
 chmod +x *.sh
 

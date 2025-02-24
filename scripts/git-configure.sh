@@ -47,3 +47,5 @@ echo -e "SSH кључ"
 ssh-keygen -t rsa -b 4096 -C "carskalavra@proton.me"
 
 cat ~/.ssh/id_rsa.pub
+
+wl-copy < ~/.ssh/id_rsa.pub
