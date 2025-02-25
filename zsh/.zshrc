@@ -129,6 +129,7 @@ alias cursor='~/Applications/Cursor/cursor.appimage'
 alias cgit='~/dotfiles/scripts/cgit.sh'
 alias cspicetify='~/dotfiles/scripts/cspicetify.sh'
 alias y='yazi'
+alias py='python'
 
 # https://filen.io ------------------------------------------
 # alias filen-cli="~/filen-cli"
