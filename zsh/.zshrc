@@ -191,6 +191,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH=$PATH:/home/lain/.spicetify
 export PATH="${HOME}/.local/bin":${PATH}
-. "/home/lain/.deno/env"
 
 export PATH="/home/lain/.bun/bin:$PATH"
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
