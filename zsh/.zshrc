@@ -193,6 +193,5 @@ export PATH=$PATH:/home/lain/.spicetify
 export PATH="${HOME}/.local/bin":${PATH}
 
 export PATH="/home/lain/.bun/bin:$PATH"
-. "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
