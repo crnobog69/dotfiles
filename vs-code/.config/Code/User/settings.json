@@ -68,5 +68,6 @@
   "catppuccin.syncWithIconPack": false,
   "diffEditor.ignoreTrimWhitespace": true,
   "workbench.editor.enablePreview": false,
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "github.copilot.editor.enableAutoCompletions": true
 }
