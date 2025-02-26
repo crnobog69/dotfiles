@@ -1,367 +1,437 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Setup logging to both terminal and file
-exec > >(tee -a ~/genesis.log) 2>&1
-
-echo "=== Инсталација је почела: $(date) ==="
-
-echo -e "${RED}УПОЗОРЕЊЕ:${NC}"
-echo -e "${RED}Arch Linux + Wayland${NC}"
-
-echo
-
-set -euo pipefail
-
-sudo pacman -Syu
+# █▀▀ █▀█ █▄ █ █▀█ █▄▄ █▀█ █▀▀ █▀▀ █▀ 
+# █▄▄ █▀▄ █ ▀█ █▄█ █▄█ █▄█ █▄█ ██▄ ▄█
+# Arch Linux Dotfiles Installer
 
 # Дефинисање боја
 GREEN='\033[0;32m'
 RED='\033[0;31m'
+BLUE='\033[0;34m'
+YELLOW='\033[0;33m'
 NC='\033[0m'
 
-# Провера захтева
+# Глобалне променљиве
+LOG_FILE=~/genesis.log
+DOTFILES_REPO="https://github.com/crnobog69/dotfiles.git"
+GITHUB_USERNAME="crnobog69"
+BITBUCKET_USERNAME="crnobog69"
+SOURCEHUT_USERNAME="crnobog"
+GITLAB_USERNAME="crnobog"
+CODEBERG_USERNAME="crnobog"
+GITEA_USERNAME="crnobog"
+DOTFILES_DIR=~/dotfiles
+CURRENT_DIR=$(pwd)
+
+# Функције помоћи
+log() {
+    echo -e "${2:-$NC}$1${NC}" | tee -a "$LOG_FILE"
+}
+
+log_header() {
+    log "\n${BLUE}=== $1 ===${NC}\n" "$BLUE"
+}
+
+log_success() {
+    log "$1" "$GREEN"
+}
+
+log_error() {
+    log "$1" "$RED" >&2
+}
+
+log_info() {
+    log "$1" "$YELLOW"
+}
+
+prompt_yes_no() {
+    log_info "$1 [y/N]"
+    read -r response
+    [[ "$response" =~ ^[Yy]$ ]] && return 0 || return 1
+}
+
+# Припремне функције
+setup_logging() {
+    touch "$LOG_FILE"
+    log_header "Инсталација је почела: $(date)"
+    log_info "УПОЗОРЕЊЕ: Скрипта је направљена за Arch Linux + Wayland"
+    log "Логови се налазе у: $LOG_FILE"
+}
+
 check_requirements() {
-    local required_commands=("git" "stow" "curl" "wl-copy")
+    log_header "Провера захтева"
+    
+    # Провера оперативног система
+    if ! grep -q "Arch Linux" /etc/os-release 2>/dev/null; then
+        log_info "Оперативни систем: $(grep ^NAME= /etc/os-release | cut -d= -f2 | tr -d '"')"
+        log_info "Ова скрипта је примарно направљена за Arch Linux"
+    fi
     
     # Провера sudo привилегија
     if ! sudo -v &>/dev/null; then
-        echo -e "${RED}Грешка: Ова скрипта захтева sudo привилегије${NC}"
-        exit 1
+        log_error "Грешка: Ова скрипта захтева sudo привилегије"
+        return 1
     fi
-
+    
+    # Основни пакети потребни за даљу инсталацију
+    local required_commands=("git" "stow" "curl" "wl-copy" "ssh-keygen")
+    
     for cmd in "${required_commands[@]}"; do
         if ! command -v "$cmd" >/dev/null 2>&1; then
-            echo -e "${RED}Инсталирање ${cmd}...${NC}"
+            log_info "Инсталирање ${cmd}..."
+            
             if [ "$cmd" = "wl-copy" ]; then
                 if ! sudo pacman -S --noconfirm wl-clipboard; then
-                    echo -e "${RED}Неуспешна инсталација wl-clipboard${NC}"
-                    exit 1
+                    log_error "Неуспешна инсталација wl-clipboard"
+                    return 1
                 fi
             else
                 if ! sudo pacman -S --noconfirm "$cmd"; then
-                    echo -e "${RED}Неуспешна инсталација ${cmd}${NC}"
-                    exit 1
+                    log_error "Неуспешна инсталација ${cmd}"
+                    return 1
                 fi
             fi
-            echo -e "${GREEN}Успешно инсталиран ${cmd}${NC}"
+            log_success "Успешно инсталиран ${cmd}"
         fi
     done
+    
+    return 0
 }
 
-# Главно
-check_requirements
-
-echo -e "${RED}Користите: ${GREEN}./genesis.sh${NC}"
-echo -e "${RED}Ако сте на Arch Linux, можда је потребно да извршите команду sudo pacman -Syu${NC}"
-echo -e "${RED}Оперативни систем: ${NC}"
-grep ^NAME= /etc/os-release | cut -d= -f2 | tr -d '"'
-
-echo
-
-echo -e "${GREEN}Клонирање Dotfiles...${NC}"
-
-cd ~
-
-## Dotfiles
-git clone git@github.com:crnobog69/dotfiles.git
-cd dotfiles
-git remote rename origin github
-git remote add bitbucket git@bitbucket.org:crnobog69/dotfiles.git
-git remote add sourcehut git@git.sr.ht:~crnobog/dotfiles.git
-git remote add gitlab git@gitlab.com:crnobog/dotfiles.git
-git remote add codeberg git@codeberg.org/crnobog/dotfiles.git
-git remote add gitea git@gitea.com:crnobog/dotfiles.git
-echo -e "${GREEN}Dotfiles клониран.${NC}"
-
-cd scripts/
-
-chmod +x *.sh
-
-echo -e "${GREEN}Инсталација пакета...${NC}"
-
-./pkg.sh
-
-echo -e "${GREEN}Инсталација пакета завршено.${NC}"
-
-echo
-#------------------------------------------------------------------------------#
-# 
-# echo -e "${RED}Да ли желите да покренете скрипту за постање? [y/N]${NC}"
-# read GENESIS
-# 
-# if [[ "$GENESIS" =~ ^[Yy]$ ]]; then
-#     echo -e "${GREEN}Постање покренуто.${NC}"
-#     echo
-# else
-#     echo -e "${RED}Постање отказано.${NC}"
-#     exit 1
-# fi
-# 
-# echo
-#------------------------------------------------------------------------------#
-
-## Git
-
-echo -e "${GREEN}Git${NC}"
-
-cd ~
-
-cd dotfiles/
-
-cd scripts/
-
-./git-configure.sh
-
-echo -e "${GREEN}Git конфигурација завршена.${NC}"
-
-echo
-
-echo -e "${GREEN}ssh кључ${} је копиран у међускладиште" && wl-copy < ~/.ssh/id_rsa.pub
-echo -e "${GREEN}GitHub${NC}: https://github.com/settings/keys"
-echo -e "${GREEN}BitBucket${NC}: https://bitbucket.org/account/settings/ssh-keys/"
-echo -e "${GREEN}SourceHut${NC}: https://meta.sr.ht/keys"
-echo -e "${GREEN}GitLab${NC}: https://gitlab.com/-/user_settings/ssh_keys"
-echo -e "${GREEN}Gitea${NC}: https://gitea.com/user/settings/keys"
-echo -e "${GREEN}Codeberg${NC}: https://codeberg.org/user/settings/keys"
-
-echo
-
-echo -e "${RED}Да ли сте поставили ssh кључ на Github, GitLab, Codeberg и Gitea-и? [y/N]${NC}"
-read GIT
-
-if [[ "$GIT" =~ ^[Yy]$ ]]; then
-    echo -e "${GREEN}Постање се наставља .${NC}"
-else
-    echo -e "${RED}Поставите ssh кључ на Github, GitLab, Codeberg и Gitea-и, па поново покрените скрипту.${NC}"
-    echo -e "${GREEN}ssh кључ${} је копиран у међускладиште" && wl-copy < ~/.ssh/id_rsa.pub
-    echo -e "${GREEN}GitHub${NC}: https://github.com/settings/keys"
-    echo -e "${GREEN}BitBucket${NC}: https://bitbucket.org/account/settings/ssh-keys/"
-    echo -e "${GREEN}SourceHut${NC}: https://meta.sr.ht/keys"
-    echo -e "${GREEN}GitLab${NC}: https://gitlab.com/-/user_settings/ssh_keys"
-    echo -e "${GREEN}Gitea${NC}: https://gitea.com/user/settings/keys"
-    echo -e "${GREEN}Codeberg${NC}: https://codeberg.org/user/settings/keys"
-    exit 1
-fi
-
-echo
-#------------------------------------------------------------------------------#
-
-echo -e "${RED}CGIT${NC}"
-
-cd ~
-
-## CGIT
-
-### Extra
-echo -e "${GREEN}Клонирање Extra...${NC}"
-cd ~
-git clone git@github.com:crnobog69/extra.git
-cd extra
-git remote rename origin github
-git remote add bitbucket git@bitbucket.org:crnobog69/extra.git
-git remote add sourcehut git@git.sr.ht:~crnobog/extra.git
-git remote add gitlab git@gitlab.com:crnobog/extra.git
-git remote add codeberg git@codeberg.org/crnobog/extra.git
-git remote add gitea git@gitea.com:crnobog/extra.git
-echo -e "${GREEN}Extra клониран.${NC}"
-
-### DotWin
-echo -e "${GREEN}Клонирање DotWin...${NC}"
-cd ~
-git clone git@github.com:crnobog69/dotwin.git
-cd dotwin
-git remote rename origin github
-git remote add bitbucket git@bitbucket.org:crnobog69/dotwin.git
-git remote add sourcehut git@git.sr.ht:~crnobog/dotwin.git
-git remote add gitlab git@gitlab.com:crnobog/dotwin.git
-git remote add codeberg git@codeberg.org/crnobog/dotwin.git
-git remote add gitea git@gitea.com:crnobog/dotwin.git
-echo -e "${GREEN}DotWin клониран.${NC}"
-
-### Scripts
-echo -e "${GREEN}Клонирање Scripts...${NC}"
-cd ~
-git clone git@github.com:crnobog69/scripts.git
-cd scripts
-git remote rename origin github
-echo -e "${GREEN}Scripts клониран.${NC}"
-
-### Website
-echo -e "${GREEN}Клонирање Website...${NC}"
-cd ~
-git clone git@github.com:crnobog69/crnogob69.github.io.git
-cd crnogob69.github.io
-git remote rename origin github
-echo -e "${GREEN}Website клониран.${NC}"
-
-### CBPaste
-echo -e "${GREEN}Клонирање CBPaste...${NC}"
-cd ~
-git clone git@github.com:crnobog69/cbpaste.git
-cd cbpaste
-git remote rename origin github
-echo -e "${GREEN}CBPaste клониран.${NC}"
-
-### CBRSS
-echo -e "${GREEN}Клонирање CBRSS...${NC}"
-cd ~
-git clone git@github.com:crnobog69/cbrss.git
-cd cbrss
-git remote rename origin github
-echo -e "${GREEN}CBRSS клониран.${NC}"
-
-### Proto-Orbita
-echo -e "${GREEN}Клонирање Proto-Orbita...${NC}"
-cd ~
-git clone git@github.com:crnobog69/proto-orbita.git
-cd proto-orbita
-git remote rename origin github
-echo -e "${GREEN}Proto-Orbita клониран.${NC}"
-
-### Galerija
-echo -e "${GREEN}Клонирање Galerija...${NC}"
-cd ~
-git clone git@github.com:crnobog69/galerija.git
-cd galerija
-git remote rename origin github
-echo -e "${GREEN}Galerija клониран.${NC}"
-
-### Galerija-MediaGenesis Installation Started
-echo -e "${GREEN}Galerija-Media клониран.${NC}"
-
-### Bitarctic
-echo -e "${GREEN}Клонирање Bitarctic...${NC}"
-cd ~
-git clone git@github.com:crnobog69/bitarctic-re.git
-cd bitarctic-re
-git remote rename origin github
-echo -e "${GREEN}Bitarctic клониран.${NC}"
-
-### Py-Zadaci
-echo -e "${GREEN}Клонирање Py-Zadaci...${NC}"
-cd ~/Desktop/
-git clone git@github.com:crnobog69/py.git
-cd py
-git remote rename origin github
-echo -e "${GREEN}Py-Zadaci клониран.${NC}"
-
-### C-Zadaci
-echo -e "${GREEN}Клонирање C-Zadaci...${NC}"
-cd ~/Desktop/
-git clone git@github.com:crnobog69/c.git
-cd c
-git remote rename origin github
-echo -e "${GREEN}C-Zadaci клониран.${NC}"
-
-### DotDocs
-echo -e "${GREEN}Клонирање DotDocs...${NC}"
-cd ~
-git clone git@github.com:crnobog69/dotdocs.git
-cd dotdocs
-git remote rename origin github
-echo -e "${GREEN}DotDocs клониран.${NC}"
-
-echo
-#------------------------------------------------------------------------------#
-
-## GNU Stow
-
-echo -e "${GREEN}GNU Stow${NC}"
-
-cd ~
-
-cd dotfiles/
-
-stow .
-
-echo -e "${GREEN}Dotfiles успешно постављене.${NC}"
-
-echo
-#------------------------------------------------------------------------------#
-
-## Atuin
-
-echo -e "${GREEN}Atuin${NC}"
-
-cd ~
-
-curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
-
-echo -e "${GREEN}Atuin успешно инсталиран.${NC}"
-
-cd ~
-
-cd dotfiles/
-
-rm -f ~/.config/atuin/config.toml && stow atuin
-
-echo -e "${GREEN}GNU Stow успешно постављен.${NC}"
-
-cd ~
-
-echo -e "${RED}Да ли желите да се пријавите на Atuin?${NC}"
-read ATUIN
-
-if [[ "$ATUIN" =~ ^[Yy]$ ]]; then
-    echo -e "${GREEN}Пријава на Atuin...${NC}"
-    atuin login
-    atuin sync
-    echo -e "${GREEN}Пријава на Atuin завршена.${NC}"
-else
-    echo -e "${RED}Пријава на Atuin отказана.${NC}"
-fi
-
-echo
-#------------------------------------------------------------------------------#
-
-## Bat
-
-echo -e "${GREEN}Bat${NC}"
-
-cd ~
-
-rm -f ~/.config/bat/config && stow bat
-
-echo -e "${GREEN}Bat конфигурација је завршена.${NC}"
-
-echo
-#------------------------------------------------------------------------------#
-
-## Wakapi
-
-echo -e "${GREEN}Wakapi${NC}"
-
-cd ~
-
-echo -e "${RED}За постављање Wakapi покрените${NC} ${GREEN}./dotfiles/scripts/install-wakapi.sh${NC}"
-
-echo
-#------------------------------------------------------------------------------#
-
-## Filen.io
-
-echo -e "${GREEN}Filen.io${NC}"
-
-cd ~
-
-curl -sL https://filen.io/cli.sh | bash
-
-echo -e "${GREEN}Filen.io успешно инсталиран.${NC}"
-
-echo -e "${GREEN}Да ли желите да се пријавите на Filen.io?${NC}"
-read FILEN
-
-if [[ "$FILEN" =~ ^[Yy]$ ]]; then
-    echo -e "${GREEN}Пријава на Filen.io...${NC}"
-    filen-cli auth
-    echo -e "${GREEN}Пријава на Filen.io завршена.${NC}"
-else
-    echo -e "${RED}Пријава на Filen.io отказана.${NC}"
-fi
-
-echo
-#------------------------------------------------------------------------------#
-
-cd ~
-
-echo "=== Инсталација завршена: $(date) ==="
+setup_ssh_keys() {
+    log_header "Подешавање SSH кључева"
+    
+    if [ ! -f ~/.ssh/id_rsa.pub ]; then
+        log_info "Креирање новог SSH кључа"
+        ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)" -f ~/.ssh/id_rsa -N ""
+    else
+        log_info "SSH кључ већ постоји"
+    fi
+    
+    # Копирање SSH кључа у међускладиште
+    if command -v wl-copy >/dev/null 2>&1; then
+        wl-copy < ~/.ssh/id_rsa.pub
+        log_success "SSH кључ је копиран у међускладиште"
+    else
+        log_info "Ваш SSH кључ је:"
+        cat ~/.ssh/id_rsa.pub
+    fi
+    
+    log_info "Додајте SSH кључ на следеће сервисе:"
+    log_info "GitHub: https://github.com/settings/keys"
+    log_info "BitBucket: https://bitbucket.org/account/settings/ssh-keys/"
+    log_info "SourceHut: https://meta.sr.ht/keys"
+    log_info "GitLab: https://gitlab.com/-/user_settings/ssh_keys"
+    log_info "Gitea: https://gitea.com/user/settings/keys"
+    log_info "Codeberg: https://codeberg.org/user/settings/keys"
+    
+    if prompt_yes_no "Да ли сте додали SSH кључ на потребним сервисима?"; then
+        log_success "Постављање SSH кључа завршено."
+    else
+        log_info "Додајте SSH кључ касније и поново покрените скрипту."
+        
+        if prompt_yes_no "Желите ли да наставите без додавања SSH кључа?"; then
+            log_info "Настављам са HTTPS клонирањем репозиторијума."
+            return 0
+        else
+            return 1
+        fi
+    fi
+}
+
+update_system() {
+    log_header "Ажурирање система"
+    if sudo pacman -Syu --noconfirm; then
+        log_success "Систем је успешно ажуриран."
+    else
+        log_error "Грешка при ажурирању система."
+        return 1
+    fi
+}
+
+# Главне функције за инсталацију
+clone_dotfiles() {
+    log_header "Клонирање Dotfiles репозиторијума"
+    
+    # Преузимање репозиторијума ако не постоји
+    if [ ! -д "$DOTFILES_DIR" ]; онда
+        log_info "Клонирам dotfiles у $DOTFILES_DIR"
+        if git clone "$DOTFILES_REPO" "$DOTFILES_DIR"; онда
+            log_success "Dotfiles успешно клониран."
+        else
+            log_error "Неуспешно клонирање dotfiles репозиторијума."
+            return 1
+        fi
+    else
+        log_info "Директоријум dotfiles већ постоји. Ажурирам репозиторијум..."
+        cd "$DOTFILES_DIR" || return 1
+        git pull
+    fi
+    
+    # Конфигурисање удаљених репозиторијума
+    cd "$DOTFILES_DIR" || return 1
+    
+    if git remote | grep -q "github"; онда
+        log_info "Удаљени репозиторијуми су већ конфигурисани."
+    else
+        git remote rename origin github || true
+        git remote add bitbucket "git@bitbucket.org:$BITBUCKET_USERNAME/dotfiles.git" || true
+        git remote add sourcehut "git@git.sr.ht:~$SOURCEHUT_USERNAME/dotfiles.git" || true
+        git remote add gitlab "git@gitlab.com:$GITLAB_USERNAME/dotfiles.git" || true
+        git remote add codeberg "git@codeberg.org/$CODEBERG_USERNAME/dotfiles.git" || true
+        git remote add gitea "git@gitea.com:$GITEA_USERNAME/dotfiles.git" || true
+        log_success "Удаљени репозиторијуми су конфигурисани."
+    fi
+    
+    return 0
+}
+
+configure_git() {
+    log_header "Конфигурисање Git-а"
+    
+    if [ -f "$DOTFILES_DIR/scripts/git-configure.sh" ]; онда
+        cd "$DOTFILES_DIR/scripts" || return 1
+        chmod +x git-configure.sh
+        ./git-configure.sh
+        log_success "Git конфигурација завршена."
+    else
+        log_error "Скрипта за конфигурацију Git-а није пронађена."
+        log_info "Конфигуришем основне Git параметре..."
+        
+        read -rp "Унесите ваше име за Git: " git_name
+        read -rp "Унесите вашу e-mail адресу за Git: " git_email
+        
+        git config --global user.name "$git_name"
+        git config --global user.email "$git_email"
+        git config --global core.editor "vim"
+        git config --global init.defaultBranch "main"
+        
+        log_success "Основна Git конфигурација завршена."
+    fi
+}
+
+install_packages() {
+    log_header "Инсталација пакета"
+    
+    if [ -f "$DOTFILES_DIR/scripts/pkg.sh" ]; онда
+        cd "$DOTFILES_DIR/scripts" || return 1
+        chmod +x pkg.sh
+        ./pkg.sh
+        log_success "Инсталација пакета завршена."
+    else
+        log_error "Скрипта за инсталацију пакета није пронађена."
+        if prompt_yes_no "Да ли желите да инсталирате основне пакете?"; онда
+            log_info "Инсталирам основне пакете..."
+            sudo pacman -S --noconfirm \
+                base-devel git stow curl wget \
+                neovim vim micro mc ranger \
+                htop btop ncdu tmux zsh fish \
+                fzf ripgrep fd bat exa
+            log_success "Основни пакети су инсталирани."
+        fi
+    fi
+}
+
+clone_additional_repos() {
+    log_header "Клонирање додатних репозиторијума"
+    
+    # Листа репозиторијума за клонирање
+    declare -A repos=(
+        ["extra"]="$HOME/extra"
+        ["dotwin"]="$HOME/dotwin"
+        ["scripts"]="$HOME/scripts"
+        ["crnogob69.github.io"]="$HOME/crnogob69.github.io"
+        ["cbpaste"]="$HOME/cbpaste"
+        ["cbrss"]="$HOME/cbrss"
+        ["proto-orbita"]="$HOME/proto-orbita"
+        ["galerija"]="$HOME/galerija"
+        ["bitarctic-re"]="$HOME/bitarctic-re"
+        ["py"]="$HOME/Desktop/py"
+        ["c"]="$HOME/Desktop/c"
+        ["dotdocs"]="$HOME/dotdocs"
+    )
+    
+    if ! prompt_yes_no "Да ли желите да клонирате додатне репозиторијуме?"; онда
+        log_info "Прескачем клонирање додатних репозиторијума."
+        return 0
+    fi
+    
+    # Проверавам и креирам Desktop директоријум ако не постоји
+    if [[ ! -д "$HOME/Desktop" ]]; онда
+        mkdir -p "$HOME/Desktop"
+    fi
+    
+    # Клонирање репозиторијума
+    for repo in "${!repos[@]}"; do
+        dest="${repos[$repo]}"
+        
+        if [ ! -д "$dest" ]; онда
+            log_info "Клонирам $repo у $dest"
+            
+            # Проверавам да ли да користим SSH или HTTPS
+            if ssh -T git@github.com 2>&1 | grep -q "success"; онда
+                git clone "git@github.com:$GITHUB_USERNAME/$repo.git" "$dest"
+            else
+                git clone "https://github.com/$GITHUB_USERNAME/$repo.git" "$dest"
+            fi
+            
+            if [ $? -eq 0 ]; онда
+                log_success "$repo клониран у $dest"
+                
+                # Додајем remote репозиторијуме
+                cd "$dest" || continue
+                git remote rename origin github || true
+                git remote add bitbucket "git@bitbucket.org:$BITBUCKET_USERNAME/$repo.git" 2>/dev/null || true
+                git remote add sourcehut "git@git.sr.ht:~$SOURCEHUT_USERNAME/$repo.git" 2>/dev/null || true
+                git remote add gitlab "git@gitlab.com:$GITLAB_USERNAME/$repo.git" 2>/dev/null || true
+                git remote add codeberg "git@codeberg.org/$CODEBERG_USERNAME/$repo.git" 2>/dev/null || true
+                git remote add gitea "git@gitea.com:$GITEA_USERNAME/$repo.git" 2>/dev/null || true
+            else
+                log_error "Грешка при клонирању $repo"
+            fi
+        else
+            log_info "$repo већ постоји у $dest"
+        fi
+    done
+    
+    log_success "Клонирање додатних репозиторијума завршено."
+}
+
+apply_dotfiles() {
+    log_header "Примена Dotfiles конфигурације"
+    
+    cd "$DOTFILES_DIR" || return 1
+    
+    if ! command -v stow >/dev/null 2>&1; онда
+        log_error "GNU Stow није инсталиран. Инсталирам..."
+        sudo pacman -S --noconfirm stow
+    fi
+    
+    if stow .; онда
+        log_success "Dotfiles успешно примењени."
+    else
+        log_error "Грешка при примени dotfiles."
+        return 1
+    fi
+}
+
+install_atuin() {
+    log_header "Инсталација Atuin-а"
+    
+    if command -v atuin >/dev/null 2>&1; онда
+        log_info "Atuin је већ инсталиран."
+    else
+        log_info "Инсталирам Atuin..."
+        curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+    fi
+    
+    # Примена atuin конфигурације
+    if [ -д "$DOTFILES_DIR/atuin" ]; онда
+        rm -f ~/.config/atuin/config.toml 2>/dev/null
+        cd "$DOTFILES_DIR" || return 1
+        stow atuin
+        log_success "Atuin конфигурација примењена."
+    fi
+    
+    if prompt_yes_no "Да ли желите да се пријавите на Atuin?"; онда
+        atuin login
+        atuin sync
+        log_success "Пријава на Atuin завршена."
+    else
+        log_info "Пријава на Atuin прескочена."
+    fi
+}
+
+install_bat() {
+    log_header "Конфигурација Bat-а"
+    
+    if ! command -v bat >/dev/null 2>&1; онда
+        log_info "Инсталирам bat..."
+        sudo pacman -S --noconfirm bat
+    fi
+    
+    if [ -д "$DOTFILES_DIR/bat" ]; онда
+        rm -f ~/.config/bat/config 2>/dev/null
+        mkdir -p ~/.config/bat
+        cd "$DOTFILES_DIR" || return 1
+        stow bat
+        log_success "Bat конфигурација примењена."
+    else
+        log_info "Bat конфигурација није пронађена у dotfiles."
+    fi
+}
+
+install_filen() {
+    log_header "Инсталација Filen.io клијента"
+    
+    if command -v filen-cli >/dev/null 2>&1; онда
+        log_info "Filen.io клијент је већ инсталиран."
+    else
+        log_info "Инсталирам Filen.io клијент..."
+        curl -sL https://filen.io/cli.sh | bash
+        log_success "Filen.io клијент успешно инсталиран."
+    fi
+    
+    if prompt_yes_no "Да ли желите да се пријавите на Filen.io?"; онда
+        filen-cli auth
+        log_success "Пријава на Filen.io завршена."
+    else
+        log_info "Пријава на Filen.io прескочена."
+    fi
+}
+
+install_wakapi() {
+    log_header "Wakapi информације"
+    
+    if [ -f "$DOTFILES_DIR/scripts/install-wakapi.sh" ]; онда
+        log_info "За постављање Wakapi покрените:"
+        log_info "${GREEN}$DOTFILES_DIR/scripts/install-wakapi.sh${NC}"
+    else
+        log_info "Скрипта за инсталацију Wakapi није пронађена."
+    fi
+}
+
+# Главна функција
+main() {
+    setup_logging
+    
+    if ! check_requirements; онда
+        log_error "Нису испуњени сви предуслови за инсталацију."
+        return 1
+    fi
+    
+    update_system
+    
+    if ! setup_ssh_keys; онда
+        if ! prompt_yes_no "Да ли желите да наставите инсталацију без SSH кључева?"; онда
+            log_error "Инсталација прекинута."
+            return 1
+        fi
+    fi
+    
+    if ! clone_dotfiles; онда
+        log_error "Грешка при клонирању dotfiles репозиторијума."
+        return 1
+    fi
+    
+    configure_git
+    install_packages
+    apply_dotfiles
+    clone_additional_repos
+    install_atuin
+    install_bat
+    install_filen
+    install_wakapi
+    
+    log_header "Инсталација је завршена: $(date)"
+    log_success "Све компоненте су успешно инсталиране и конфигурисане."
+    
+    # Покажи завршне информације
+    log_info "\nЗа потпуно искуство, препоручујемо да се одјавите и поново пријавите у систем."
+    log_info "Затим проверите ~/.zshrc, ~/.bashrc, или одговарајуће конфигурационе датотеке."
+    
+    return 0
+}
+
+# Извршавање главне функције
+main "$@"
