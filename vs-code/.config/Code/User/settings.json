@@ -20,6 +20,9 @@
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[markdown]": {
+        "editor.defaultFormatter": null
+    },
     "workbench.colorCustomizations": {
         "terminal.background": "#00000000"
     },
