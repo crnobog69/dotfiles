@@ -355,7 +355,7 @@ main_menu() {
                 fi
                 ;;
             "󰈆  Излаз")
-                gum style --foreground "$COLOR_SUCCESS" " Довиђења!"
+                gum style --foreground "$YELLOW" " Довиђења!"
                 exit 0
                 ;;
         esac

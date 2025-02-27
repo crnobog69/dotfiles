@@ -39,7 +39,8 @@
     "blueman",
     "wl-clipboard",
     "keychain",
-    "uv"
+    "uv",
+    "ruff"
   ],
   "chaoticaur": [
     "brave-bin",
