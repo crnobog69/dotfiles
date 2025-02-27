@@ -75,5 +75,7 @@
     "diffEditor.hideUnchangedRegions.enabled": true,
     "github.copilot.editor.enableAutoCompletions": true,
     "git.openRepositoryInParentFolders": "never",
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorBlinking": true
 }
