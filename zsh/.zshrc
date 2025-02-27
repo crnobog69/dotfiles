@@ -128,6 +128,7 @@ alias litterbox='~/dotfiles/scripts/litterbox.sh'
 alias cursor='~/Applications/Cursor/cursor.appimage'
 alias cgit='~/dotfiles/scripts/cgit.sh'
 alias cspicetify='~/dotfiles/scripts/cspicetify.sh'
+alias togcop='~/dotfiles/scripts/togcop.sh'
 alias y='yazi'
 alias py='python'
 

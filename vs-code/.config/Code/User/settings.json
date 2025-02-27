@@ -1,71 +1,79 @@
 {
-  "security.workspace.trust.untrustedFiles": "open",
-  "tabnine.experimentalAutoImports": true,
-  "workbench.productIconTheme": "material-product-icons",
-  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-  "window.titleBarStyle": "custom",
-  "editor.linkedEditing": true,
-  "vscodeGoogleTranslate.preferredLanguage": "Serbian",
-  "settingsSync.ignoredExtensions": ["illixion.vscode-vibrancy-continued"],
-  "workbench.editorAssociations": {
-    "*.mp3": "vscode.audioPreview",
-    "*.jpg": "luna.editor"
-  },
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "workbench.colorCustomizations": {
-    "terminal.background": "#00000000"
-  },
-  "workbench.settings.applyToAllProfiles": ["workbench.colorCustomizations"],
-  "catppuccin.colorOverrides": {},
-  "catppuccin.accentColor": "green",
-  "workbench.iconTheme": "catppuccin-mocha",
-  "glassit.alpha": 255,
-  "editor.fontFamily": "'JetBrainsMono Nerd Font'",
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "editor.fontSize": 15,
-  "supermaven.enableFixWithSupermaven": true,
-  "editor.formatOnSave": true,
-  "terminal.integrated.commandsToSkipShell": ["matlab.interrupt"],
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "editor.tokenColorCustomizations": {
-    "[Catppuccin Mocha]": {
-      "textMateRules": [
-        {
-          "scope": ["comment"],
-          "settings": {
-            "fontStyle": ""
-          }
-        },
-        {
-          "scope": [
-            "keyword.control",
-            "keyword.operator.new",
-            "keyword.operator.expression",
-            "keyword.operator.logical.and",
-            "storage.type",
-            "storage.modifier",
-            "entity.name.function"
-          ],
-          "settings": {
-            "fontStyle": "italic"
-          }
+    "security.workspace.trust.untrustedFiles": "open",
+    "tabnine.experimentalAutoImports": true,
+    "workbench.productIconTheme": "material-product-icons",
+    "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+    "window.titleBarStyle": "custom",
+    "editor.linkedEditing": true,
+    "vscodeGoogleTranslate.preferredLanguage": "Serbian",
+    "settingsSync.ignoredExtensions": [
+        "illixion.vscode-vibrancy-continued"
+    ],
+    "workbench.editorAssociations": {
+        "*.mp3": "vscode.audioPreview",
+        "*.jpg": "luna.editor"
+    },
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000"
+    },
+    "workbench.settings.applyToAllProfiles": [
+        "workbench.colorCustomizations"
+    ],
+    "catppuccin.colorOverrides": {},
+    "catppuccin.accentColor": "green",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "glassit.alpha": 255,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font'",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "editor.fontSize": 15,
+    "supermaven.enableFixWithSupermaven": true,
+    "editor.formatOnSave": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.tokenColorCustomizations": {
+        "[Catppuccin Mocha]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.control",
+                        "keyword.operator.new",
+                        "keyword.operator.expression",
+                        "keyword.operator.logical.and",
+                        "storage.type",
+                        "storage.modifier",
+                        "entity.name.function"
+                    ],
+                    "settings": {
+                        "fontStyle": "italic"
+                    }
+                }
+            ]
         }
-      ]
-    }
-  },
-  "catppuccin.syncWithIconPack": false,
-  "diffEditor.ignoreTrimWhitespace": true,
-  "workbench.editor.enablePreview": false,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "github.copilot.editor.enableAutoCompletions": true,
-  "git.openRepositoryInParentFolders": "never",
-  "workbench.startupEditor": "none"
+    },
+    "catppuccin.syncWithIconPack": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "workbench.editor.enablePreview": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "github.copilot.editor.enableAutoCompletions": false,
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.startupEditor": "none"
 }
