@@ -34,6 +34,10 @@
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
     "editor.fontSize": 15,
     "supermaven.enableFixWithSupermaven": true,
     "editor.formatOnSave": true,
@@ -69,11 +73,11 @@
             ]
         }
     },
+    "github.copilot.editor.enableAutoCompletions": true,
     "catppuccin.syncWithIconPack": false,
     "diffEditor.ignoreTrimWhitespace": true,
     "workbench.editor.enablePreview": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
-    "github.copilot.editor.enableAutoCompletions": true,
     "git.openRepositoryInParentFolders": "never",
     "workbench.startupEditor": "none",
     "terminal.integrated.cursorStyle": "line",
