@@ -76,7 +76,7 @@
             ]
         }
     },
-    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.editor.enableAutoCompletions": false,
     "catppuccin.syncWithIconPack": false,
     "diffEditor.ignoreTrimWhitespace": true,
     "workbench.editor.enablePreview": false,
