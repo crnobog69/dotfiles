@@ -16,7 +16,7 @@ trim_at = "-"
 
 # Third param
 [directory]
-style = "#a6e3a1"
+style = "#fab387"
 truncate_to_repo = true
 truncation_length = 2
 truncation_symbol = " : "
