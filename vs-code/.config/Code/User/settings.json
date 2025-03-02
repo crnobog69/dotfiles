@@ -47,7 +47,6 @@
     "terminal.integrated.commandsToSkipShell": [
         "matlab.interrupt"
     ],
-    "workbench.colorTheme": "Catppuccin Mocha",
     "editor.tokenColorCustomizations": {
         "[Catppuccin Mocha]": {
             "textMateRules": [
@@ -84,5 +83,6 @@
     "git.openRepositoryInParentFolders": "never",
     "workbench.startupEditor": "none",
     "terminal.integrated.cursorStyle": "line",
-    "terminal.integrated.cursorBlinking": true
+    "terminal.integrated.cursorBlinking": true,
+    "workbench.colorTheme": "Catppuccin Mocha"
 }

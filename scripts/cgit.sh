@@ -411,7 +411,7 @@ handle_all_repositories() {
             pull_from_github "$C_ZADACI_REPO"
             pull_from_github "$CBPASTE_REPO"
             pull_from_github "$CBRSS_REPO"
-            pull_from_github "$GALERIJA_REПО"
+            pull_from_github "$GALERIJA_REPO"
             pull_from_github "$GALERIJA_MEDIA_REPO"
             pull_from_github "$PROTO_ORBITA_REPO"
             pull_from_github "$BITARCTIC_REPO"
