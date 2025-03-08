@@ -81,10 +81,13 @@
     "workbench.editor.enablePreview": false,
     "diffEditor.hideUnchangedRegions.enabled": true,
     "git.openRepositoryInParentFolders": "never",
-    "workbench.startupEditor": "none",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
     "workbench.colorTheme": "Catppuccin Mocha",
     "gitlens.ai.model": "vscode",
-    "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet-thought"
+    "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet-thought",
+    "remote.SSH.configFile": "/home/lain/.ssh/config",
+    "remote.SSH.connectTimeout": 1,
+    "remote.SSH.showLoginTerminal": true,
+    "workbench.startupEditor": "none"
 }
