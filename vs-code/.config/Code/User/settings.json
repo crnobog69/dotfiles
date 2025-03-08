@@ -42,7 +42,7 @@
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "editor.fontSize": 15,
-    "supermaven.enableFixWithSupermaven": true,
+    "supermaven.enableFixWithSupermaven": false,
     "editor.formatOnSave": true,
     "terminal.integrated.commandsToSkipShell": [
         "matlab.interrupt"
