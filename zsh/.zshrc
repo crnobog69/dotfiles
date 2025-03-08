@@ -131,6 +131,7 @@ alias cspicetify='~/dotfiles/scripts/cspicetify.sh'
 alias togcop='~/dotfiles/scripts/togcop.sh'
 alias y='yazi'
 alias py='python'
+alias refresh='source ~/.zshrc'
 
 # https://filen.io ------------------------------------------
 # alias filen-cli="~/filen-cli"
