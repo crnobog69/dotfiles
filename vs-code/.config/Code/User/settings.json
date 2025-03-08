@@ -83,11 +83,13 @@
     "git.openRepositoryInParentFolders": "never",
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.colorTheme": "Catppuccin Mocha",
+    "remote.SSH.useLocalServer": false,
+    "git.useIntegratedAskPass": false,
+    "git.terminalAuthentication": false,
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet-thought",
-    "remote.SSH.configFile": "/home/lain/.ssh/config",
-    "remote.SSH.connectTimeout": 1,
-    "remote.SSH.showLoginTerminal": true,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "gitlens.views.repositories.autoRefresh": false
 }
