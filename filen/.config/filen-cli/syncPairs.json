@@ -1,11 +1,11 @@
 [
   {
-    "local": "/run/media/lain/VERMAHT/Linux/НАЦИЗАМ/",
+    "local": "/run/media/lain/PRVI/Linux/НАЦИЗАМ/",
     "remote": "/lain",
     "syncMode": "twoWay"
   },
   {
-    "local": "/run/media/lain/VERMAHT/Факултет/",
+    "local": "/run/media/lain/PRVI/Факултет/",
     "remote": "/Факултет",
     "syncMode": "twoWay"
   }

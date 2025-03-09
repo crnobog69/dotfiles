@@ -40,7 +40,8 @@
     "wl-clipboard",
     "keychain",
     "uv",
-    "ruff"
+    "ruff",
+    "gdu"
   ],
   "chaoticaur": [
     "brave-bin",
