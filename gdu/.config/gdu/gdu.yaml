@@ -1,1 +1,21 @@
-no-color: true
+no-color: false
+show-bars: true
+header-bg: "default"
+footer-bg: "default"
+
+style:
+  header:
+    hidden: false
+    background-color: "#1e1e2e"
+    text-color: "#cdd6f4"
+  footer:
+    background-color: "#1e1e2e"
+    text-color: "#cdd6f4"
+    number-color: "#89b4fa"
+  selected-row:
+    text-color: "#1e1e2e"
+    background-color: "#89b4fa"
+  result-row:
+    number-color: "#a6e3a1"
+    directory-color: "#f38ba8"
+  use-old-size-bar: true
