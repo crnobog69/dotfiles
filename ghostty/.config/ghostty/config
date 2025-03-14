@@ -83,3 +83,6 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = catppuccin-mocha.conf
+cursor-style = bar
+cursor-style-blink = false
+shell-integration-features = no-cursor
