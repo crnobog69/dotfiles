@@ -41,7 +41,8 @@
     "keychain",
     "uv",
     "ruff",
-    "gdu"
+    "gdu",
+    "ripgrep"
   ],
   "chaoticaur": [
     "brave-bin",
