@@ -42,7 +42,7 @@
     "uv",
     "ruff",
     "gdu",
-    "ripgrep"
+    "ripgrep-all"
   ],
   "chaoticaur": [
     "brave-bin",
