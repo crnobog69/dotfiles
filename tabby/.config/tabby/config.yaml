@@ -2,8 +2,7 @@ version: 7
 profiles: []
 groups: []
 hotkeys:
-  toggle-window:
-    - Ctrl-Space
+  toggle-window: []
   copy-current-path: []
   ctrl-c:
     - Ctrl-C
@@ -86,8 +85,7 @@ hotkeys:
     - Ctrl-Shift-PageUp
   move-tab-right:
     - Ctrl-Shift-PageDown
-  rearrange-panes:
-    - Ctrl-Shift
+  rearrange-panes: []
   duplicate-tab: []
   restart-tab: []
   reconnect-tab: []
