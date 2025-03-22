@@ -242,6 +242,10 @@ ssh:
       port: 22
       type: ecdsa-sha2-nistp256
       digest: 3mGrJsDHSS3EqwT+qWkKzCqlwJ+kWGBuFb+y2K2qyb0=
+    - host: 89.168.127.69
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: apBbLkcsY6gLgoowyulbik2w6A/jcPNKVgTw8iYm9W4=
 clickableLinks: {}
 accessibility: {}
 appearance:
