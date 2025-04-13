@@ -198,3 +198,7 @@ export PATH="${HOME}/.local/bin":${PATH}
 export PATH="/home/lain/.bun/bin:$PATH"
 
 eval "$(atuin init zsh)"
+
+
+# filen-cli
+PATH=$PATH:~/.filen-cli/bin
