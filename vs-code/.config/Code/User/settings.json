@@ -91,5 +91,6 @@
     "gitlens.ai.model": "vscode",
     "gitlens.ai.vscode.model": "copilot:claude-3.7-sonnet-thought",
     "workbench.startupEditor": "none",
-    "gitlens.views.repositories.autoRefresh": false
+    "gitlens.views.repositories.autoRefresh": false,
+    "editor.unicodeHighlight.nonBasicASCII": false
 }
